@@ -18,7 +18,7 @@
 
 # 📖 About This Project <a name="about-project"></a>
 
-> GitHub Profiles A website built with HTML, SCSS, and TypeScript, utilizing the GitHub API and Axios for seamless data retrieval. Linters are employed to maintain clean code. Explore the live demo to search for any GitHub user.
+> Bankist-Complete is a sleek website built with HTML, SCSS, and JavaScript. Easily create, log in, delete accounts, transfer money to predefined users, and make money requests. Experience automatic logout for added security when there's no mouse movement. Explore the live demo for a hands-on preview.
 
 # Sample Of Website <a name="Sample-Of-Website"></a>
 
@@ -36,7 +36,6 @@
   <li><a href="https://en.wikipedia.org/wiki/CSS">Css</a></li>
   <li><a href="https://en.wikipedia.org/wiki/Sass_(style_sheet_language)">Scss</a></li>
   <li><a href="https://en.wikipedia.org/wiki/JavaScript">Javascript</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/TypeScript">TypeScript</a></li>
   <li><a href="https://stylelint.io/">Html/CSS Linters</a></li>
   <li><a href="https://eslint.org/">eslinters/TsLinters</a></li>
   </ul>
@@ -49,9 +48,8 @@
 - **[Responsive Website]**
 - **[Flex & Grid]**
 - **[SCSS ]**
-- **[TypeScript ]**
 - **[Linters ]**
-- **[Tslint ]**
+- **[Eslint ]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
