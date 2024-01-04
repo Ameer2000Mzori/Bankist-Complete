@@ -94,3 +94,16 @@ body {
   font-size: 1.2rem;
   color: black;
 }
+
+.navbar .nav-Right .nav-Right-Links-Wrap li .create-Account-Btn,
+.navbar .nav-Right-Wrap .nav-Right-Links-Wrap li .create-Account-Btn {
+  width: 150px;
+  height: 40px;
+  border-radius: 15px;
+  background-color: #5ec576;
+  color: black;
+  font-family: "Poppins", "Helvetica Neue", helvetica, sans-serif;
+  border: none;
+  font-weight: 400;
+  font-size: 1rem;
+}
