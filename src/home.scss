@@ -156,3 +156,29 @@ body {
     }
   }
 }
+//  navbar responsvness
+@media screen and (max-width: 1100px) {
+  .navbar {
+    .navbar-Wrap {
+      width: 90%;
+
+      .nav-Left,
+      .nav-Left-Wrap {
+        height: 100%;
+        width: 30%;
+
+        .nav-Left-Wrap {
+          width: 100%;
+        }
+
+        .nav-Left-Img {
+          height: 40px;
+        }
+      }
+    }
+
+    .nav-Right {
+      display: none;
+    }
+  }
+}
