@@ -8,14 +8,14 @@ body {
   position: absolute;
   height: 50px;
   width: 50px;
-  top: 1rem;
-  right: 1rem;
+  top: 2rem;
+  right: 2rem;
   display: flex;
   flex-direction: column;
   text-align: center;
   align-items: center;
   justify-content: space-evenly;
-  background-color: black;
+  z-index: 1;
 }
 
 .burger-Menu .burger-Menu-Wrap {
@@ -26,11 +26,16 @@ body {
   text-align: center;
   align-items: center;
   justify-content: space-evenly;
+  z-index: 2;
+}
+
+.burger-Menu .burger-Menu-Wrap:hover {
+  cursor: pointer;
 }
 
 .burger-Menu .burger-Menu-Wrap #b-M-Bars {
   height: 4px;
-  background-color: white;
+  background-color: #63da7f;
   border-radius: 15px;
   width: 100%;
 }
