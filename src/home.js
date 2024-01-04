@@ -8,5 +8,9 @@ const navRightLinksWrapEl = document.getElementsByClassName(
 )[0];
 
 // functions
+const openNav = () => {
+  navRightLinksWrapEl.classList.toggle("active");
+};
 
 // event linsters
+burgerMenuWrap.addEventListener("click", openNav);
