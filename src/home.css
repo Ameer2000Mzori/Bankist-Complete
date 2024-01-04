@@ -10,6 +10,11 @@ body {
   width: 50px;
   top: 1rem;
   right: 1rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: space-evenly;
   background-color: black;
 }
 
@@ -21,6 +26,13 @@ body {
   text-align: center;
   align-items: center;
   justify-content: space-evenly;
+}
+
+.burger-Menu .burger-Menu-Wrap #b-M-Bars {
+  height: 4px;
+  background-color: white;
+  border-radius: 15px;
+  width: 100%;
 }
 
 .navbar {
