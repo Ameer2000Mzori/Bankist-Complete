@@ -5,7 +5,16 @@ body {
   padding: 0;
   margin: 0;
 }
-
+// burger menu buttons and wraps
+.burger-M-Wrap {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  top: 1rem;
+  right: 1rem;
+  background-color: black;
+}
+//  navbar
 .navbar {
   display: flex;
   position: fixed;

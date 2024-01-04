@@ -4,6 +4,15 @@ body {
   margin: 0;
 }
 
+.burger-M-Wrap {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  top: 1rem;
+  right: 1rem;
+  background-color: black;
+}
+
 .navbar {
   display: flex;
   position: fixed;
