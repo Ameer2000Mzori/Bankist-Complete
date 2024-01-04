@@ -31,7 +31,7 @@ body {
   display: flex;
   flex-direction: column;
   text-align: center;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   height: 100%;
   width: 50%;
@@ -49,7 +49,7 @@ body {
   display: flex;
   flex-direction: column;
   text-align: center;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
   height: 100%;
   width: 50%;
