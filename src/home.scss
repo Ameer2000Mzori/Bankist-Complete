@@ -43,4 +43,19 @@ body {
       }
     }
   }
+
+  .nav-Right,
+  .nav-Right-Wrap {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 50%;
+
+    .nav-Right-Links-Wrap {
+      //
+    }
+  }
 }

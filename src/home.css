@@ -43,3 +43,14 @@ body {
   object-fit: cover;
   text-align: center;
 }
+
+.navbar .nav-Right,
+.navbar .nav-Right-Wrap {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 50%;
+}
