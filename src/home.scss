@@ -16,4 +16,14 @@ body {
   width: 100%;
   top: 0;
   height: 12vh;
+
+  .navbar-Wrap {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    height: 100%;
+  }
 }
