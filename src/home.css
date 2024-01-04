@@ -100,10 +100,22 @@ body {
   width: 150px;
   height: 40px;
   border-radius: 15px;
-  background-color: #5ec576;
+  background-color: #63da7f;
   color: black;
   font-family: "Poppins", "Helvetica Neue", helvetica, sans-serif;
   border: none;
   font-weight: 400;
   font-size: 1rem;
+  transition: all 50ms ease-in-out;
+}
+
+.navbar .nav-Right .nav-Right-Links-Wrap li .create-Account-Btn:hover,
+.navbar .nav-Right-Wrap .nav-Right-Links-Wrap li .create-Account-Btn:hover {
+  cursor: pointer;
+}
+
+.navbar .nav-Right .nav-Right-Links-Wrap li .create-Account-Btn:active,
+.navbar .nav-Right-Wrap .nav-Right-Links-Wrap li .create-Account-Btn:active {
+  color: white;
+  background-color: #439256;
 }
