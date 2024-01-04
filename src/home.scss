@@ -26,7 +26,8 @@ body {
     width: 80%;
     height: 100%;
 
-    .nav-Left {
+    .nav-Left,
+    .nav-Left-Wrap {
       display: flex;
       flex-direction: column;
       text-align: center;
@@ -34,6 +35,12 @@ body {
       justify-content: center;
       height: 100%;
       width: 50%;
+
+      .nav-Left-Img {
+        height: 50px;
+        object-fit: cover;
+        text-align: center;
+      }
     }
   }
 }
