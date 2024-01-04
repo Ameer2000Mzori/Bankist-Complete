@@ -80,3 +80,17 @@ body {
   justify-content: center;
   list-style: none;
 }
+
+.navbar .nav-Right .nav-Right-Links-Wrap li,
+.navbar .nav-Right-Wrap .nav-Right-Links-Wrap li {
+  padding: 1rem;
+}
+
+.navbar .nav-Right .nav-Right-Links-Wrap li a,
+.navbar .nav-Right-Wrap .nav-Right-Links-Wrap li a {
+  text-decoration: none;
+  font-family: "Poppins", "Helvetica Neue", helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: black;
+}
