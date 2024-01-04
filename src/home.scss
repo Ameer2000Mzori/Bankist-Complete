@@ -54,8 +54,16 @@ body {
     height: 100%;
     width: 50%;
 
+    .nav-Right-Wrap {
+      width: 100%;
+    }
+
     .nav-Right-Links-Wrap {
-      //
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
     }
   }
 }

@@ -54,3 +54,17 @@ body {
   height: 100%;
   width: 50%;
 }
+
+.navbar .nav-Right .nav-Right-Wrap,
+.navbar .nav-Right-Wrap .nav-Right-Wrap {
+  width: 100%;
+}
+
+.navbar .nav-Right .nav-Right-Links-Wrap,
+.navbar .nav-Right-Wrap .nav-Right-Links-Wrap {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
