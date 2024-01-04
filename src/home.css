@@ -68,3 +68,15 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+.navbar .nav-Right .nav-Right-Links-Wrap ul,
+.navbar .nav-Right-Wrap .nav-Right-Links-Wrap ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
