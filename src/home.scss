@@ -1,5 +1,9 @@
 $fontOne: "Poppins", "Helvetica Neue", helvetica, sans-serif;
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: $fontOne;
   padding: 0;

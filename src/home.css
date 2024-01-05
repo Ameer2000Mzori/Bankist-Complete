@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Poppins", "Helvetica Neue", helvetica, sans-serif;
   padding: 0;
