@@ -109,6 +109,7 @@ body {
 
 .navbar .navbar-Wrap .nav-Right .nav-Right-Links-Wrap ul li .create-Account-Btn,
 .navbar .navbar-Wrap .nav-Right-Wrap .nav-Right-Links-Wrap ul li .create-Account-Btn {
+  margin: 5px;
   width: 150px;
   height: 40px;
   border-radius: 15px;
