@@ -624,6 +624,10 @@ body {
   justify-content: space-evenly;
 }
 
+.operations .operations-Wrap .operations-Top {
+  height: 20%;
+}
+
 .operations .operations-Wrap .operations-Top .operations-Top-Wrap {
   text-align: start;
 }
@@ -637,4 +641,25 @@ body {
 .operations .operations-Wrap .operations-Top .operations-Top-Wrap .operations-Top-Text-2 {
   font-size: 2rem;
   font-family: "Poppins", "Helvetica Neue", helvetica, sans-serif;
+}
+
+.operations .operations-Wrap .operations-bottom {
+  width: 90%;
+  height: 80%;
+}
+
+.operations .operations-Wrap .operations-bottom .operations-Bottom-Wrap {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.operations .operations-Wrap .operations-bottom .operations-Bottom-Wrap .operations-Buttons-Wrap {
+  position: absolute;
+  display: none;
 }
