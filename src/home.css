@@ -434,9 +434,8 @@ body {
   flex-direction: column;
   text-align: center;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   height: 2200px;
-  width: 100vw;
 }
 
 .about .about-Wrap {
@@ -493,4 +492,15 @@ body {
   text-align: center;
   align-items: center;
   justify-content: center;
+}
+
+.about .about-Wrap .about-Bottom .about-Bottom-Wrap .about-Card .about-Card-Left {
+  width: 60%;
+  height: 100%;
+}
+
+.about .about-Wrap .about-Bottom .about-Bottom-Wrap .about-Card .about-Card-Left .about-Card-Left-Img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
 }

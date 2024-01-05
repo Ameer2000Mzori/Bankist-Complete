@@ -432,9 +432,8 @@ body {
   flex-direction: column;
   text-align: center;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   height: 2200px;
-  width: 100vw;
 
   .about-Wrap {
     display: flex;
@@ -487,6 +486,17 @@ body {
           text-align: center;
           align-items: center;
           justify-content: center;
+
+          .about-Card-Left {
+            width: 60%;
+            height: 100%;
+
+            .about-Card-Left-Img {
+              object-fit: cover;
+              height: 100%;
+              width: 100%;
+            }
+          }
         }
       }
     }
