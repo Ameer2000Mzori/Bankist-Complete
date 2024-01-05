@@ -56,14 +56,14 @@ const operData = [
 
 // functions
 const changeOperationCard = (index) => {
-  console.log("hi", index);
-  console.log();
-
+  // remove all active classes from all selected elements
   operationsTextWrap.forEach((operationBtn) => {
     operationBtn.classList.remove("active");
   });
+  // add active class to that clicked element
   operationsTextWrap[index].classList.add("active");
 
+  // inster and put the right data in to the element
   operationsBottomIcon.classList = `${operData[index].icon}`;
   operationsBottomText1.textContent = `${operData[index].title}`;
   operationsBottomText2.textContent = `${operData[index].description}`;
@@ -73,3 +73,4 @@ const changeOperationCard = (index) => {
 operationsTextWrap.forEach((operationBtn, index) => {
   operationBtn.addEventListener("click", () => changeOperationCard(index));
 });
+changeOperationCard(0);
