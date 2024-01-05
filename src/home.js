@@ -14,3 +14,14 @@ const openNav = () => {
 
 // event linsters
 burgerMenuWrap.addEventListener("click", openNav);
+//
+//
+//
+//   Operations //
+//
+//
+// selecting elements
+
+// functions
+
+// event linsters
