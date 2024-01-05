@@ -270,5 +270,14 @@ body {
     align-items: center;
     justify-content: space-evenly;
     flex-direction: row;
+
+    .header-Right {
+      .header-Right-Wrap {
+        .header-Right-Img {
+          object-fit: cover;
+          height: 350px;
+        }
+      }
+    }
   }
 }

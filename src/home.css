@@ -285,3 +285,8 @@ body {
   justify-content: space-evenly;
   flex-direction: row;
 }
+
+.header .header-Wrap .header-Right .header-Right-Wrap .header-Right-Img {
+  object-fit: cover;
+  height: 350px;
+}
