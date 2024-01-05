@@ -55,5 +55,11 @@ const operData = [
 ];
 
 // functions
+const changeOperationCard = (index) => {
+  console.log("hi", index);
+};
 
 // event linsters
+operationsTextWrap.forEach((operationBtn, index) => {
+  operationBtn.addEventListener("click", () => changeOperationCard(index));
+});
