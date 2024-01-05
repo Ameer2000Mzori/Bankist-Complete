@@ -57,6 +57,16 @@ const operData = [
 // functions
 const changeOperationCard = (index) => {
   console.log("hi", index);
+  console.log();
+
+  operationsTextWrap.forEach((operationBtn) => {
+    operationBtn.classList.remove("active");
+  });
+  operationsTextWrap[index].classList.add("active");
+
+  operationsBottomIcon.classList = `${operData[index].icon}`;
+  operationsBottomText1.textContent = `${operData[index].title}`;
+  operationsBottomText2.textContent = `${operData[index].description}`;
 };
 
 // event linsters

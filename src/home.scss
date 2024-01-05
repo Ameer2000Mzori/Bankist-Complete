@@ -728,7 +728,7 @@ body {
 
           .operations-Text-Wrap.active {
             position: relative;
-            bottom: 15px;
+            transform: translateY(-25%);
             background-color: #63da7f;
           }
         }
