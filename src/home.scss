@@ -122,6 +122,7 @@ body {
     border-left: none;
     border-right: none;
     border-top: none;
+    height: 15vh;
 
     .navbar-Wrap {
       width: 95%;
@@ -179,10 +180,10 @@ body {
             background-color: white;
             border: solid black 1px;
             border-top: none;
-            height: 100vh;
+            height: 75vh;
             position: absolute;
-            right: -5px;
-            top: -5px;
+            right: -12px;
+            top: 3rem;
 
             li {
               padding: 1.5rem;
