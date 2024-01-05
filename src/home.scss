@@ -714,6 +714,8 @@ body {
             display: flex;
             flex-direction: column;
             justify-content: center;
+            cursor: pointer;
+            transition: all 250ms ease-in-out;
 
             #operations-Texts {
               padding: 0;
@@ -722,6 +724,12 @@ body {
               font-size: 0.9rem;
               color: white;
             }
+          }
+
+          .operations-Text-Wrap.active {
+            position: relative;
+            bottom: 15px;
+            background-color: #63da7f;
           }
         }
       }
