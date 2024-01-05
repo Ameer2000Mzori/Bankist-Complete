@@ -17,7 +17,6 @@ body {
   background-color: rgba(255, 255, 255, 0.95);
   height: 12vh;
 }
-
 .navbar .navbar-Wrap {
   display: flex;
   flex-direction: row;
@@ -27,7 +26,6 @@ body {
   width: 80%;
   height: 100%;
 }
-
 .navbar .navbar-Wrap .nav-Left,
 .navbar .navbar-Wrap .nav-Left-Wrap {
   display: flex;
@@ -38,14 +36,12 @@ body {
   height: 100%;
   width: 50%;
 }
-
 .navbar .navbar-Wrap .nav-Left .nav-Left-Img,
 .navbar .navbar-Wrap .nav-Left-Wrap .nav-Left-Img {
   height: 50px;
   object-fit: cover;
   text-align: center;
 }
-
 .navbar .navbar-Wrap .nav-Right,
 .navbar .navbar-Wrap .nav-Right-Wrap {
   display: flex;
@@ -56,12 +52,10 @@ body {
   height: 100%;
   width: 50%;
 }
-
 .navbar .navbar-Wrap .nav-Right .nav-Right-Wrap,
 .navbar .navbar-Wrap .nav-Right-Wrap .nav-Right-Wrap {
   width: 100%;
 }
-
 .navbar .navbar-Wrap .nav-Right .nav-Right-Links-Wrap,
 .navbar .navbar-Wrap .nav-Right-Wrap .nav-Right-Links-Wrap {
   display: flex;
@@ -70,7 +64,6 @@ body {
   align-items: center;
   justify-content: center;
 }
-
 .navbar .navbar-Wrap .nav-Right .nav-Right-Links-Wrap ul,
 .navbar .navbar-Wrap .nav-Right-Wrap .nav-Right-Links-Wrap ul {
   padding: 0;
@@ -82,12 +75,10 @@ body {
   justify-content: center;
   list-style: none;
 }
-
 .navbar .navbar-Wrap .nav-Right .nav-Right-Links-Wrap ul li,
 .navbar .navbar-Wrap .nav-Right-Wrap .nav-Right-Links-Wrap ul li {
   padding: 1rem;
 }
-
 .navbar .navbar-Wrap .nav-Right .nav-Right-Links-Wrap ul li a,
 .navbar .navbar-Wrap .nav-Right-Wrap .nav-Right-Links-Wrap ul li a {
   text-decoration: none;
@@ -97,12 +88,10 @@ body {
   color: black;
   transition: all 250ms ease-in-out;
 }
-
 .navbar .navbar-Wrap .nav-Right .nav-Right-Links-Wrap ul li a:hover,
 .navbar .navbar-Wrap .nav-Right-Wrap .nav-Right-Links-Wrap ul li a:hover {
   color: #60be76;
 }
-
 .navbar .navbar-Wrap .nav-Right .nav-Right-Links-Wrap ul li .create-Account-Btn,
 .navbar .navbar-Wrap .nav-Right-Wrap .nav-Right-Links-Wrap ul li .create-Account-Btn {
   width: 150px;
@@ -116,14 +105,12 @@ body {
   font-size: 1rem;
   transition: all 50ms ease-in-out;
 }
-
 .navbar .navbar-Wrap .nav-Right .nav-Right-Links-Wrap ul li .create-Account-Btn:hover,
 .navbar .navbar-Wrap .nav-Right-Wrap .nav-Right-Links-Wrap ul li .create-Account-Btn:hover {
   cursor: pointer;
   background-color: #60be76;
   color: white;
 }
-
 .navbar .navbar-Wrap .nav-Right .nav-Right-Links-Wrap ul li .create-Account-Btn:active,
 .navbar .navbar-Wrap .nav-Right-Wrap .nav-Right-Links-Wrap ul li .create-Account-Btn:active {
   color: white;
@@ -138,27 +125,22 @@ body {
     border-top: none;
     height: 11vh;
   }
-
   .navbar .navbar-Wrap {
     width: 95%;
   }
-
   .navbar .navbar-Wrap .nav-Left,
   .navbar .navbar-Wrap .nav-Left-Wrap {
     height: 100%;
     width: 30%;
   }
-
   .navbar .navbar-Wrap .nav-Left .nav-Left-Wrap,
   .navbar .navbar-Wrap .nav-Left-Wrap .nav-Left-Wrap {
     width: 100%;
   }
-
   .navbar .navbar-Wrap .nav-Left .nav-Left-Img,
   .navbar .navbar-Wrap .nav-Left-Wrap .nav-Left-Img {
     height: 40px;
   }
-
   .navbar .navbar-Wrap .nav-Right,
   .navbar .navbar-Wrap .nav-Right-Wrap {
     display: flex;
@@ -169,14 +151,12 @@ body {
     height: 100%;
     width: 70%;
   }
-
   .navbar .navbar-Wrap .nav-Right .nav-Right-Wrap,
   .navbar .navbar-Wrap .nav-Right-Wrap .nav-Right-Wrap {
     width: 100%;
     align-items: flex-end;
     justify-content: center;
   }
-
   .navbar .navbar-Wrap .nav-Right .nav-Right-Links-Wrap,
   .navbar .navbar-Wrap .nav-Right-Wrap .nav-Right-Links-Wrap {
     display: none;
@@ -189,7 +169,6 @@ body {
     z-index: -1;
     transition: all 500ms ease-in-out;
   }
-
   .navbar .navbar-Wrap .nav-Right .nav-Right-Links-Wrap ul,
   .navbar .navbar-Wrap .nav-Right-Wrap .nav-Right-Links-Wrap ul {
     padding: 0;
@@ -208,30 +187,25 @@ body {
     right: -12px;
     top: 2rem;
   }
-
   .navbar .navbar-Wrap .nav-Right .nav-Right-Links-Wrap ul li,
   .navbar .navbar-Wrap .nav-Right-Wrap .nav-Right-Links-Wrap ul li {
     padding: 1.5rem;
   }
-
   .navbar .navbar-Wrap .nav-Right .nav-Right-Links-Wrap ul li a,
   .navbar .navbar-Wrap .nav-Right-Wrap .nav-Right-Links-Wrap ul li a {
     font-size: 1.5rem;
     color: black;
   }
-
   .navbar .navbar-Wrap .nav-Right .nav-Right-Links-Wrap ul li .create-Account-Btn,
   .navbar .navbar-Wrap .nav-Right-Wrap .nav-Right-Links-Wrap ul li .create-Account-Btn {
     width: 170px;
     font-size: 1rem;
   }
-
   .navbar .navbar-Wrap .nav-Right .nav-Right-Links-Wrap.active,
   .navbar .navbar-Wrap .nav-Right-Wrap .nav-Right-Links-Wrap.active {
     display: flex;
   }
 }
-
 .burger-Menu {
   position: absolute;
   height: 50px;
@@ -246,7 +220,6 @@ body {
   z-index: 1;
   display: none;
 }
-
 .burger-Menu .burger-Menu-Wrap {
   height: 100%;
   width: 100%;
@@ -257,11 +230,9 @@ body {
   justify-content: space-evenly;
   z-index: 2;
 }
-
 .burger-Menu .burger-Menu-Wrap:hover {
   cursor: pointer;
 }
-
 .burger-Menu .burger-Menu-Wrap #b-M-Bars {
   height: 4px;
   background-color: #63da7f;
@@ -274,7 +245,6 @@ body {
     display: flex;
   }
 }
-
 .header {
   display: flex;
   height: 100vh;
@@ -283,7 +253,6 @@ body {
   justify-content: center;
   flex-direction: column;
 }
-
 .header .header-Wrap {
   display: flex;
   height: 80%;
@@ -293,15 +262,12 @@ body {
   justify-content: space-evenly;
   flex-direction: row;
 }
-
 .header .header-Wrap .header-Left {
   width: 50%;
 }
-
 .header .header-Wrap .header-Left .header-Left-Wrap {
   text-align: start;
 }
-
 .header .header-Wrap .header-Left .header-Left-Wrap .header-Left-Text-1 {
   color: rgb(22, 37, 68);
   font-family: "Poppins", "Helvetica Neue", helvetica, sans-serif;
@@ -309,7 +275,6 @@ body {
   padding: 0;
   margin: 0;
 }
-
 .header .header-Wrap .header-Left .header-Left-Wrap .header-Left-Text-2 {
   padding: 0;
   margin: 0;
@@ -318,7 +283,6 @@ body {
   font-size: 1.2rem;
   font-weight: 500;
 }
-
 .header .header-Wrap .header-Left .header-Left-Wrap .header-Left-Button {
   background-color: transparent;
   color: #63da7f;
@@ -330,21 +294,17 @@ body {
   letter-spacing: 5px;
   cursor: pointer;
 }
-
 .header .header-Wrap .header-Left .header-Left-Wrap .header-Left-Button #header-Left-Button-Icon {
   color: #63da7f;
   font-size: 1.2rem;
   font-weight: 600;
 }
-
 .header .header-Wrap .header-Left .header-Left-Wrap .header-Left-Button:hover {
   color: #60be76;
 }
-
 .header .header-Wrap .header-Right {
   width: 35%;
 }
-
 .header .header-Wrap .header-Right .header-Right-Wrap .header-Right-Img {
   object-fit: cover;
   height: 350px;
@@ -357,78 +317,61 @@ body {
     width: 90%;
     flex-direction: column;
   }
-
   .header .header-Wrap .header-Left {
     width: 500px;
   }
-
   .header .header-Wrap .header-Left .header-Left-Wrap {
     text-align: center;
   }
-
   .header .header-Wrap .header-Left .header-Left-Wrap .header-Left-Text-1 {
     font-size: 3.2rem;
   }
-
   .header .header-Wrap .header-Left .header-Left-Wrap .header-Left-Text-2 {
     font-size: 1rem;
     font-weight: 500;
   }
-
   .header .header-Wrap .header-Left .header-Left-Wrap .header-Left-Button {
     font-size: 1rem;
   }
-
   .header .header-Wrap .header-Left .header-Left-Wrap .header-Left-Button #header-Left-Button-Icon {
     font-size: 1rem;
   }
-
   .header .header-Wrap .header-Right {
     width: 500px;
   }
-
   .header .header-Wrap .header-Right .header-Right-Wrap .header-Right-Img {
     object-fit: cover;
     height: 350px;
   }
 }
-
 @media screen and (max-width: 768px) {
   .header .header-Wrap .header-Left {
     width: 350px;
   }
-
   .header .header-Wrap .header-Left .header-Left-Wrap {
     text-align: center;
   }
-
   .header .header-Wrap .header-Left .header-Left-Wrap .header-Left-Text-1 {
     font-size: 2.2rem;
   }
-
   .header .header-Wrap .header-Left .header-Left-Wrap .header-Left-Text-2 {
     font-size: 0.9rem;
     font-weight: 500;
   }
-
   .header .header-Wrap .header-Left .header-Left-Wrap .header-Left-Button {
     font-size: 0.9rem;
   }
-
   .header .header-Wrap .header-Left .header-Left-Wrap .header-Left-Button #header-Left-Button-Icon {
     font-size: 0.9rem;
   }
-
   .header .header-Wrap .header-Right {
     width: 350px;
   }
-
   .header .header-Wrap .header-Right .header-Right-Wrap .header-Right-Img {
     object-fit: cover;
     height: 250px;
   }
 }
-
 .about {
   display: flex;
   flex-direction: column;
@@ -437,7 +380,6 @@ body {
   justify-content: center;
   height: 2200px;
 }
-
 .about .about-Wrap {
   display: flex;
   flex-direction: column;
@@ -447,25 +389,21 @@ body {
   height: 100%;
   width: 80%;
 }
-
 .about .about-Wrap .about-Top-Wrap {
   height: 10%;
   width: 100%;
   text-align: start;
 }
-
 .about .about-Wrap .about-Top-Wrap .about-Top-Text-1 {
   font-family: "Poppins", "Helvetica Neue", helvetica, sans-serif;
   color: #60be76;
 }
-
 .about .about-Wrap .about-Top-Wrap .about-Top-Text-2 {
   font-family: "Poppins", "Helvetica Neue", helvetica, sans-serif;
   color: rgb(22, 37, 68);
   font-size: 2.5rem;
   font-weight: 500;
 }
-
 .about .about-Wrap .about-Bottom {
   height: 80%;
   width: 100%;
@@ -475,7 +413,6 @@ body {
   align-items: center;
   justify-content: center;
 }
-
 .about .about-Wrap .about-Bottom .about-Bottom-Wrap {
   height: 100%;
   width: 100%;
@@ -485,7 +422,6 @@ body {
   align-items: center;
   justify-content: space-evenly;
 }
-
 .about .about-Wrap .about-Bottom .about-Bottom-Wrap .about-Card {
   display: flex;
   flex-direction: row;
@@ -495,18 +431,15 @@ body {
   height: 450px;
   width: 100%;
 }
-
 .about .about-Wrap .about-Bottom .about-Bottom-Wrap .about-Card .about-Card-Left {
   width: 50%;
   height: 100%;
 }
-
 .about .about-Wrap .about-Bottom .about-Bottom-Wrap .about-Card .about-Card-Left .about-Card-Left-Img {
   object-fit: cover;
   height: 100%;
   width: 100%;
 }
-
 .about .about-Wrap .about-Bottom .about-Bottom-Wrap .about-Card .about-Card-Right {
   width: 50%;
   height: 100%;
@@ -516,3 +449,14 @@ body {
   text-align: end;
   align-items: end;
 }
+.about .about-Wrap .about-Bottom .about-Bottom-Wrap .about-Card .about-Card-Right .about-Card-Right-Wrap {
+  height: 100%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: start;
+  align-items: start;
+}
+
+/*# sourceMappingURL=home.css.map */
