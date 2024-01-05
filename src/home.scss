@@ -434,6 +434,7 @@ body {
   align-items: center;
   justify-content: space-evenly;
   height: 2200px;
+  width: 100vw;
 
   .about-Wrap {
     display: flex;
@@ -442,6 +443,12 @@ body {
     align-items: center;
     justify-content: space-evenly;
     height: 100%;
-    width: 100%;
+    width: 80%;
+
+    .about-Top-Wrap {
+      height: 20vh;
+      width: 100%;
+      text-align: start;
+    }
   }
 }
