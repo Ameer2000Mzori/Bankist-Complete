@@ -20,6 +20,7 @@ body {
   top: 0;
   background-color: rgba(255, 255, 255, 0.95);
   height: 12vh;
+  z-index: 2;
 }
 
 .navbar .navbar-Wrap {
@@ -205,7 +206,7 @@ body {
     align-items: center;
     justify-content: space-evenly;
     list-style: none;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.95);
     border: solid black 1px;
     border-top: none;
     height: 500px;
@@ -712,6 +713,8 @@ body {
   flex-direction: column;
   justify-content: center;
   cursor: pointer;
+  position: relative;
+  z-index: 1;
   transition: all 250ms ease-in-out;
 }
 
