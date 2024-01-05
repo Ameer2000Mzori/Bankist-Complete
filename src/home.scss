@@ -530,6 +530,24 @@ body {
                 text-align: center;
                 justify-content: center;
               }
+
+              .about-Card-Right-Text-1 {
+                font-family: $fontOne;
+                color: black;
+                font-weight: 600;
+                font-size: 2rem;
+                padding: 0;
+                margin: 0;
+              }
+
+              .about-Card-Right-Text-2 {
+                font-family: $fontOne;
+                color: black;
+                font-weight: 200;
+                padding: 0;
+                margin: 0;
+                font-size: 1.2rem;
+              }
             }
           }
         }
