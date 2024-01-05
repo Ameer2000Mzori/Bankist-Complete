@@ -300,6 +300,13 @@ body {
   font-size: 4rem;
 }
 
+.header .header-Wrap .header-Left .header-Left-Wrap .header-Left-Text-2 {
+  color: rgb(22, 37, 68);
+  font-family: "Poppins", "Helvetica Neue", helvetica, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
 .header .header-Wrap .header-Right {
   width: 35%;
 }
