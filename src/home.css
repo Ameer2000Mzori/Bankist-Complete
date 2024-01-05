@@ -1,6 +1,7 @@
 body {
   font-family: "Poppins", "Helvetica Neue", helvetica, sans-serif;
   padding: 0;
+  background-color: #f3f3f3;
   margin: 0;
 }
 
@@ -298,9 +299,13 @@ body {
   color: rgb(22, 37, 68);
   font-family: "Poppins", "Helvetica Neue", helvetica, sans-serif;
   font-size: 4rem;
+  padding: 0;
+  margin: 0;
 }
 
 .header .header-Wrap .header-Left .header-Left-Wrap .header-Left-Text-2 {
+  padding: 0;
+  margin: 0;
   color: rgb(22, 37, 68);
   font-family: "Poppins", "Helvetica Neue", helvetica, sans-serif;
   font-size: 1.2rem;
