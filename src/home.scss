@@ -671,6 +671,7 @@ body {
           align-items: center;
           flex-direction: row;
           justify-content: space-evenly;
+          position: relative;
           background-color: white;
 
           .operations-Bottom-Text-Wrap-Left {
@@ -697,7 +698,31 @@ body {
 
         .operations-Buttons-Wrap {
           position: absolute;
-          display: none;
+          top: -2rem;
+          display: flex;
+          width: 100%;
+
+          .operations-Text-Wrap {
+            background-color: black;
+            color: white;
+            margin: 5px;
+            border-radius: 25px;
+            height: 40px;
+            width: 33%;
+            text-align: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            #operations-Texts {
+              padding: 0;
+              font-weight: 300;
+              margin: 0;
+              font-size: 0.9rem;
+              color: white;
+            }
+          }
         }
       }
     }
