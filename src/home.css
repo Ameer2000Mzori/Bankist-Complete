@@ -476,3 +476,13 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+.about .about-Wrap .about-Bottom .about-Bottom-Wrap {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
