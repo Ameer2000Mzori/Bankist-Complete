@@ -736,3 +736,60 @@ body {
     }
   }
 }
+// operations responsvness
+@media screen and (max-width: 850px) {
+  .operations {
+    height: 120vh;
+
+    .operations-Wrap {
+      height: 90%;
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      justify-content: space-evenly;
+
+      .operations-Top {
+        height: 20%;
+
+        .operations-Top-Wrap {
+          .operations-Top-Text-1 {
+            font-size: 0.9rem;
+          }
+
+          .operations-Top-Text-2 {
+            font-size: 1.2rem;
+          }
+        }
+      }
+
+      .operations-bottom {
+        .operations-Bottom-Wrap {
+          .operations-Bottom-Text-Wrap {
+            width: 360px;
+            height: 500px;
+
+            .operations-Bottom-Text-Wrap-Left {
+              font-size: 2rem;
+            }
+
+            .operations-Bottom-Text-Wrap-Right {
+              width: 75%;
+              height: 100%;
+              font-size: 1rem;
+            }
+          }
+
+          .operations-Buttons-Wrap {
+            .operations-Text-Wrap {
+              #operations-Texts {
+                font-size: 0.8rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
