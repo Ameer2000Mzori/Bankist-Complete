@@ -22,6 +22,16 @@ burgerMenuWrap.addEventListener("click", openNav);
 //
 // selecting elements
 
+// data object
+const operData = [
+  {
+    icon: "fa-solid fa-phone",
+    title: "Tranfser money to anyone, instantly! No fees, no BS.",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  },
+];
+
 // functions
 
 // event linsters
