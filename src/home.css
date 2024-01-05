@@ -435,4 +435,15 @@ body {
   text-align: center;
   align-items: center;
   justify-content: space-evenly;
+  height: 2200px;
+}
+
+.about .about-Wrap {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
+  width: 100%;
 }
