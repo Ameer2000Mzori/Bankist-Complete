@@ -275,3 +275,13 @@ body {
   justify-content: center;
   flex-direction: column;
 }
+
+.header .header-Wrap {
+  display: flex;
+  height: 80%;
+  width: 80%;
+  text-align: center;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
