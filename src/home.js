@@ -21,6 +21,16 @@ burgerMenuWrap.addEventListener("click", openNav);
 //
 //
 // selecting elements
+const operationsBottomIcon = document.getElementById(
+  "operations-Bottom-Text-Wrap-Left-Icon"
+);
+const operationsBottomText1 = document.getElementsByClassName(
+  "operations-Bottom-Text-1"
+)[0];
+const operationsBottomText2 = document.getElementsByClassName(
+  "operations-Bottom-Text-2"
+)[0];
+const operationsTextWrap = document.querySelectorAll(".operations-Text-Wrap");
 
 // data object
 const operData = [
