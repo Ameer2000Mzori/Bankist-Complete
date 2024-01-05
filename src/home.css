@@ -312,6 +312,18 @@ body {
   font-weight: 500;
 }
 
+.header .header-Wrap .header-Left .header-Left-Wrap .header-Left-Button {
+  background-color: transparent;
+  color: #63da7f;
+  font-family: "Poppins", "Helvetica Neue", helvetica, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border: none;
+  margin-top: 1rem;
+  letter-spacing: 5px;
+  cursor: pointer;
+}
+
 .header .header-Wrap .header-Right {
   width: 35%;
 }

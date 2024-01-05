@@ -294,6 +294,18 @@ body {
           font-size: 1.2rem;
           font-weight: 500;
         }
+
+        .header-Left-Button {
+          background-color: transparent;
+          color: #63da7f;
+          font-family: $fontOne;
+          font-size: 1.2rem;
+          font-weight: 600;
+          border: none;
+          margin-top: 1rem;
+          letter-spacing: 5px;
+          cursor: pointer;
+        }
       }
     }
 
