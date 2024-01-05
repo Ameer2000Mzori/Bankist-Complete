@@ -478,7 +478,8 @@ body {
         flex-direction: column;
         text-align: center;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: flex-start;
+        gap: 5rem;
 
         .about-Card {
           display: flex;
@@ -550,6 +551,10 @@ body {
               }
             }
           }
+        }
+
+        .reversed {
+          flex-direction: row-reverse;
         }
       }
     }
