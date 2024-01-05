@@ -324,6 +324,12 @@ body {
   cursor: pointer;
 }
 
+.header .header-Wrap .header-Left .header-Left-Wrap .header-Left-Button #header-Left-Button-Icon {
+  color: #63da7f;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
 .header .header-Wrap .header-Right {
   width: 35%;
 }
