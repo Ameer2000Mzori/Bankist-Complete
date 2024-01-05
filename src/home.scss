@@ -271,7 +271,23 @@ body {
     justify-content: space-evenly;
     flex-direction: row;
 
+    .header-Left {
+      width: 50%;
+
+      .header-Left-Wrap {
+        text-align: start;
+
+        .header-Left-Text-1 {
+          color: rgb(22, 37, 68);
+          font-family: $fontOne;
+          font-size: 4rem;
+        }
+      }
+    }
+
     .header-Right {
+      width: 35%;
+
       .header-Right-Wrap {
         .header-Right-Img {
           object-fit: cover;

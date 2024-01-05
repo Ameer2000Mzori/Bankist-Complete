@@ -286,6 +286,24 @@ body {
   flex-direction: row;
 }
 
+.header .header-Wrap .header-Left {
+  width: 50%;
+}
+
+.header .header-Wrap .header-Left .header-Left-Wrap {
+  text-align: start;
+}
+
+.header .header-Wrap .header-Left .header-Left-Wrap .header-Left-Text-1 {
+  color: rgb(22, 37, 68);
+  font-family: "Poppins", "Helvetica Neue", helvetica, sans-serif;
+  font-size: 4rem;
+}
+
+.header .header-Wrap .header-Right {
+  width: 35%;
+}
+
 .header .header-Wrap .header-Right .header-Right-Wrap .header-Right-Img {
   object-fit: cover;
   height: 350px;
