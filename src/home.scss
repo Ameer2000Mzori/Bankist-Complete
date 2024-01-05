@@ -386,5 +386,43 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  // 768px size
+  .header {
+    .header-Wrap {
+      .header-Left {
+        width: 350px;
+
+        .header-Left-Wrap {
+          text-align: center;
+
+          .header-Left-Text-1 {
+            font-size: 2.2rem;
+          }
+
+          .header-Left-Text-2 {
+            font-size: 0.9rem;
+            font-weight: 500;
+          }
+
+          .header-Left-Button {
+            font-size: 0.9rem;
+
+            #header-Left-Button-Icon {
+              font-size: 0.9rem;
+            }
+          }
+        }
+      }
+
+      .header-Right {
+        width: 350px;
+
+        .header-Right-Wrap {
+          .header-Right-Img {
+            object-fit: cover;
+            height: 250px;
+          }
+        }
+      }
+    }
+  }
 }

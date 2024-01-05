@@ -392,3 +392,39 @@ body {
     height: 350px;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .header .header-Wrap .header-Left {
+    width: 350px;
+  }
+
+  .header .header-Wrap .header-Left .header-Left-Wrap {
+    text-align: center;
+  }
+
+  .header .header-Wrap .header-Left .header-Left-Wrap .header-Left-Text-1 {
+    font-size: 2.2rem;
+  }
+
+  .header .header-Wrap .header-Left .header-Left-Wrap .header-Left-Text-2 {
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+
+  .header .header-Wrap .header-Left .header-Left-Wrap .header-Left-Button {
+    font-size: 0.9rem;
+  }
+
+  .header .header-Wrap .header-Left .header-Left-Wrap .header-Left-Button #header-Left-Button-Icon {
+    font-size: 0.9rem;
+  }
+
+  .header .header-Wrap .header-Right {
+    width: 350px;
+  }
+
+  .header .header-Wrap .header-Right .header-Right-Wrap .header-Right-Img {
+    object-fit: cover;
+    height: 250px;
+  }
+}
