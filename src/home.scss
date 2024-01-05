@@ -486,9 +486,11 @@ body {
           text-align: center;
           align-items: center;
           justify-content: center;
+          height: 450px;
+          width: 100%;
 
           .about-Card-Left {
-            width: 60%;
+            width: 50%;
             height: 100%;
 
             .about-Card-Left-Img {
@@ -496,6 +498,16 @@ body {
               height: 100%;
               width: 100%;
             }
+          }
+
+          .about-Card-Right {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: end;
+            align-items: end;
           }
         }
       }
