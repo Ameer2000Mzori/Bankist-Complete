@@ -560,3 +560,46 @@ body {
     }
   }
 }
+// about responsvness
+@media screen and (max-width: 800px) {
+  .about {
+    .about-Wrap {
+      width: 90%;
+
+      .about-Top-Wrap {
+        .about-Top-Text-2 {
+          font-size: 1.2rem;
+        }
+      }
+
+      .about-Bottom {
+        .about-Bottom-Wrap {
+          gap: 5rem;
+
+          .about-Card {
+            .about-Card-Right {
+              .about-Card-Right-Wrap {
+                justify-content: space-evenly;
+
+                #about-Card-Icon {
+                  height: 45px;
+                  width: 45px;
+                  font-size: 1rem;
+                }
+
+                .about-Card-Right-Text-1 {
+                  font-weight: 600;
+                  font-size: 1rem;
+                }
+
+                .about-Card-Right-Text-2 {
+                  font-size: 0.8rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
