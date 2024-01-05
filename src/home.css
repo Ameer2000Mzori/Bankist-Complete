@@ -95,6 +95,12 @@ body {
   font-weight: 400;
   font-size: 1.2rem;
   color: black;
+  transition: all 250ms ease-in-out;
+}
+
+.navbar .navbar-Wrap .nav-Right .nav-Right-Links-Wrap ul li a:hover,
+.navbar .navbar-Wrap .nav-Right-Wrap .nav-Right-Links-Wrap ul li a:hover {
+  color: #60be76;
 }
 
 .navbar .navbar-Wrap .nav-Right .nav-Right-Links-Wrap ul li .create-Account-Btn,
@@ -115,6 +121,7 @@ body {
 .navbar .navbar-Wrap .nav-Right-Wrap .nav-Right-Links-Wrap ul li .create-Account-Btn:hover {
   cursor: pointer;
   background-color: #60be76;
+  color: white;
 }
 
 .navbar .navbar-Wrap .nav-Right .nav-Right-Links-Wrap ul li .create-Account-Btn:active,
