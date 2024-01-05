@@ -663,6 +663,16 @@ body {
         flex-direction: column;
         justify-content: center;
 
+        .operations-Bottom-Text-Wrap {
+          width: 600px;
+          height: 350px;
+          display: flex;
+          text-align: center;
+          align-items: center;
+          flex-direction: row;
+          justify-content: space-evenly;
+        }
+
         .operations-Buttons-Wrap {
           position: absolute;
           display: none;

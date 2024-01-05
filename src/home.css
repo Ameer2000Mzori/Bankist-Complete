@@ -659,6 +659,16 @@ body {
   justify-content: center;
 }
 
+.operations .operations-Wrap .operations-bottom .operations-Bottom-Wrap .operations-Bottom-Text-Wrap {
+  width: 600px;
+  height: 350px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
 .operations .operations-Wrap .operations-bottom .operations-Bottom-Wrap .operations-Buttons-Wrap {
   position: absolute;
   display: none;
