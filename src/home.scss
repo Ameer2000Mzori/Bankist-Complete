@@ -130,7 +130,7 @@ body {
     border-left: none;
     border-right: none;
     border-top: none;
-    height: 15vh;
+    height: 11vh;
 
     .navbar-Wrap {
       width: 95%;
@@ -188,10 +188,10 @@ body {
             background-color: white;
             border: solid black 1px;
             border-top: none;
-            height: 75vh;
+            height: 500px;
             position: absolute;
             right: -12px;
-            top: 3rem;
+            top: 2rem;
 
             li {
               padding: 1.5rem;
@@ -339,7 +339,50 @@ body {
 }
 // header responsvness
 @media screen and (max-width: 1200px) {
-  // 1200px size
+  .header {
+    .header-Wrap {
+      display: flex;
+      height: 80%;
+      width: 90%;
+      flex-direction: column;
+
+      .header-Left {
+        width: 500px;
+
+        .header-Left-Wrap {
+          text-align: center;
+
+          .header-Left-Text-1 {
+            font-size: 3.2rem;
+          }
+
+          .header-Left-Text-2 {
+            font-size: 1rem;
+            font-weight: 500;
+          }
+
+          .header-Left-Button {
+            font-size: 1rem;
+
+            #header-Left-Button-Icon {
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+
+      .header-Right {
+        width: 500px;
+
+        .header-Right-Wrap {
+          .header-Right-Img {
+            object-fit: cover;
+            height: 350px;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {

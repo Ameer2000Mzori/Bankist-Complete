@@ -136,7 +136,7 @@ body {
     border-left: none;
     border-right: none;
     border-top: none;
-    height: 15vh;
+    height: 11vh;
   }
 
   .navbar .navbar-Wrap {
@@ -203,10 +203,10 @@ body {
     background-color: white;
     border: solid black 1px;
     border-top: none;
-    height: 75vh;
+    height: 500px;
     position: absolute;
     right: -12px;
-    top: 3rem;
+    top: 2rem;
   }
 
   .navbar .navbar-Wrap .nav-Right .nav-Right-Links-Wrap ul li,
@@ -348,4 +348,47 @@ body {
 .header .header-Wrap .header-Right .header-Right-Wrap .header-Right-Img {
   object-fit: cover;
   height: 350px;
+}
+
+@media screen and (max-width: 1200px) {
+  .header .header-Wrap {
+    display: flex;
+    height: 80%;
+    width: 90%;
+    flex-direction: column;
+  }
+
+  .header .header-Wrap .header-Left {
+    width: 500px;
+  }
+
+  .header .header-Wrap .header-Left .header-Left-Wrap {
+    text-align: center;
+  }
+
+  .header .header-Wrap .header-Left .header-Left-Wrap .header-Left-Text-1 {
+    font-size: 3.2rem;
+  }
+
+  .header .header-Wrap .header-Left .header-Left-Wrap .header-Left-Text-2 {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  .header .header-Wrap .header-Left .header-Left-Wrap .header-Left-Button {
+    font-size: 1rem;
+  }
+
+  .header .header-Wrap .header-Left .header-Left-Wrap .header-Left-Button #header-Left-Button-Icon {
+    font-size: 1rem;
+  }
+
+  .header .header-Wrap .header-Right {
+    width: 500px;
+  }
+
+  .header .header-Wrap .header-Right .header-Right-Wrap .header-Right-Img {
+    object-fit: cover;
+    height: 350px;
+  }
 }
