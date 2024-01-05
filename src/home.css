@@ -486,3 +486,11 @@ body {
   align-items: center;
   justify-content: space-evenly;
 }
+
+.about .about-Wrap .about-Bottom .about-Bottom-Wrap .about-Card {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}

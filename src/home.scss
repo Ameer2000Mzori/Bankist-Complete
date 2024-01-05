@@ -480,6 +480,14 @@ body {
         text-align: center;
         align-items: center;
         justify-content: space-evenly;
+
+        .about-Card {
+          display: flex;
+          flex-direction: row;
+          text-align: center;
+          align-items: center;
+          justify-content: center;
+        }
       }
     }
   }
