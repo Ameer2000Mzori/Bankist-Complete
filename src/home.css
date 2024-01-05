@@ -621,5 +621,20 @@ body {
   flex-direction: column;
   text-align: center;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
+}
+
+.operations .operations-Wrap .operations-Top .operations-Top-Wrap {
+  text-align: start;
+}
+
+.operations .operations-Wrap .operations-Top .operations-Top-Wrap .operations-Top-Text-1 {
+  color: #60be76;
+  font-size: 1.5rem;
+  font-family: "Poppins", "Helvetica Neue", helvetica, sans-serif;
+}
+
+.operations .operations-Wrap .operations-Top .operations-Top-Wrap .operations-Top-Text-2 {
+  font-size: 2rem;
+  font-family: "Poppins", "Helvetica Neue", helvetica, sans-serif;
 }

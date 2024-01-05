@@ -628,6 +628,23 @@ body {
     flex-direction: column;
     text-align: center;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+
+    .operations-Top {
+      .operations-Top-Wrap {
+        text-align: start;
+
+        .operations-Top-Text-1 {
+          color: #60be76;
+          font-size: 1.5rem;
+          font-family: $fontOne;
+        }
+
+        .operations-Top-Text-2 {
+          font-size: 2rem;
+          font-family: $fontOne;
+        }
+      }
+    }
   }
 }
