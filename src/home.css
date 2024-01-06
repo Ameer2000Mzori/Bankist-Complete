@@ -1102,3 +1102,13 @@ body {
   justify-content: center;
   color: white;
 }
+
+.footer .footer-Wrap {
+  height: 90%;
+  width: 90%;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
