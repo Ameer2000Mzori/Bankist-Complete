@@ -796,3 +796,16 @@ body {
     }
   }
 }
+// customers
+.customers {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  border: solid rgb(206, 206, 206) 1px;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+}
