@@ -88,13 +88,17 @@ const customersCardsHolderEl = document.getElementsByClassName(
   "customers-Cards-Holder"
 )[0];
 const customerBottomBtns = document.querySelectorAll(".customer-Bottom-Btns");
-// data object
 
+slideCount = 0;
 // functions
-const changeCustomerCard = () => {
-  console.log("hi");
+const changeCustomerCard = (index) => {
+  customerBottomBtns.forEach((customerBBtn) => {
+    customerBBtn.classList.remove("active");
+  });
+
+  customerBottomBtns[slideCount].classList.add("active");
 };
 // event linsters
-customerBottomsLRIds.forEach((lrBtns) => {
-  lrBtns.addEventListener("click", changeCustomerCard);
+customerBottomsLRIds.forEach((lrBtns, index) => {
+  lrBtns.addEventListener("click", () => changeCustomerCard(index));
 });
