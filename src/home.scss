@@ -819,7 +819,7 @@ body {
     justify-content: center;
 
     .customers-Top {
-      height: 20vh;
+      height: 30vh;
 
       .customers-Top-Wrap {
         display: flex;
@@ -847,6 +847,15 @@ body {
           }
         }
       }
+    }
+
+    .customers-Bottom {
+      height: 70vh;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
     }
   }
 }
