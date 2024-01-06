@@ -928,6 +928,7 @@ body {
   justify-content: center;
   padding: 0;
   margin: 0;
+  overflow: hidden;
 }
 
 .customers .customers-Wrap .customers-Bottom .customers-Bottom-Wrap .customers-Card-Wrap .customers-Cards-Holder {
@@ -941,7 +942,7 @@ body {
   flex-wrap: wrap;
   top: 0;
   left: 0;
-  transform: translate(-100%);
+  transition: all 500ms ease-in-out;
 }
 
 .customers .customers-Wrap .customers-Bottom .customers-Bottom-Wrap .customers-Card-Wrap .customers-Cards-Holder .customers-Card {

@@ -940,6 +940,7 @@ body {
           justify-content: center;
           padding: 0;
           margin: 0;
+          overflow: hidden;
 
           .customers-Cards-Holder {
             height: 100%;
@@ -952,7 +953,7 @@ body {
             flex-wrap: wrap;
             top: 0;
             left: 0;
-            transform: translate(-100%);
+            transition: all 500ms ease-in-out;
 
             .customers-Card {
               height: 100%;
