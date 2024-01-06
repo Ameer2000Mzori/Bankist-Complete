@@ -761,6 +761,21 @@ body {
   align-items: center;
   justify-content: center;
 }
+.customers .customers-Wrap .customers-Bottom .customers-Bottom-Wrap .customer-Bottom-L-R-Btns-Wrap .customer-Left-Btn-Wrap #customer-Bottoms-L-R-Ids,
+.customers .customers-Wrap .customers-Bottom .customers-Bottom-Wrap .customer-Bottom-L-R-Btns-Wrap .customer-Right-Btn-Wrap #customer-Bottoms-L-R-Ids {
+  font-size: 2.3rem;
+  color: #60be76;
+  -webkit-text-stroke: black 1px;
+  transition: all 50ms ease-in-out;
+  padding: 5px;
+  border-radius: 50%;
+  background-color: #d9e9dd;
+  cursor: pointer;
+}
+.customers .customers-Wrap .customers-Bottom .customers-Bottom-Wrap .customer-Bottom-L-R-Btns-Wrap .customer-Left-Btn-Wrap #customer-Bottoms-L-R-Ids:active,
+.customers .customers-Wrap .customers-Bottom .customers-Bottom-Wrap .customer-Bottom-L-R-Btns-Wrap .customer-Right-Btn-Wrap #customer-Bottoms-L-R-Ids:active {
+  transform: scale(1.5);
+}
 .customers .customers-Wrap .customers-Bottom .customers-Bottom-Wrap .customers-Card-Wrap {
   width: 80%;
   height: 60%;

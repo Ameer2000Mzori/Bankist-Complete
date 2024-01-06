@@ -885,6 +885,20 @@ body {
             text-align: center;
             align-items: center;
             justify-content: center;
+
+            #customer-Bottoms-L-R-Ids {
+              font-size: 2.3rem;
+              color: #60be76;
+              -webkit-text-stroke: black 1px;
+              transition: all 50ms ease-in-out;
+              padding: 5px;
+              border-radius: 50%;
+              background-color: #d9e9dd;
+              cursor: pointer;
+              &:active {
+                transform: scale(1.5);
+              }
+            }
           }
         }
 
