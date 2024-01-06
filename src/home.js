@@ -74,3 +74,16 @@ operationsTextWrap.forEach((operationBtn, index) => {
   operationBtn.addEventListener("click", () => changeOperationCard(index));
 });
 changeOperationCard(0);
+//
+//
+//
+//   Customers //
+//
+//
+// selecting elements
+
+// data object
+
+// functions
+
+// event linsters
