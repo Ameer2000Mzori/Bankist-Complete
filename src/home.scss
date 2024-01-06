@@ -963,6 +963,15 @@ body {
               font-size: 1rem;
               font-family: $fontOne;
             }
+            .card-Name-Img-Wrap {
+              display: flex;
+              flex-direction: row;
+              text-align: start;
+              align-items: center;
+              justify-content: start;
+              height: 9vh;
+              gap: 5rem;
+            }
           }
         }
       }
