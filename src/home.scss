@@ -817,5 +817,22 @@ body {
     text-align: center;
     align-items: center;
     justify-content: center;
+
+    .customers-Top {
+      height: 20vh;
+
+      .customers-Top-Wrap {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+
+        .customers-Top-Text-Wrap {
+          text-align: start;
+          width: 80%;
+        }
+      }
+    }
   }
 }
