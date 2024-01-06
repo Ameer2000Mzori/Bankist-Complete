@@ -1094,7 +1094,7 @@ body {
 
 .footer {
   height: 30vh;
-  background-color: rgb(22, 37, 68);
+  background-color: #37383d;
   text-align: center;
   align-items: center;
   display: flex;
@@ -1123,4 +1123,9 @@ body {
   border: none;
   border-radius: 15px;
   letter-spacing: 2px;
+}
+
+.footer .footer-Wrap .footer-Bottom #footer-Bottom-Icon {
+  font-size: 3rem;
+  color: white;
 }
