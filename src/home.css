@@ -1123,6 +1123,17 @@ body {
   border: none;
   border-radius: 15px;
   letter-spacing: 2px;
+  transition: all 50ms ease-in-out;
+}
+
+.footer .footer-Wrap .footer-Top .footer-Top-Btn:hover {
+  cursor: pointer;
+  color: #63da7f;
+  background-color: white;
+}
+
+.footer .footer-Wrap .footer-Top .footer-Top-Btn:active {
+  transform: scale(0.9);
 }
 
 .footer .footer-Wrap .footer-Bottom #footer-Bottom-Icon {

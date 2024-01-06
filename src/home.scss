@@ -1154,6 +1154,17 @@ body {
         border: none;
         border-radius: 15px;
         letter-spacing: 2px;
+        transition: all 50ms ease-in-out;
+
+        &:hover {
+          cursor: pointer;
+          color: #63da7f;
+          background-color: white;
+        }
+
+        &:active {
+          transform: scale(0.9);
+        }
       }
     }
 
