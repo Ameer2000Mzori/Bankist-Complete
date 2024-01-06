@@ -920,6 +920,10 @@ body {
             border-radius: 50%;
             cursor: pointer;
           }
+
+          .customer-Bottom-Btns.active {
+            background-color: rgb(160, 160, 160);
+          }
         }
 
         .customers-Card-Wrap {

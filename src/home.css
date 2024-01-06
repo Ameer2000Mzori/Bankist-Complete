@@ -794,6 +794,9 @@ body {
   border-radius: 50%;
   cursor: pointer;
 }
+.customers .customers-Wrap .customers-Bottom .customers-Bottom-Wrap .customer-Bottom-Buttons-Wrap .customer-Bottom-Btns.active {
+  background-color: rgb(160, 160, 160);
+}
 .customers .customers-Wrap .customers-Bottom .customers-Bottom-Wrap .customers-Card-Wrap {
   width: 80%;
   height: 60%;
