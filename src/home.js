@@ -92,6 +92,21 @@ const customerBottomBtns = document.querySelectorAll(".customer-Bottom-Btns");
 slideCount = 0;
 // functions
 const changeCustomerCard = (index) => {
+  if (index === 0) {
+    if (slideCount >= 1) {
+      slideCount--;
+    } else {
+      slideCount = 2;
+    }
+  }
+
+  if (index === 1) {
+    if (slideCount < 2) {
+      slideCount++;
+    } else {
+      slideCount = 0;
+    }
+  }
   customerBottomBtns.forEach((customerBBtn) => {
     customerBBtn.classList.remove("active");
   });
