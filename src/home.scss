@@ -1123,3 +1123,14 @@ body {
     }
   }
 }
+// footer
+.footer {
+  height: 30vh;
+  background-color: rgb(22, 37, 68);
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
