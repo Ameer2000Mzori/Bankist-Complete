@@ -870,11 +870,22 @@ body {
         .customer-Bottom-L-R-Btns-Wrap {
           position: absolute;
           display: flex;
-          width: 90%;
+          width: 100%;
           flex-direction: row;
           text-align: center;
           align-items: center;
           justify-content: space-between;
+
+          .customer-Left-Btn-Wrap,
+          .customer-Right-Btn-Wrap {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+          }
         }
 
         .customers-Card-Wrap {
