@@ -998,3 +998,96 @@ body {
   color: gray;
   font-weight: 300;
 }
+
+@media screen and (max-width: 1100px) {
+  .customers .customers-Wrap .customers-Top .customers-Top-Wrap .customers-Top-Text-Wrap .customers-Top-Text-1 {
+    font-size: 1.2rem;
+  }
+
+  .customers .customers-Wrap .customers-Top .customers-Top-Wrap .customers-Top-Text-Wrap .customers-Top-Text-2 {
+    font-size: 1.2rem;
+  }
+
+  .customers .customers-Wrap .customers-Bottom {
+    height: 80%;
+  }
+
+  .customers .customers-Wrap .customers-Bottom .customers-Bottom-Wrap {
+    height: 80%;
+  }
+
+  .customers .customers-Wrap .customers-Bottom .customers-Bottom-Wrap .customer-Bottom-L-R-Btns-Wrap {
+    width: 100%;
+  }
+
+  .customers .customers-Wrap .customers-Bottom .customers-Bottom-Wrap .customer-Bottom-L-R-Btns-Wrap .customer-Left-Btn-Wrap #customer-Bottoms-L-R-Ids,
+  .customers .customers-Wrap .customers-Bottom .customers-Bottom-Wrap .customer-Bottom-L-R-Btns-Wrap .customer-Right-Btn-Wrap #customer-Bottoms-L-R-Ids {
+    font-size: 2.2rem;
+  }
+
+  .customers .customers-Wrap .customers-Bottom .customers-Bottom-Wrap .customer-Bottom-Buttons-Wrap {
+    bottom: -1.2rem;
+  }
+
+  .customers .customers-Wrap .customers-Bottom .customers-Bottom-Wrap .customers-Card-Wrap {
+    height: 100%;
+    width: 70%;
+  }
+
+  .customers .customers-Wrap .customers-Bottom .customers-Bottom-Wrap .customers-Card-Wrap .customers-Cards-Holder {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    top: 0;
+    left: 0;
+    transition: all 500ms ease-in-out;
+  }
+
+  .customers .customers-Wrap .customers-Bottom .customers-Bottom-Wrap .customers-Card-Wrap .customers-Cards-Holder .customers-Card {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .customers .customers-Wrap .customers-Bottom .customers-Bottom-Wrap .customers-Card-Wrap .customers-Cards-Holder .customers-Card .customers-Title-Text-1 {
+    font-size: 1.2rem;
+    padding: 0;
+    margin: 0;
+  }
+
+  .customers .customers-Wrap .customers-Bottom .customers-Bottom-Wrap .customers-Card-Wrap .customers-Cards-Holder .customers-Card .customers-Text-2 {
+    font-size: 0.8rem;
+    padding: 0;
+    margin: 0;
+  }
+
+  .customers .customers-Wrap .customers-Bottom .customers-Bottom-Wrap .customers-Card-Wrap .customers-Cards-Holder .customers-Card .card-Name-Img-Wrap {
+    height: 7vh;
+    gap: 2rem;
+  }
+
+  .customers .customers-Wrap .customers-Bottom .customers-Bottom-Wrap .customers-Card-Wrap .customers-Cards-Holder .customers-Card .card-Name-Img-Wrap .card-Img-Wrap .customers-Imgs {
+    height: 45px;
+  }
+
+  .customers .customers-Wrap .customers-Bottom .customers-Bottom-Wrap .customers-Card-Wrap .customers-Cards-Holder .customers-Card .card-Name-Img-Wrap .card-Name {
+    font-size: 0.8rem;
+    padding: 0;
+    margin: 0;
+  }
+
+  .customers .customers-Wrap .customers-Bottom .customers-Bottom-Wrap .customers-Card-Wrap .customers-Cards-Holder .customers-Card .card-Name-Img-Wrap .card-Location {
+    padding: 0;
+    margin: 0;
+    font-size: 0.8rem;
+  }
+}
