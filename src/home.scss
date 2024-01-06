@@ -856,6 +856,21 @@ body {
       text-align: center;
       align-items: center;
       justify-content: center;
+
+      .customers-Bottom-Wrap {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+
+        .customers-Card-Wrap {
+          width: 80%;
+          height: 60%;
+        }
+      }
     }
   }
 }
