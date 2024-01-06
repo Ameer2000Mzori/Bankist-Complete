@@ -928,17 +928,41 @@ body {
         }
 
         .customers-Card-Wrap {
-          width: 50%;
+          width: 60%;
           height: 350px;
           display: flex;
           flex-direction: column;
           text-align: center;
           align-items: center;
           justify-content: center;
+          padding: 0;
+          margin: 0;
 
-          .Customers-Card {
+          .customers-Card {
             width: 90%;
             height: 90%;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            text-align: start;
+            justify-content: flex-end;
+            gap: 1rem;
+
+            .customers-Title-Text-1 {
+              padding: 0;
+              margin: 0;
+
+              font-family: $fontOne;
+              font-size: 2rem;
+            }
+
+            .customers-Text-2 {
+              padding: 0;
+              margin: 0;
+              font-size: 1rem;
+              font-family: $fontOne;
+            }
           }
         }
       }
