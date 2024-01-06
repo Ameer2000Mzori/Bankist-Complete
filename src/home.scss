@@ -870,7 +870,7 @@ body {
         .customer-Bottom-L-R-Btns-Wrap {
           position: absolute;
           display: flex;
-          width: 100%;
+          width: 75%;
           flex-direction: row;
           text-align: center;
           align-items: center;
@@ -911,7 +911,7 @@ body {
           text-align: center;
           align-items: center;
           justify-content: space-between;
-          bottom: 1rem;
+          bottom: 2rem;
 
           .customer-Bottom-Btns {
             height: 15px;
@@ -919,6 +919,7 @@ body {
             background-color: rgb(221, 220, 220);
             border-radius: 50%;
             cursor: pointer;
+            transition: all 150ms ease-in-out;
           }
 
           .customer-Bottom-Btns.active {
@@ -927,8 +928,18 @@ body {
         }
 
         .customers-Card-Wrap {
-          width: 80%;
-          height: 60%;
+          width: 50%;
+          height: 350px;
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          align-items: center;
+          justify-content: center;
+
+          .Customers-Card {
+            width: 90%;
+            height: 90%;
+          }
         }
       }
     }
