@@ -89,9 +89,20 @@ const customersCardsHolderEl = document.getElementsByClassName(
 )[0];
 const customerBottomBtns = document.querySelectorAll(".customer-Bottom-Btns");
 
+// gelobal variables
 slideCount = 0;
+
 // functions
 const changeCustomerCard = (index) => {
+  customerBottomBtns.forEach((customerBBtn) => {
+    customerBBtn.classList.remove("active");
+  });
+  customersCardsHolderEl.style.transform = `translateX(-${index}00%)`;
+  customerBottomBtns[index].classList.add("active");
+};
+
+// dots logic
+const dotBottomStylingLogic = (index) => {
   index === 0
     ? slideCount >= 1
       ? slideCount--
@@ -99,16 +110,16 @@ const changeCustomerCard = (index) => {
     : slideCount < 2
     ? slideCount++
     : (slideCount = 0);
-
-  customerBottomBtns.forEach((customerBBtn) => {
-    customerBBtn.classList.remove("active");
-  });
-
-  console.log(slideCount);
-  customersCardsHolderEl.style.transform = `translateX(-${slideCount}00%)`;
-  customerBottomBtns[slideCount].classList.add("active");
+  changeCustomerCard(slideCount);
 };
+
 // event linsters
 customerBottomsLRIds.forEach((lrBtns, index) => {
-  lrBtns.addEventListener("click", () => changeCustomerCard(index));
+  lrBtns.addEventListener("click", () => dotBottomStylingLogic(index));
+});
+
+customerBottomBtns.forEach((customerDownBtn, index) => {
+  customerDownBtn.addEventListener("click", () =>
+    changeCustomerCard((slideCount = index))
+  );
 });
