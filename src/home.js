@@ -95,7 +95,7 @@ const changeCustomerCard = (index) => {
   index === 0
     ? slideCount >= 1
       ? slideCount--
-      : (slideCount = customerBottomsLRIds.length)
+      : (slideCount = customerBottomBtns.length - 1)
     : slideCount < 2
     ? slideCount++
     : (slideCount = 0);
