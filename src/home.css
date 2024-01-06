@@ -776,6 +776,17 @@ body {
 .customers .customers-Wrap .customers-Bottom .customers-Bottom-Wrap .customer-Bottom-L-R-Btns-Wrap .customer-Right-Btn-Wrap #customer-Bottoms-L-R-Ids:active {
   transform: scale(1.5);
 }
+.customers .customers-Wrap .customers-Bottom .customers-Bottom-Wrap .customer-Bottom-Buttons-Wrap {
+  position: absolute;
+  display: flex;
+  width: 150px;
+  height: 20px;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  bottom: 1rem;
+}
 .customers .customers-Wrap .customers-Bottom .customers-Bottom-Wrap .customers-Card-Wrap {
   width: 80%;
   height: 60%;

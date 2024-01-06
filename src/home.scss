@@ -902,6 +902,18 @@ body {
           }
         }
 
+        .customer-Bottom-Buttons-Wrap {
+          position: absolute;
+          display: flex;
+          width: 150px;
+          height: 20px;
+          flex-direction: row;
+          text-align: center;
+          align-items: center;
+          justify-content: space-between;
+          bottom: 1rem;
+        }
+
         .customers-Card-Wrap {
           width: 80%;
           height: 60%;
