@@ -104,6 +104,8 @@ const changeCustomerCard = (index) => {
     customerBBtn.classList.remove("active");
   });
 
+  console.log(slideCount);
+  customersCardsHolderEl.style.transform = `translateX(-${slideCount}00%)`;
   customerBottomBtns[slideCount].classList.add("active");
 };
 // event linsters
