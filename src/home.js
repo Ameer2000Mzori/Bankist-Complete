@@ -81,7 +81,13 @@ changeOperationCard(0);
 //
 //
 // selecting elements
-
+const customerBottomsLRIds = document.querySelectorAll(
+  "#customer-Bottoms-L-R-Ids"
+);
+const customersCardsHolderEl = document.getElementsByClassName(
+  "customers-Cards-Holder"
+)[0];
+const customerBottomBtns = document.querySelectorAll(".customer-Bottom-Btns");
 // data object
 
 // functions
