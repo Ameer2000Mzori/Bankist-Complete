@@ -779,13 +779,20 @@ body {
 .customers .customers-Wrap .customers-Bottom .customers-Bottom-Wrap .customer-Bottom-Buttons-Wrap {
   position: absolute;
   display: flex;
-  width: 150px;
+  width: 100px;
   height: 20px;
   flex-direction: row;
   text-align: center;
   align-items: center;
   justify-content: space-between;
   bottom: 1rem;
+}
+.customers .customers-Wrap .customers-Bottom .customers-Bottom-Wrap .customer-Bottom-Buttons-Wrap .customer-Bottom-Btns {
+  height: 15px;
+  width: 15px;
+  background-color: rgb(221, 220, 220);
+  border-radius: 50%;
+  cursor: pointer;
 }
 .customers .customers-Wrap .customers-Bottom .customers-Bottom-Wrap .customers-Card-Wrap {
   width: 80%;
