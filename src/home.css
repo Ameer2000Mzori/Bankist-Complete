@@ -731,6 +731,7 @@ body {
   text-align: center;
   align-items: center;
   justify-content: center;
+  width: 90%;
 }
 .customers .customers-Wrap .customers-Bottom .customers-Bottom-Wrap {
   display: flex;
@@ -799,10 +800,11 @@ body {
   background-color: rgb(160, 160, 160);
 }
 .customers .customers-Wrap .customers-Bottom .customers-Bottom-Wrap .customers-Card-Wrap {
-  width: 60%;
+  width: 900px;
   height: 350px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  position: relative;
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -810,9 +812,19 @@ body {
   margin: 0;
   overflow: hidden;
 }
-.customers .customers-Wrap .customers-Bottom .customers-Bottom-Wrap .customers-Card-Wrap .customers-Card {
-  width: 90%;
-  height: 90%;
+.customers .customers-Wrap .customers-Bottom .customers-Bottom-Wrap .customers-Card-Wrap .customers-Cards-Holder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.customers .customers-Wrap .customers-Bottom .customers-Bottom-Wrap .customers-Card-Wrap .customers-Cards-Holder .customers-Card {
+  width: 100%;
+  height: 100%;
   padding: 0;
   margin: 0;
   display: flex;
@@ -821,19 +833,19 @@ body {
   justify-content: flex-end;
   gap: 1rem;
 }
-.customers .customers-Wrap .customers-Bottom .customers-Bottom-Wrap .customers-Card-Wrap .customers-Card .customers-Title-Text-1 {
+.customers .customers-Wrap .customers-Bottom .customers-Bottom-Wrap .customers-Card-Wrap .customers-Cards-Holder .customers-Card .customers-Title-Text-1 {
   padding: 0;
   margin: 0;
   font-family: "Poppins", "Helvetica Neue", helvetica, sans-serif;
   font-size: 2rem;
 }
-.customers .customers-Wrap .customers-Bottom .customers-Bottom-Wrap .customers-Card-Wrap .customers-Card .customers-Text-2 {
+.customers .customers-Wrap .customers-Bottom .customers-Bottom-Wrap .customers-Card-Wrap .customers-Cards-Holder .customers-Card .customers-Text-2 {
   padding: 0;
   margin: 0;
   font-size: 1rem;
   font-family: "Poppins", "Helvetica Neue", helvetica, sans-serif;
 }
-.customers .customers-Wrap .customers-Bottom .customers-Bottom-Wrap .customers-Card-Wrap .customers-Card .card-Name-Img-Wrap {
+.customers .customers-Wrap .customers-Bottom .customers-Bottom-Wrap .customers-Card-Wrap .customers-Cards-Holder .customers-Card .card-Name-Img-Wrap {
   display: flex;
   flex-direction: row;
   text-align: start;
@@ -842,17 +854,17 @@ body {
   height: 9vh;
   gap: 5rem;
 }
-.customers .customers-Wrap .customers-Bottom .customers-Bottom-Wrap .customers-Card-Wrap .customers-Card .card-Name-Img-Wrap .card-Img-Wrap .customers-Imgs {
+.customers .customers-Wrap .customers-Bottom .customers-Bottom-Wrap .customers-Card-Wrap .customers-Cards-Holder .customers-Card .card-Name-Img-Wrap .card-Img-Wrap .customers-Imgs {
   height: 75px;
   border-radius: 50%;
   object-fit: cover;
 }
-.customers .customers-Wrap .customers-Bottom .customers-Bottom-Wrap .customers-Card-Wrap .customers-Card .card-Name-Img-Wrap .card-Name {
+.customers .customers-Wrap .customers-Bottom .customers-Bottom-Wrap .customers-Card-Wrap .customers-Cards-Holder .customers-Card .card-Name-Img-Wrap .card-Name {
   padding: 0;
   margin: 0;
   font-size: 1rem;
 }
-.customers .customers-Wrap .customers-Bottom .customers-Bottom-Wrap .customers-Card-Wrap .customers-Card .card-Name-Img-Wrap .card-Location {
+.customers .customers-Wrap .customers-Bottom .customers-Bottom-Wrap .customers-Card-Wrap .customers-Cards-Holder .customers-Card .card-Name-Img-Wrap .card-Location {
   padding: 0;
   margin: 0;
   font-size: 1rem;
