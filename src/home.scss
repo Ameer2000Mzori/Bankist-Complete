@@ -831,6 +831,20 @@ body {
         .customers-Top-Text-Wrap {
           text-align: start;
           width: 80%;
+
+          .customers-Top-Text-1 {
+            font-family: $fontOne;
+            font-size: 1.5rem;
+            color: #60be76;
+            font-weight: 600;
+            padding: 0;
+            margin: 0;
+          }
+
+          .customers-Top-Text-2 {
+            font-family: $fontOne;
+            font-size: 2rem;
+          }
         }
       }
     }
