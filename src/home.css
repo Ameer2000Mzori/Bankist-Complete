@@ -857,7 +857,7 @@ body {
 .customers .customers-Wrap .customers-Bottom .customers-Bottom-Wrap .customer-Bottom-L-R-Btns-Wrap {
   position: absolute;
   display: flex;
-  width: 75%;
+  width: 85%;
   flex-direction: row;
   text-align: center;
   align-items: center;
@@ -918,8 +918,8 @@ body {
 }
 
 .customers .customers-Wrap .customers-Bottom .customers-Bottom-Wrap .customers-Card-Wrap {
-  width: 900px;
-  height: 350px;
+  height: 60%;
+  width: 70%;
   display: flex;
   flex-direction: row;
   position: relative;

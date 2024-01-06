@@ -91,5 +91,10 @@ const customerBottomBtns = document.querySelectorAll(".customer-Bottom-Btns");
 // data object
 
 // functions
-
+const changeCustomerCard = () => {
+  console.log("hi");
+};
 // event linsters
+customerBottomsLRIds.forEach((lrBtns) => {
+  lrBtns.addEventListener("click", changeCustomerCard);
+});
