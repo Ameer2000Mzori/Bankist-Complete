@@ -1176,3 +1176,34 @@ body {
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .footer {
+    height: 50vh;
+    background-color: #37383d;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+
+    .footer-Wrap {
+      .footer-Top {
+        .footer-Top-Btn {
+          width: 330px;
+          height: 40px;
+          border-radius: 15px;
+          letter-spacing: 1px;
+        }
+      }
+
+      .footer-Bottom {
+        #footer-Bottom-Icon {
+          font-size: 2.5rem;
+          color: white;
+        }
+      }
+    }
+  }
+}
