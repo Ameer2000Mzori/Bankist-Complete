@@ -808,4 +808,14 @@ body {
   border-left: none;
   border-right: none;
   border-bottom: none;
+
+  .customers-Wrap {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
 }
