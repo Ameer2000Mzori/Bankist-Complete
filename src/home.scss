@@ -895,6 +895,7 @@ body {
               border-radius: 50%;
               background-color: #d9e9dd;
               cursor: pointer;
+
               &:active {
                 transform: scale(1.5);
               }
@@ -952,7 +953,6 @@ body {
             .customers-Title-Text-1 {
               padding: 0;
               margin: 0;
-
               font-family: $fontOne;
               font-size: 2rem;
             }
@@ -963,6 +963,7 @@ body {
               font-size: 1rem;
               font-family: $fontOne;
             }
+
             .card-Name-Img-Wrap {
               display: flex;
               flex-direction: row;
@@ -985,6 +986,7 @@ body {
                 margin: 0;
                 font-size: 1rem;
               }
+
               .card-Location {
                 padding: 0;
                 margin: 0;
