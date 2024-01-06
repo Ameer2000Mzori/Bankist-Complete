@@ -841,5 +841,22 @@ body {
   height: 9vh;
   gap: 5rem;
 }
+.customers .customers-Wrap .customers-Bottom .customers-Bottom-Wrap .customers-Card-Wrap .customers-Card .card-Name-Img-Wrap .card-Img-Wrap .customers-Imgs {
+  height: 75px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.customers .customers-Wrap .customers-Bottom .customers-Bottom-Wrap .customers-Card-Wrap .customers-Card .card-Name-Img-Wrap .card-Name {
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+}
+.customers .customers-Wrap .customers-Bottom .customers-Bottom-Wrap .customers-Card-Wrap .customers-Card .card-Name-Img-Wrap .card-Location {
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+  color: gray;
+  font-weight: 300;
+}
 
 /*# sourceMappingURL=home.css.map */
