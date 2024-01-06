@@ -1141,6 +1141,20 @@ body {
     align-items: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
+
+    .footer-Top {
+      .footer-Top-Btn {
+        background-color: #60be76;
+        width: 350px;
+        height: 45px;
+        font-family: $fontOne;
+        color: black;
+        font-weight: 600;
+        border: none;
+        border-radius: 15px;
+        letter-spacing: 2px;
+      }
+    }
   }
 }
