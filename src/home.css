@@ -1233,3 +1233,14 @@ body {
   align-items: end;
   justify-content: center;
 }
+
+.account .account-Wrap .account-Input-Wrap {
+  height: 60%;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}
