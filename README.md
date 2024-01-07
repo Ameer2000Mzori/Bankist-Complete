@@ -18,7 +18,7 @@
 
 # 📖 About This Project <a name="about-project"></a>
 
-> Bankist-Complete is a sleek website built with HTML, SCSS, and JavaScript. Easily create, log in, delete accounts, transfer money to predefined users, and make money requests. Experience automatic logout for added security when there's no mouse movement. Explore the live demo for a hands-on preview.
+> Bankist-Complete is a sleek website built with HTML, SCSS, and JavaScript. Easily create, log in, delete accounts, transfer money to predefined users, and make money requests. Experience automatic logout for added security when there's no mouse movement. Explore the live demo for a hands-on preview..
 
 # Sample Of Website <a name="Sample-Of-Website"></a>
 
