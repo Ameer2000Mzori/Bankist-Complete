@@ -1323,12 +1323,13 @@ body {
       color: white;
 
       #input-Text {
-        width: 80%;
+        width: 95%;
         height: 10%;
         outline: none;
         border: solid #37383d 2px;
         padding-left: 15px;
-        font-size: $fontOne;
+        font-family: $fontOne;
+        font-size: 1.1rem;
       }
 
       .text-label {

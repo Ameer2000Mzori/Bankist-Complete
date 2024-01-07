@@ -1282,12 +1282,13 @@ body {
 }
 
 .account .account-Wrap .account-Input-Wrap #input-Text {
-  width: 80%;
+  width: 95%;
   height: 10%;
   outline: none;
   border: solid #37383d 2px;
   padding-left: 15px;
-  font-size: "Poppins", "Helvetica Neue", helvetica, sans-serif;
+  font-family: "Poppins", "Helvetica Neue", helvetica, sans-serif;
+  font-size: 1.1rem;
 }
 
 .account .account-Wrap .account-Input-Wrap .text-label {
