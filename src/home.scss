@@ -1399,11 +1399,10 @@ body {
   display: flex;
   z-index: 100;
   right: 0;
-  top: 50%;
+  top: 70%;
   text-align: center;
   align-items: end;
   justify-content: center;
-  display: flex;
   flex-direction: column;
   overflow: hidden;
 
@@ -1415,7 +1414,7 @@ body {
     background-color: red;
     color: white;
     transition: all 500ms ease-in-out;
-    transform: translateX(100%);
+    transform: translateX(110%);
   }
 
   .notification-Message.active {

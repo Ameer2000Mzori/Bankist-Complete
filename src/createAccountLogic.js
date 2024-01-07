@@ -11,6 +11,9 @@ const inputPassword = document.getElementsByClassName("input-Password")[0];
 const submitCreationAccountBtn = document.getElementsByClassName(
   "submit-Creation-Account"
 )[0];
+const notificationMessageEl = document.getElementsByClassName(
+  "notification-Message"
+)[0];
 
 // gelobal varibales
 let userNew = true;
@@ -70,9 +73,23 @@ const cleanInputs = (userName, userEmail, userPass) => {
   accountOverlayClickEl.classList.remove("active");
 };
 
+let nitoCount = 0;
 // already take account function :
 const alreadyTakenNotifyMessage = () => {
   console.log("account already taken");
+  notificationMessageEl.style.backgroundColor = "red";
+  notificationMessageEl.textContent = "account already taken";
+  notificationMessageEl.classList.add("active");
+
+  let startNitificationInterval = setInterval(() => {
+    if (nitoCount < 10) {
+      nitoCount++;
+    } else {
+      nitoCount = 0;
+      notificationMessageEl.classList.remove("active");
+      clearInterval(startNitificationInterval);
+    }
+  }, 100);
 };
 
 // eventlinsters
