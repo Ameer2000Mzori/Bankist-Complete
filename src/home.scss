@@ -1274,6 +1274,19 @@ body {
       text-align: end;
       align-items: end;
       justify-content: center;
+
+      .close-Create-Account-Card {
+        background-color: transparent;
+        font-size: 1rem;
+        text-align: center;
+        align-items: center;
+        border: solid white 2px;
+      }
+
+      #close-Create-A-C-Icon {
+        color: white;
+        font-size: 2rem;
+      }
     }
 
     .account-Top {

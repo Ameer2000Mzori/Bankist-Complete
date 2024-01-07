@@ -1083,6 +1083,17 @@ body {
   align-items: end;
   justify-content: center;
 }
+.account .account-Wrap .account-top-Button-Wrap .close-Create-Account-Card {
+  background-color: transparent;
+  font-size: 1rem;
+  text-align: center;
+  align-items: center;
+  border: solid white 2px;
+}
+.account .account-Wrap .account-top-Button-Wrap #close-Create-A-C-Icon {
+  color: white;
+  font-size: 2rem;
+}
 .account .account-Wrap .account-Top .account-Top-Text-1 {
   color: white;
   font-family: "Poppins", "Helvetica Neue", helvetica, sans-serif;
