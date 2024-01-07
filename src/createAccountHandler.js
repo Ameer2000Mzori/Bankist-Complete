@@ -5,6 +5,9 @@ const accountOverlayEl = document.getElementsByClassName("account-Overlay")[0];
 const accountOverlayClickEl = document.getElementsByClassName(
   "account-Overlay-Click"
 )[0];
+const closeCreateAccountCardBtn = document.getElementsByClassName(
+  "close-Create-Account-Card"
+)[0];
 
 // gelobal varibales
 
@@ -31,6 +34,5 @@ const closeCard = () => {
 openAccountsBtns.forEach((openAccountBtn) => {
   openAccountBtn.addEventListener("click", openCardHandler);
 });
-accountOverlayClickEl.addEventListener("click", () => {
-  console.log("clicked");
-});
+accountOverlayClickEl.addEventListener("click", closeCard);
+closeCreateAccountCardBtn.addEventListener("click", closeCard);
