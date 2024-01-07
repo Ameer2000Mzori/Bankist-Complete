@@ -80,10 +80,7 @@ const alreadyTakenNotifyMessage = (checkNotigy) => {
   if (checkNotigy) {
     accountTake();
   } else {
-    console.log("account already taken");
-    notificationMessageEl.style.backgroundColor = "red";
-    notificationMessageEl.textContent = "account already taken";
-    notificationMessageEl.classList.add("active");
+    accountCreated();
   }
 
   let startNitificationInterval = setInterval(() => {
@@ -103,6 +100,14 @@ const accountTake = () => {
   notificationMessageEl.style.backgroundColor = "green";
   notificationMessageEl.style.color = "black";
   notificationMessageEl.textContent = "account created";
+  notificationMessageEl.classList.add("active");
+};
+
+// account created
+const accountCreated = () => {
+  console.log("account already taken");
+  notificationMessageEl.style.backgroundColor = "red";
+  notificationMessageEl.textContent = "account already taken";
   notificationMessageEl.classList.add("active");
 };
 // eventlinsters
