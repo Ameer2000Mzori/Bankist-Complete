@@ -20,6 +20,13 @@ body {
   filter: blur(1px);
 }
 
+.account-overlay-Click {
+  width: 0%;
+  height: 0%;
+  position: fixed;
+  z-index: 4;
+}
+
 //  navbar
 .navbar {
   display: flex;
