@@ -1406,4 +1406,13 @@ body {
   justify-content: center;
   display: flex;
   flex-direction: column;
+
+  .notification-Message {
+    width: 250px;
+    border-radius: 15px;
+    height: 40px;
+    font-size: 1rem;
+    background-color: red;
+    color: white;
+  }
 }
