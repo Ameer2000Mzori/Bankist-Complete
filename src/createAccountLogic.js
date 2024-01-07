@@ -7,15 +7,21 @@ const submitCreationAccountBtn = document.getElementsByClassName(
 )[0];
 
 // gelobal varibales
-const accountsDataObj = [];
+let userNew = true;
+const accountsDataObj = [
+  {
+    userName: "Ameer",
+    userEmail: "Ameer",
+    userPass: "Ameer",
+  },
+];
 
 // functions
 const createAccount = () => {
   let userName = inputName.value;
   let userEmail = inputEmail.value;
   let userPass = inputPassword.value;
-
-  console.log(userName, userEmail, userPass);
+  checkData(userName, userEmail, userPass);
 };
 
 // eventlinsters
