@@ -3,15 +3,14 @@ const openAccountsBtns = document.querySelectorAll("#open-Accounts-Btns");
 const accountEl = document.getElementsByClassName("account")[0];
 const accountOverlayEl = document.getElementsByClassName("account-Overlay")[0];
 const accountOverlayClickEl = document.getElementsByClassName(
-  "account-overlay-Click"
+  "account-Overlay-Click"
 )[0];
 
 // gelobal varibales
 
 // functions
 const openCardHandler = () => {
-  console.log("wow");
-  accountEl.classList.contains("active") ? closeCard() : openCard();
+  openCard();
 };
 
 // this is for opning the card function
@@ -31,4 +30,7 @@ const closeCard = () => {
 // eventlinsters
 openAccountsBtns.forEach((openAccountBtn) => {
   openAccountBtn.addEventListener("click", openCardHandler);
+});
+accountOverlayClickEl.addEventListener("click", () => {
+  console.log("clicked");
 });
