@@ -1389,3 +1389,21 @@ body {
 .account.active {
   display: flex;
 }
+
+// notification
+.notification {
+  position: fixed;
+  height: 50px;
+  width: 300px;
+  margin-right: 5px;
+  display: flex;
+  background-color: black;
+  z-index: 100;
+  right: 0;
+  top: 50%;
+  text-align: center;
+  align-items: end;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
