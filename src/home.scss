@@ -1257,7 +1257,6 @@ body {
     z-index: 8;
     height: 500px;
     width: 500px;
-    background-color: #fff;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -1292,6 +1291,7 @@ body {
           cursor: pointer;
           border-color: black;
           background-color: white;
+
           #close-Create-A-C-Icon {
             color: black;
             font-size: 2rem;
@@ -1355,10 +1355,20 @@ body {
         font-weight: 600;
         font-family: $fontOne;
         background-color: transparent;
-        border: solid white 2px;
         width: 190px;
         height: 40px;
         color: white;
+
+        &:hover {
+          cursor: pointer;
+          color: black;
+          border-color: black;
+          background-color: white;
+        }
+
+        &:active {
+          transform: scale(0.9);
+        }
       }
     }
   }
