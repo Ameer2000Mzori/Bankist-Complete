@@ -56,5 +56,11 @@ const createAccountStepTwo = (userName, userEmail, userPass) => {
   cleanInputs(userName, userEmail, userPass);
 };
 
+// clean up the inputs function
+const cleanInputs = (userName, userEmail, userPass) => {
+  userName = inputName.value = "";
+  userEmail = inputEmail.value = "";
+  userPass = inputPassword.value = "";
+};
 // eventlinsters
 submitCreationAccountBtn.addEventListener("click", createAccount);
