@@ -11,6 +11,14 @@ const accountOverlayClickEl = document.getElementsByClassName(
 // functions
 const openCardHandler = () => {
   console.log("wow");
+  accountEl.classList.contains("active") ? openCard() : closeCard();
+};
+
+// this is for opning the card function
+const openCard = () => {
+  accountEl.classList.add("active");
+  accountOverlayEl.classList.add("active");
+  accountOverlayClickEl.classList.add("active");
 };
 
 // eventlinsters
