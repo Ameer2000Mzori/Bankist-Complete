@@ -1136,5 +1136,14 @@ body {
   text-align: start;
   color: white;
 }
+.account .account-Wrap .account-Bottom {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
 
 /*# sourceMappingURL=home.css.map */
