@@ -1244,7 +1244,7 @@ body {
   z-index: 6;
   height: 100%;
   width: 100%;
-  display: flex;
+  display: none;
   flex-direction: column;
   text-align: center;
   align-items: center;
@@ -1373,4 +1373,8 @@ body {
       }
     }
   }
+}
+
+.account.active {
+  display: flex;
 }
