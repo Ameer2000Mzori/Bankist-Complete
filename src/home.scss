@@ -1262,7 +1262,9 @@ body {
     flex-direction: column;
     text-align: center;
     align-items: center;
-    justify-content: start;
+    justify-content: center;
+    background-color: #37383d;
+    border-radius: 25px;
 
     .account-top-Button-Wrap {
       height: 10%;
@@ -1274,25 +1276,38 @@ body {
       justify-content: center;
     }
 
+    .account-Top {
+      .account-Top-Text-1 {
+        color: white;
+        font-family: $fontOne;
+      }
+    }
+
     .account-Input-Wrap {
       height: 60%;
-      width: 100%;
-      text-align: center;
-      align-items: center;
+      width: 70%;
+      text-align: start;
+      align-items: start;
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: flex-start;
       gap: 10px;
+      color: white;
 
       #input-Text {
-        margin: 5px;
-        width: 60%;
+        width: 80%;
         height: 10%;
-        border-radius: 15px;
         outline: none;
         border: solid #37383d 2px;
         padding-left: 15px;
         font-size: $fontOne;
+      }
+
+      .text-label {
+        font-size: $fontOne;
+        font-weight: 500;
+        text-align: start;
+        color: white;
       }
     }
   }
