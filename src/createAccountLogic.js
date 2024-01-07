@@ -77,14 +77,10 @@ const cleanInputs = (userName, userEmail, userPass) => {
 let nitoCount = 0;
 // already take account function :
 const alreadyTakenNotifyMessage = (checkNotigy) => {
-  if (checkNotigy) {
-    accountTake();
-  } else {
-    accountCreated();
-  }
+  checkNotigy ? accountCreated() : accountTake();
 
   let startNitificationInterval = setInterval(() => {
-    if (nitoCount < 10) {
+    if (nitoCount < 15) {
       nitoCount++;
     } else {
       nitoCount = 0;
@@ -97,17 +93,17 @@ const alreadyTakenNotifyMessage = (checkNotigy) => {
 //  account taken
 const accountTake = () => {
   console.log("account already taken");
-  notificationMessageEl.style.backgroundColor = "green";
-  notificationMessageEl.style.color = "black";
-  notificationMessageEl.textContent = "account created";
+  notificationMessageEl.style.backgroundColor = "red";
+  notificationMessageEl.textContent = "account already taken";
   notificationMessageEl.classList.add("active");
 };
 
 // account created
 const accountCreated = () => {
   console.log("account already taken");
-  notificationMessageEl.style.backgroundColor = "red";
-  notificationMessageEl.textContent = "account already taken";
+  notificationMessageEl.style.backgroundColor = "green";
+  notificationMessageEl.style.color = "black";
+  notificationMessageEl.textContent = "account created";
   notificationMessageEl.classList.add("active");
 };
 // eventlinsters
