@@ -1282,7 +1282,18 @@ body {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      gap: 15px;
+      gap: 10px;
+
+      #input-Text {
+        margin: 5px;
+        width: 60%;
+        height: 10%;
+        border-radius: 15px;
+        outline: none;
+        border: solid #37383d 2px;
+        padding-left: 15px;
+        font-size: $fontOne;
+      }
     }
   }
 }
