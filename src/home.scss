@@ -13,18 +13,33 @@ body {
 }
 
 .account-Overlay {
-  position: fixed;
-  height: 100vh; /* Change this line */
+  position: relative;
+  height: 100%; /* Change this line */
+  width: 100%;
+  z-index: 1;
+  filter: blur(0);
+}
+
+.account-Overlay.active {
+  height: 100%; /* Change this line */
   width: 100%;
   z-index: 5;
+  position: fixed;
   filter: blur(1px);
 }
 
 .account-overlay-Click {
   width: 0%;
   height: 0%;
-  position: fixed;
-  z-index: 4;
+  position: relative;
+  z-index: 6;
+  filter: blur(0);
+}
+
+.account-overlay-Click.active {
+  width: 100%;
+  height: 100%;
+  position: absolute;
 }
 
 //  navbar
