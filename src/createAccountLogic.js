@@ -33,18 +33,15 @@ const createAccount = () => {
 // check data if there is same name or email in the object data
 const checkData = (userName, userEmail, userPass) => {
   for (let user of accountsDataObj) {
-    if (user.userName === userName) {
+    if (user.userName === userName || user.userEmail === userEmail) {
       userNew = false;
+      console.log("user name or email is already taken");
       return;
     } else {
-      console.log("times");
       userNew = true;
     }
   }
-  if (userNew) {
-    console.log("this user is new");
-    createAccountStepTwo(userName, userEmail, userPass);
-  }
+  userName && createAccountStepTwo(userName, userEmail, userPass);
 };
 
 // here is when the data goes to the object accounts  and local storage save
