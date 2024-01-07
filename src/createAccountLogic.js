@@ -24,5 +24,22 @@ const createAccount = () => {
   checkData(userName, userEmail, userPass);
 };
 
+// check data if there is same name or email in the object data
+const checkData = (userName, userEmail, userPass) => {
+  for (let user of accountsDataObj) {
+    if (user.userName === userName) {
+      userNew = false;
+      return;
+    } else {
+      console.log("times");
+      userNew = true;
+    }
+  }
+  if (userNew) {
+    console.log("this user is new");
+    createAccountStepTwo(userName, userEmail, userPass);
+  }
+};
+
 // eventlinsters
 submitCreationAccountBtn.addEventListener("click", createAccount);
