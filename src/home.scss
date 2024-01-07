@@ -1281,11 +1281,26 @@ body {
         text-align: center;
         align-items: center;
         border: solid white 2px;
-      }
+        transition: all 50ms ease-in-out;
 
-      #close-Create-A-C-Icon {
-        color: white;
-        font-size: 2rem;
+        #close-Create-A-C-Icon {
+          color: white;
+          font-size: 2rem;
+        }
+
+        &:hover {
+          cursor: pointer;
+          border-color: black;
+          background-color: white;
+          #close-Create-A-C-Icon {
+            color: black;
+            font-size: 2rem;
+          }
+        }
+
+        &:active {
+          transform: scale(0.9);
+        }
       }
     }
 

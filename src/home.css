@@ -1089,10 +1089,23 @@ body {
   text-align: center;
   align-items: center;
   border: solid white 2px;
+  transition: all 50ms ease-in-out;
 }
-.account .account-Wrap .account-top-Button-Wrap #close-Create-A-C-Icon {
+.account .account-Wrap .account-top-Button-Wrap .close-Create-Account-Card #close-Create-A-C-Icon {
   color: white;
   font-size: 2rem;
+}
+.account .account-Wrap .account-top-Button-Wrap .close-Create-Account-Card:hover {
+  cursor: pointer;
+  border-color: black;
+  background-color: white;
+}
+.account .account-Wrap .account-top-Button-Wrap .close-Create-Account-Card:hover #close-Create-A-C-Icon {
+  color: black;
+  font-size: 2rem;
+}
+.account .account-Wrap .account-top-Button-Wrap .close-Create-Account-Card:active {
+  transform: scale(0.9);
 }
 .account .account-Wrap .account-Top .account-Top-Text-1 {
   color: white;
