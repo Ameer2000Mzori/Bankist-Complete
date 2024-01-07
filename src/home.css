@@ -1221,11 +1221,15 @@ body {
   flex-direction: column;
   text-align: center;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: start;
 }
 
 .account .account-Wrap .account-top-Button-Wrap {
-  height: 20%;
-  width: 90%;
+  height: 10%;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
   text-align: end;
+  align-items: end;
+  justify-content: center;
 }
