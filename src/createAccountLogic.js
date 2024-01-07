@@ -22,6 +22,8 @@ const accountsDataObj = [
     userName: "Ameer",
     userEmail: "Ameer",
     userPass: "Ameer",
+    transactions: [100, 150, 100],
+    currnce: `$`,
   },
 ];
 
@@ -55,6 +57,8 @@ const createAccountStepTwo = (userName, userEmail, userPass) => {
     userName,
     userEmail,
     userPass,
+    transactions: [],
+    currnce: `$`,
   };
 
   accountsDataObj.push(newAccount);
