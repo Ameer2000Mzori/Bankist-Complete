@@ -1145,5 +1145,17 @@ body {
   text-align: center;
   align-items: center;
 }
+.account .account-Wrap .account-Bottom .submit-Creation-Account {
+  border: solid white 2px;
+  transition: all 50ms ease-in-out;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: "Poppins", "Helvetica Neue", helvetica, sans-serif;
+  background-color: transparent;
+  border: solid white 2px;
+  width: 190px;
+  height: 40px;
+  color: white;
+}
 
 /*# sourceMappingURL=home.css.map */
