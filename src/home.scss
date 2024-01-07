@@ -14,14 +14,14 @@ body {
 
 .account-Overlay {
   position: relative;
-  height: 100%; /* Change this line */
+  height: 100%;
   width: 100%;
   z-index: 1;
   filter: blur(0);
 }
 
 .account-Overlay.active {
-  height: 100%; /* Change this line */
+  height: 100%;
   width: 100%;
   z-index: 5;
   position: fixed;
@@ -1371,6 +1371,15 @@ body {
           transform: scale(0.9);
         }
       }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .account {
+    .account-Wrap {
+      height: 560px;
+      width: 360px;
     }
   }
 }
