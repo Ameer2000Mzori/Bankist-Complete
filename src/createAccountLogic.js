@@ -35,6 +35,7 @@ const checkData = (userName, userEmail, userPass) => {
   for (let user of accountsDataObj) {
     if (user.userName === userName || user.userEmail === userEmail) {
       userNew = false;
+      alreadyTakenNotifyMessage();
       console.log("user name or email is already taken");
       return;
     } else {
@@ -68,5 +69,11 @@ const cleanInputs = (userName, userEmail, userPass) => {
   accountOverlayEl.classList.remove("active");
   accountOverlayClickEl.classList.remove("active");
 };
+
+// already take account function :
+const alreadyTakenNotifyMessage = () => {
+  console.log("account already taken");
+};
+
 // eventlinsters
 submitCreationAccountBtn.addEventListener("click", createAccount);
