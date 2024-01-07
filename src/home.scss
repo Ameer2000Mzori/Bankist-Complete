@@ -1397,7 +1397,6 @@ body {
   width: 300px;
   margin-right: 5px;
   display: flex;
-  background-color: black;
   z-index: 100;
   right: 0;
   top: 50%;
@@ -1406,6 +1405,7 @@ body {
   justify-content: center;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 
   .notification-Message {
     width: 250px;
@@ -1414,5 +1414,11 @@ body {
     font-size: 1rem;
     background-color: red;
     color: white;
+    transition: all 500ms ease-in-out;
+    transform: translateX(100%);
+  }
+
+  .notification-Message.active {
+    transform: translateX(0%);
   }
 }
