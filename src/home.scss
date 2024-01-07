@@ -28,7 +28,7 @@ body {
   filter: blur(1px);
 }
 
-.account-overlay-Click {
+.account-Overlay-Click {
   width: 0%;
   height: 0%;
   position: relative;
@@ -36,7 +36,7 @@ body {
   filter: blur(0);
 }
 
-.account-overlay-Click.active {
+.account-Overlay-Click.active {
   width: 100%;
   height: 100%;
   position: absolute;
