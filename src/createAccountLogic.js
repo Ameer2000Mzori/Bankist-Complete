@@ -38,7 +38,7 @@ const checkData = (userName, userEmail, userPass) => {
   for (let user of accountsDataObj) {
     if (user.userName === userName || user.userEmail === userEmail) {
       userNew = false;
-      alreadyTakenNotifyMessage();
+      alreadyTakenNotifyMessage(false);
       console.log("user name or email is already taken");
       return;
     } else {
@@ -61,6 +61,7 @@ const createAccountStepTwo = (userName, userEmail, userPass) => {
   console.log(accountsDataObj);
   console.log(userName, userEmail, userPass);
   cleanInputs(userName, userEmail, userPass);
+  alreadyTakenNotifyMessage(true);
 };
 
 // clean up the inputs function
@@ -75,11 +76,15 @@ const cleanInputs = (userName, userEmail, userPass) => {
 
 let nitoCount = 0;
 // already take account function :
-const alreadyTakenNotifyMessage = () => {
-  console.log("account already taken");
-  notificationMessageEl.style.backgroundColor = "red";
-  notificationMessageEl.textContent = "account already taken";
-  notificationMessageEl.classList.add("active");
+const alreadyTakenNotifyMessage = (checkNotigy) => {
+  if (checkNotigy) {
+    accountTake();
+  } else {
+    console.log("account already taken");
+    notificationMessageEl.style.backgroundColor = "red";
+    notificationMessageEl.textContent = "account already taken";
+    notificationMessageEl.classList.add("active");
+  }
 
   let startNitificationInterval = setInterval(() => {
     if (nitoCount < 10) {
@@ -92,5 +97,13 @@ const alreadyTakenNotifyMessage = () => {
   }, 100);
 };
 
+//  account taken
+const accountTake = () => {
+  console.log("account already taken");
+  notificationMessageEl.style.backgroundColor = "green";
+  notificationMessageEl.style.color = "black";
+  notificationMessageEl.textContent = "account created";
+  notificationMessageEl.classList.add("active");
+};
 // eventlinsters
 submitCreationAccountBtn.addEventListener("click", createAccount);
