@@ -41,5 +41,20 @@ const checkData = (userName, userEmail, userPass) => {
   }
 };
 
+// here is when the data goes to the object accounts  and local storage save
+const createAccountStepTwo = (userName, userEmail, userPass) => {
+  console.log("account created!");
+  let newAccount = {
+    userName,
+    userEmail,
+    userPass,
+  };
+
+  accountsDataObj.push(newAccount);
+  console.log(accountsDataObj);
+  console.log(userName, userEmail, userPass);
+  cleanInputs(userName, userEmail, userPass);
+};
+
 // eventlinsters
 submitCreationAccountBtn.addEventListener("click", createAccount);
