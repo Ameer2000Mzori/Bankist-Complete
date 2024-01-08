@@ -246,6 +246,17 @@ $fontOne: "Poppins", "Helvetica Neue", helvetica, sans-serif;
           font-family: $fontOne;
           color: black;
           font-weight: 600;
+          transition: all 50ms ease-in-out;
+
+          &:hover {
+            color: white;
+            background-color: black;
+            border: solid white 2px;
+          }
+
+          &:active {
+            transform: scale(0.9);
+          }
         }
       }
 

@@ -229,6 +229,15 @@
   font-family: "Poppins", "Helvetica Neue", helvetica, sans-serif;
   color: black;
   font-weight: 600;
+  transition: all 50ms ease-in-out;
+}
+.dashboard .dashboard-Wrap .dashboard-Bottom .dashboard-Bottom-Left .dashboard-Bottom-Left-Sort-Btn:hover {
+  color: white;
+  background-color: black;
+  border: solid white 2px;
+}
+.dashboard .dashboard-Wrap .dashboard-Bottom .dashboard-Bottom-Left .dashboard-Bottom-Left-Sort-Btn:active {
+  transform: scale(0.9);
 }
 .dashboard .dashboard-Wrap .dashboard-Bottom .dashboard-Bottom-Right {
   width: 30%;
