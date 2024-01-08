@@ -1335,4 +1335,11 @@ body {
   display: flex;
 }
 
+@media screen and (max-width: 768px) {
+  .login .login-Wrap {
+    height: 560px;
+    width: 360px;
+  }
+}
+
 /*# sourceMappingURL=home.css.map */

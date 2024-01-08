@@ -1564,3 +1564,12 @@ body {
 .login.active {
   display: flex;
 }
+// login responsvness
+@media screen and (max-width: 768px) {
+  .login {
+    .login-Wrap {
+      height: 560px;
+      width: 360px;
+    }
+  }
+}
