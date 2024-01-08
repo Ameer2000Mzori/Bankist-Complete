@@ -1286,5 +1286,20 @@ body {
   justify-content: center;
   gap: 2rem;
 }
+.login .login-Wrap .login-Form-Wrap .login-Texts-Inputs {
+  width: 50%;
+  height: 10%;
+  outline: none;
+  border: solid #37383d 2px;
+  padding-left: 15px;
+  font-family: "Poppins", "Helvetica Neue", helvetica, sans-serif;
+  font-size: 1.1rem;
+}
+.login .login-Wrap .login-Form-Wrap .login-Labels-Texts {
+  font-size: "Poppins", "Helvetica Neue", helvetica, sans-serif;
+  font-weight: 500;
+  text-align: start;
+  color: white;
+}
 
 /*# sourceMappingURL=home.css.map */

@@ -1507,6 +1507,23 @@ body {
       align-items: center;
       justify-content: center;
       gap: 2rem;
+
+      .login-Texts-Inputs {
+        width: 50%;
+        height: 10%;
+        outline: none;
+        border: solid #37383d 2px;
+        padding-left: 15px;
+        font-family: $fontOne;
+        font-size: 1.1rem;
+      }
+
+      .login-Labels-Texts {
+        font-size: $fontOne;
+        font-weight: 500;
+        text-align: start;
+        color: white;
+      }
     }
   }
 }
