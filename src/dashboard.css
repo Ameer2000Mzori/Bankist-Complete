@@ -6,7 +6,6 @@
   justify-content: center;
   height: 100vh;
 }
-
 .dashboard .dashboard-Wrap {
   width: 769px;
   height: 600px;
@@ -16,7 +15,6 @@
   align-items: center;
   justify-content: space-between;
 }
-
 .dashboard .dashboard-Wrap .dashboard-Top {
   display: flex;
   flex-direction: row;
@@ -28,12 +26,10 @@
   background-color: aliceblue;
   border-radius: 15px 15px 0 0;
 }
-
 .dashboard .dashboard-Wrap .dashboard-Top .dashboard-Top-Left {
   padding: 0;
   margin: 0;
 }
-
 .dashboard .dashboard-Wrap .dashboard-Top .dashboard-Top-Left .dashboard-Top-Left-Text-1 {
   padding: 0;
   font-family: "Poppins", "Helvetica Neue", helvetica, sans-serif;
@@ -41,12 +37,10 @@
   color: rgb(34, 34, 34);
   margin: 5px;
 }
-
 .dashboard .dashboard-Wrap .dashboard-Top .dashboard-Top-Mid {
   padding: 0;
   margin: 0;
 }
-
 .dashboard .dashboard-Wrap .dashboard-Top .dashboard-Top-Mid .dashboard-Top-Mid-Text-1,
 .dashboard .dashboard-Wrap .dashboard-Top .dashboard-Top-Mid .dashboard-Top-Mid-Text-2 {
   padding: 0;
@@ -54,12 +48,10 @@
   color: rgb(34, 34, 34);
   font-family: "Poppins", "Helvetica Neue", helvetica, sans-serif;
 }
-
 .dashboard .dashboard-Wrap .dashboard-Top .dashboard-Top-Mid .dashboard-Top-Mid-Text-2 {
   color: gray;
   font-size: 0.8rem;
 }
-
 .dashboard .dashboard-Wrap .dashboard-Top .dashboard-Top-Right {
   display: flex;
   flex-direction: column;
@@ -68,7 +60,6 @@
   align-items: start;
   justify-content: start;
 }
-
 .dashboard .dashboard-Wrap .dashboard-Top .dashboard-Top-Right .dashboard-Top-Right-Text-1 {
   padding: 0;
   font-size: 1.2rem;
@@ -76,7 +67,6 @@
   font-family: "Poppins", "Helvetica Neue", helvetica, sans-serif;
   margin: 5px;
 }
-
 .dashboard .dashboard-Wrap .dashboard-Mid {
   height: 60%;
   width: 100%;
@@ -86,13 +76,11 @@
   align-items: center;
   justify-content: space-between;
 }
-
 .dashboard .dashboard-Wrap .dashboard-Mid .dashboard-Mid-Left {
   height: 90%;
   width: 60%;
   display: flex;
 }
-
 .dashboard .dashboard-Wrap .dashboard-Mid .dashboard-Mid-Left .dashboard-Mid-Left-Wrap {
   height: 100%;
   width: 100%;
@@ -101,7 +89,6 @@
   text-align: start;
   align-items: start;
 }
-
 .dashboard .dashboard-Wrap .dashboard-Mid .dashboard-Mid-Left .dashboard-Mid-Left-Wrap .dashboard-Transfer-Card {
   width: 100%;
   height: 40px;
@@ -112,7 +99,6 @@
   justify-content: space-evenly;
   background-color: aliceblue;
 }
-
 .dashboard .dashboard-Wrap .dashboard-Mid .dashboard-Mid-Right {
   height: 100%;
   width: 30%;
@@ -122,3 +108,30 @@
   align-items: center;
   justify-content: space-evenly;
 }
+.dashboard .dashboard-Wrap .dashboard-Mid .dashboard-Mid-Right .dashboard-Mid-Top,
+.dashboard .dashboard-Wrap .dashboard-Mid .dashboard-Mid-Right .dashboard-Mid-Mid,
+.dashboard .dashboard-Wrap .dashboard-Mid .dashboard-Mid-Right .dashboard-Mid-Bottom {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border-radius: 15px;
+  background-color: rgb(0, 196, 10);
+  color: white;
+}
+.dashboard .dashboard-Wrap .dashboard-Mid .dashboard-Mid-Right .dashboard-Mid-Top .dashboard-Card-Wrap,
+.dashboard .dashboard-Wrap .dashboard-Mid .dashboard-Mid-Right .dashboard-Mid-Mid .dashboard-Card-Wrap,
+.dashboard .dashboard-Wrap .dashboard-Mid .dashboard-Mid-Right .dashboard-Mid-Bottom .dashboard-Card-Wrap {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  height: 100%;
+  font-family: "Poppins", "Helvetica Neue", helvetica, sans-serif;
+}
+
+/*# sourceMappingURL=dashboard.css.map */
