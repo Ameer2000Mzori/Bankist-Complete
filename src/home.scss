@@ -1456,6 +1456,15 @@ body {
       text-align: end;
       align-items: end;
       justify-content: center;
+
+      .login-Close-Btn {
+        background-color: transparent;
+        font-size: 1rem;
+        text-align: center;
+        align-items: center;
+        border: solid white 2px;
+        transition: all 50ms ease-in-out;
+      }
     }
   }
 }
