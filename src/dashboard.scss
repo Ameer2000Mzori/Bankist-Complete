@@ -5,4 +5,14 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
+
+  .dashboard-Wrap {
+    width: 769px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
 }
