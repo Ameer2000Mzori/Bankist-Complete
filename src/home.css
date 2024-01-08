@@ -1266,5 +1266,15 @@ body {
 .login .login-Wrap .login-Close-Btn-Wrap .login-Close-Btn:active {
   transform: scale(0.9);
 }
+.login .login-Wrap .login-Title-Wrap {
+  height: 20%;
+  width: 95%;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
 
 /*# sourceMappingURL=home.css.map */

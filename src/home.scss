@@ -1486,5 +1486,16 @@ body {
         }
       }
     }
+
+    .login-Title-Wrap {
+      height: 20%;
+      width: 95%;
+      text-align: center;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      color: white;
+    }
   }
 }
