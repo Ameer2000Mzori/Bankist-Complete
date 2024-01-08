@@ -1301,5 +1301,14 @@ body {
   text-align: start;
   color: white;
 }
+.login .login-Wrap .submit-Login-Btn-Wrap {
+  height: 10%;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
 
 /*# sourceMappingURL=home.css.map */
