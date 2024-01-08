@@ -18,8 +18,29 @@ const accountsDataObj = [
     userName: "Ameer",
     userEmail: "Ameer",
     userPass: "Ameer",
-    transactions: [100, 150, 100],
-    currnce: `$`,
+    date: [
+      {
+        day: "1",
+        month: "1",
+        year: "2023",
+        transaction: 100,
+      },
+      {
+        day: "2",
+        month: "1",
+        year: "2024",
+        transaction: 500,
+      },
+      {
+        day: "4",
+        month: "1",
+        year: "2024",
+        transaction: 100,
+      },
+    ],
+    currency: "$",
+    balance: "500",
+    minBalance: "-100",
   },
 ];
 
