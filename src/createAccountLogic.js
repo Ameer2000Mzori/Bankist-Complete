@@ -1,9 +1,5 @@
 // selecting elements
 const accountEl = document.getElementsByClassName("account")[0];
-const accountOverlayEl = document.getElementsByClassName("account-Overlay")[0];
-const accountOverlayClickEl = document.getElementsByClassName(
-  "account-Overlay-Click"
-)[0];
 
 const inputName = document.getElementsByClassName("input-Name")[0];
 const inputEmail = document.getElementsByClassName("input-Email")[0];
@@ -74,8 +70,6 @@ const cleanInputs = (userName, userEmail, userPass) => {
   userEmail = inputEmail.value = "";
   userPass = inputPassword.value = "";
   accountEl.classList.remove("active");
-  accountOverlayEl.classList.remove("active");
-  accountOverlayClickEl.classList.remove("active");
 };
 
 let nitoCount = 0;
