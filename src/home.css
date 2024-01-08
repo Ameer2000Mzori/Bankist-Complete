@@ -1211,7 +1211,7 @@ body {
   position: fixed;
   height: 100%;
   width: 100%;
-  display: flex;
+  display: none;
   flex-direction: column;
   text-align: center;
   align-items: center;
@@ -1329,6 +1329,10 @@ body {
 }
 .login .login-Wrap .submit-Login-Btn-Wrap .submit-Login-Btn:active {
   transform: scale(0.9);
+}
+
+.login.active {
+  display: flex;
 }
 
 /*# sourceMappingURL=home.css.map */
