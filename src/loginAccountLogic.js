@@ -34,5 +34,14 @@ const userNotFoundNoty = () => {
   userNoty();
 };
 
+// account created
+const userFoundNoty = () => {
+  notificationMessageEl.style.backgroundColor = "green";
+  notificationMessageEl.style.color = "black";
+  notificationMessageEl.textContent = "LOGGED IN";
+  notificationMessageEl.classList.add("active");
+  userNoty();
+};
+
 // eventlinsters
 submitLoginBtn.addEventListener("click", loginToAccount);
