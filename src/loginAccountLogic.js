@@ -43,5 +43,19 @@ const userFoundNoty = () => {
   userNoty();
 };
 
+let nitoCount = 0;
+// start userFindNoty
+const userNoty = () => {
+  let startNitificationInterval = setInterval(() => {
+    if (nitoCount < 15) {
+      nitoCount++;
+    } else {
+      nitoCount = 0;
+      notificationMessageEl.classList.remove("active");
+      clearInterval(startNitificationInterval);
+    }
+  }, 100);
+};
+
 // eventlinsters
 submitLoginBtn.addEventListener("click", loginToAccount);
