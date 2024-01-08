@@ -7,6 +7,7 @@ const submitLoginBtn = document.getElementsByClassName("submit-Login-Btn")[0];
 const notificationMessageEl = document.getElementsByClassName(
   "notification-Message"
 )[0];
+const loginEl = document.getElementsByClassName("login")[0];
 
 // functions
 const loginToAccount = () => {
@@ -32,6 +33,7 @@ const userNotFoundNoty = () => {
   notificationMessageEl.textContent = "USER NOT FOUND";
   notificationMessageEl.classList.add("active");
   userNoty();
+  cleanInputs();
 };
 
 // account created
@@ -41,6 +43,7 @@ const userFoundNoty = () => {
   notificationMessageEl.textContent = "LOGGED IN";
   notificationMessageEl.classList.add("active");
   userNoty();
+  cleanInputs();
 };
 
 let nitoCount = 0;
@@ -55,6 +58,13 @@ const userNoty = () => {
       clearInterval(startNitificationInterval);
     }
   }, 100);
+};
+
+// clean up the inputs function
+const cleanInputs = (userEmail, userPass) => {
+  userEmail = loginUserEmail.value = "";
+  userPass = loginUserPass.value = "";
+  loginEl.classList.remove("active");
 };
 
 // eventlinsters
