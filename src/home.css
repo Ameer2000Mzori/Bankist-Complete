@@ -1254,5 +1254,17 @@ body {
   color: white;
   font-size: 2rem;
 }
+.login .login-Wrap .login-Close-Btn-Wrap .login-Close-Btn:hover {
+  cursor: pointer;
+  border-color: black;
+  background-color: white;
+}
+.login .login-Wrap .login-Close-Btn-Wrap .login-Close-Btn:hover #login-Close-Btn-Icon {
+  color: black;
+  font-size: 2rem;
+}
+.login .login-Wrap .login-Close-Btn-Wrap .login-Close-Btn:active {
+  transform: scale(0.9);
+}
 
 /*# sourceMappingURL=home.css.map */

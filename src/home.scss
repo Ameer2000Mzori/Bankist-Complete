@@ -1469,6 +1469,21 @@ body {
           color: white;
           font-size: 2rem;
         }
+
+        &:hover {
+          cursor: pointer;
+          border-color: black;
+          background-color: white;
+
+          #login-Close-Btn-Icon {
+            color: black;
+            font-size: 2rem;
+          }
+        }
+
+        &:active {
+          transform: scale(0.9);
+        }
       }
     }
   }
