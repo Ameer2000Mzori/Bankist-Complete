@@ -285,3 +285,108 @@
   justify-content: end;
   flex-direction: row;
 }
+
+@media screen and (max-width: 800px) {
+  .dashboard {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgb(209, 209, 209);
+  }
+
+  .dashboard .dashboard-Wrap {
+    width: 360px;
+    height: 600px;
+  }
+
+  .dashboard .dashboard-Wrap .dashboard-Top .dashboard-Top-Left .dashboard-Top-Left-Text-1 {
+    font-size: 0.9rem;
+  }
+
+  .dashboard .dashboard-Wrap .dashboard-Top .dashboard-Top-Mid .dashboard-Top-Mid-Text-1,
+  .dashboard .dashboard-Wrap .dashboard-Top .dashboard-Top-Mid .dashboard-Top-Mid-Text-2 {
+    font-size: 0.9rem;
+  }
+
+  .dashboard .dashboard-Wrap .dashboard-Top .dashboard-Top-Mid .dashboard-Top-Mid-Text-2 {
+    font-size: 0.7rem;
+  }
+
+  .dashboard .dashboard-Wrap .dashboard-Top .dashboard-Top-Right .dashboard-Top-Right-Text-1 {
+    padding: 0;
+    font-size: 0.9rem;
+    color: rgb(34, 34, 34);
+    font-family: "Poppins", "Helvetica Neue", helvetica, sans-serif;
+    margin: 5px;
+  }
+
+  .dashboard .dashboard-Wrap .dashboard-Mid .dashboard-Mid-Left {
+    width: 55%;
+  }
+
+  .dashboard .dashboard-Wrap .dashboard-Mid .dashboard-Mid-Left .dashboard-Mid-Left-Wrap .dashboard-Transfer-Card .type-Of-Transfer {
+    font-size: 0.8rem;
+  }
+
+  .dashboard .dashboard-Wrap .dashboard-Mid .dashboard-Mid-Left .dashboard-Mid-Left-Wrap .dashboard-Transfer-Card .date-Of-Transfer {
+    font-size: 0.7rem;
+  }
+
+  .dashboard .dashboard-Wrap .dashboard-Mid .dashboard-Mid-Left .dashboard-Mid-Left-Wrap .dashboard-Transfer-Card .amount-Of-Transfer {
+    font-size: 0.8rem;
+  }
+
+  .dashboard .dashboard-Wrap .dashboard-Mid .dashboard-Mid-Right {
+    width: 40%;
+  }
+
+  .dashboard .dashboard-Wrap .dashboard-Mid .dashboard-Mid-Right .dashboard-Mid-Top .dashboard-Card-Wrap .dashboard-Card-Title,
+  .dashboard .dashboard-Wrap .dashboard-Mid .dashboard-Mid-Right .dashboard-Mid-Mid .dashboard-Card-Wrap .dashboard-Card-Title,
+  .dashboard .dashboard-Wrap .dashboard-Mid .dashboard-Mid-Right .dashboard-Mid-Bottom .dashboard-Card-Wrap .dashboard-Card-Title {
+    font-size: 0.8rem;
+  }
+
+  .dashboard .dashboard-Wrap .dashboard-Mid .dashboard-Mid-Right .dashboard-Mid-Top .dashboard-Card-Wrap .dashboard-Card-Inputs-Wrap .dashboard-Card-Inputs,
+  .dashboard .dashboard-Wrap .dashboard-Mid .dashboard-Mid-Right .dashboard-Mid-Mid .dashboard-Card-Wrap .dashboard-Card-Inputs-Wrap .dashboard-Card-Inputs,
+  .dashboard .dashboard-Wrap .dashboard-Mid .dashboard-Mid-Right .dashboard-Mid-Bottom .dashboard-Card-Wrap .dashboard-Card-Inputs-Wrap .dashboard-Card-Inputs {
+    width: 80%;
+  }
+
+  .dashboard .dashboard-Wrap .dashboard-Mid .dashboard-Mid-Right .dashboard-Mid-Top .dashboard-Card-Wrap .dashboard-Card-Inputs-Wrap .dashboard-Card-Inputs-Buttons,
+  .dashboard .dashboard-Wrap .dashboard-Mid .dashboard-Mid-Right .dashboard-Mid-Mid .dashboard-Card-Wrap .dashboard-Card-Inputs-Wrap .dashboard-Card-Inputs-Buttons,
+  .dashboard .dashboard-Wrap .dashboard-Mid .dashboard-Mid-Right .dashboard-Mid-Bottom .dashboard-Card-Wrap .dashboard-Card-Inputs-Wrap .dashboard-Card-Inputs-Buttons {
+    border: solid white 1px;
+    width: 50%;
+  }
+
+  .dashboard .dashboard-Wrap .dashboard-Bottom {
+    justify-content: space-between;
+  }
+
+  .dashboard .dashboard-Wrap .dashboard-Bottom .dashboard-Bottom-Left {
+    width: 70%;
+  }
+
+  .dashboard .dashboard-Wrap .dashboard-Bottom .dashboard-Bottom-Left .dashboard-Bottom-Left-In-Wrap {
+    font-size: 0.7rem;
+  }
+
+  .dashboard .dashboard-Wrap .dashboard-Bottom .dashboard-Bottom-Left .dashboard-Bottom-Left-Out-Wrap {
+    font-size: 0.7rem;
+  }
+
+  .dashboard .dashboard-Wrap .dashboard-Bottom .dashboard-Bottom-Left .dashboard-Bottom-Left-Sort-Btn {
+    cursor: pointer;
+    width: 50px;
+    font-size: 0.7rem;
+  }
+
+  .dashboard .dashboard-Wrap .dashboard-Bottom .dashboard-Bottom-Right {
+    font-size: 0.6rem;
+    text-align: center;
+    width: 25%;
+  }
+}
