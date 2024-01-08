@@ -14,7 +14,13 @@ const loginToAccount = () => {
     (obj) => obj.userName === loginUserEmail && obj.userPass === loginUserPass
   );
 
-  console.log("matchingObject:", matchingObject);
+  matchingObject ? userFound(matchingObject) : console.log("user not found");
+};
+
+// user found function
+const userFound = (matchingObject) => {
+  console.log("this user is found!");
+  console.log("the user data is :", matchingObject);
 };
 
 // eventlinsters
