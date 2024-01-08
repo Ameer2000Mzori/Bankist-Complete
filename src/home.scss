@@ -1534,6 +1534,18 @@ body {
       text-align: center;
       align-items: center;
       justify-content: center;
+
+      .submit-Login-Btn {
+        border: solid white 2px;
+        transition: all 50ms ease-in-out;
+        font-size: 1rem;
+        font-weight: 600;
+        font-family: $fontOne;
+        background-color: transparent;
+        width: 190px;
+        height: 40px;
+        color: white;
+      }
     }
   }
 }
