@@ -106,3 +106,4 @@ const accountCreated = () => {
 };
 // eventlinsters
 submitCreationAccountBtn.addEventListener("click", createAccount);
+export default accountsDataObj;
