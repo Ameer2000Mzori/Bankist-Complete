@@ -7,6 +7,7 @@ $fontOne: "Poppins", "Helvetica Neue", helvetica, sans-serif;
   align-items: center;
   justify-content: center;
   height: 100vh;
+  background-color: rgb(209, 209, 209);
 
   .dashboard-Wrap {
     width: 769px;
@@ -16,6 +17,8 @@ $fontOne: "Poppins", "Helvetica Neue", helvetica, sans-serif;
     text-align: center;
     align-items: center;
     justify-content: space-between;
+    border: solid white 2px;
+    border-radius: 17px 17px 0 0;
 
     .dashboard-Top {
       display: flex;
@@ -144,6 +147,14 @@ $fontOne: "Poppins", "Helvetica Neue", helvetica, sans-serif;
             height: 100%;
             font-family: $fontOne;
           }
+        }
+
+        .dashboard-Mid-Mid {
+          background-color: rgb(196, 72, 0);
+        }
+
+        .dashboard-Mid-Bottom {
+          background-color: rgb(224, 1, 1);
         }
       }
     }
