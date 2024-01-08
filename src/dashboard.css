@@ -202,5 +202,15 @@
   justify-content: space-between;
   flex-direction: row;
 }
+.dashboard .dashboard-Wrap .dashboard-Bottom .dashboard-Bottom-Right {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  font-size: 0.8rem;
+  text-align: end;
+  align-items: center;
+  justify-content: end;
+  flex-direction: row;
+}
 
 /*# sourceMappingURL=dashboard.css.map */
