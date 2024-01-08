@@ -1321,5 +1321,14 @@ body {
   height: 40px;
   color: white;
 }
+.login .login-Wrap .submit-Login-Btn-Wrap .submit-Login-Btn:hover {
+  cursor: pointer;
+  color: black;
+  border-color: black;
+  background-color: white;
+}
+.login .login-Wrap .submit-Login-Btn-Wrap .submit-Login-Btn:active {
+  transform: scale(0.9);
+}
 
 /*# sourceMappingURL=home.css.map */
