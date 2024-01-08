@@ -7,7 +7,6 @@
   height: 100vh;
   background-color: rgb(209, 209, 209);
 }
-
 .dashboard .dashboard-Wrap {
   width: 769px;
   height: 600px;
@@ -19,7 +18,6 @@
   border: solid white 2px;
   border-radius: 17px 17px 0 0;
 }
-
 .dashboard .dashboard-Wrap .dashboard-Top {
   display: flex;
   flex-direction: row;
@@ -31,12 +29,10 @@
   background-color: aliceblue;
   border-radius: 15px 15px 0 0;
 }
-
 .dashboard .dashboard-Wrap .dashboard-Top .dashboard-Top-Left {
   padding: 0;
   margin: 0;
 }
-
 .dashboard .dashboard-Wrap .dashboard-Top .dashboard-Top-Left .dashboard-Top-Left-Text-1 {
   padding: 0;
   font-family: "Poppins", "Helvetica Neue", helvetica, sans-serif;
@@ -44,12 +40,10 @@
   color: rgb(34, 34, 34);
   margin: 5px;
 }
-
 .dashboard .dashboard-Wrap .dashboard-Top .dashboard-Top-Mid {
   padding: 0;
   margin: 0;
 }
-
 .dashboard .dashboard-Wrap .dashboard-Top .dashboard-Top-Mid .dashboard-Top-Mid-Text-1,
 .dashboard .dashboard-Wrap .dashboard-Top .dashboard-Top-Mid .dashboard-Top-Mid-Text-2 {
   padding: 0;
@@ -58,12 +52,10 @@
   color: rgb(34, 34, 34);
   font-family: "Poppins", "Helvetica Neue", helvetica, sans-serif;
 }
-
 .dashboard .dashboard-Wrap .dashboard-Top .dashboard-Top-Mid .dashboard-Top-Mid-Text-2 {
   color: gray;
   font-size: 0.8rem;
 }
-
 .dashboard .dashboard-Wrap .dashboard-Top .dashboard-Top-Right {
   display: flex;
   flex-direction: column;
@@ -72,7 +64,6 @@
   align-items: start;
   justify-content: start;
 }
-
 .dashboard .dashboard-Wrap .dashboard-Top .dashboard-Top-Right .dashboard-Top-Right-Text-1 {
   padding: 0;
   font-size: 1.2rem;
@@ -80,7 +71,6 @@
   font-family: "Poppins", "Helvetica Neue", helvetica, sans-serif;
   margin: 5px;
 }
-
 .dashboard .dashboard-Wrap .dashboard-Mid {
   height: 60%;
   width: 100%;
@@ -90,7 +80,6 @@
   align-items: center;
   justify-content: space-between;
 }
-
 .dashboard .dashboard-Wrap .dashboard-Mid .dashboard-Mid-Left {
   height: 100%;
   width: 65%;
@@ -99,7 +88,6 @@
   overflow: hidden;
   margin-left: 5px;
 }
-
 .dashboard .dashboard-Wrap .dashboard-Mid .dashboard-Mid-Left .dashboard-Mid-Left-Wrap {
   height: 100%;
   width: 100%;
@@ -108,7 +96,6 @@
   text-align: start;
   align-items: start;
 }
-
 .dashboard .dashboard-Wrap .dashboard-Mid .dashboard-Mid-Left .dashboard-Mid-Left-Wrap .dashboard-Transfer-Card {
   width: 100%;
   height: 40px;
@@ -119,7 +106,6 @@
   justify-content: space-evenly;
   background-color: aliceblue;
 }
-
 .dashboard .dashboard-Wrap .dashboard-Mid .dashboard-Mid-Right {
   height: 100%;
   width: 30%;
@@ -131,7 +117,6 @@
   background-color: aliceblue;
   border-radius: 15px 0 0 15px;
 }
-
 .dashboard .dashboard-Wrap .dashboard-Mid .dashboard-Mid-Right .dashboard-Mid-Top,
 .dashboard .dashboard-Wrap .dashboard-Mid .dashboard-Mid-Right .dashboard-Mid-Mid,
 .dashboard .dashboard-Wrap .dashboard-Mid .dashboard-Mid-Right .dashboard-Mid-Bottom {
@@ -145,7 +130,6 @@
   background-color: rgb(0, 196, 10);
   color: white;
 }
-
 .dashboard .dashboard-Wrap .dashboard-Mid .dashboard-Mid-Right .dashboard-Mid-Top .dashboard-Card-Wrap,
 .dashboard .dashboard-Wrap .dashboard-Mid .dashboard-Mid-Right .dashboard-Mid-Mid .dashboard-Card-Wrap,
 .dashboard .dashboard-Wrap .dashboard-Mid .dashboard-Mid-Right .dashboard-Mid-Bottom .dashboard-Card-Wrap {
@@ -158,7 +142,6 @@
   height: 100%;
   font-family: "Poppins", "Helvetica Neue", helvetica, sans-serif;
 }
-
 .dashboard .dashboard-Wrap .dashboard-Mid .dashboard-Mid-Right .dashboard-Mid-Top .dashboard-Card-Wrap .dashboard-Card-Inputs-Wrap .dashboard-Card-Inputs,
 .dashboard .dashboard-Wrap .dashboard-Mid .dashboard-Mid-Right .dashboard-Mid-Mid .dashboard-Card-Wrap .dashboard-Card-Inputs-Wrap .dashboard-Card-Inputs,
 .dashboard .dashboard-Wrap .dashboard-Mid .dashboard-Mid-Right .dashboard-Mid-Bottom .dashboard-Card-Wrap .dashboard-Card-Inputs-Wrap .dashboard-Card-Inputs {
@@ -169,11 +152,33 @@
   padding-left: 15px;
   font-family: "Poppins", "Helvetica Neue", helvetica, sans-serif;
 }
-
+.dashboard .dashboard-Wrap .dashboard-Mid .dashboard-Mid-Right .dashboard-Mid-Top .dashboard-Card-Wrap .dashboard-Card-Inputs-Wrap .dashboard-Card-Inputs-Buttons,
+.dashboard .dashboard-Wrap .dashboard-Mid .dashboard-Mid-Right .dashboard-Mid-Mid .dashboard-Card-Wrap .dashboard-Card-Inputs-Wrap .dashboard-Card-Inputs-Buttons,
+.dashboard .dashboard-Wrap .dashboard-Mid .dashboard-Mid-Right .dashboard-Mid-Bottom .dashboard-Card-Wrap .dashboard-Card-Inputs-Wrap .dashboard-Card-Inputs-Buttons {
+  width: 50px;
+  background-color: transparent;
+  border: solid white 2px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.dashboard .dashboard-Wrap .dashboard-Mid .dashboard-Mid-Right .dashboard-Mid-Top .dashboard-Card-Wrap .dashboard-Card-Inputs-Wrap .dashboard-Card-Inputs-Buttons:hover,
+.dashboard .dashboard-Wrap .dashboard-Mid .dashboard-Mid-Right .dashboard-Mid-Mid .dashboard-Card-Wrap .dashboard-Card-Inputs-Wrap .dashboard-Card-Inputs-Buttons:hover,
+.dashboard .dashboard-Wrap .dashboard-Mid .dashboard-Mid-Right .dashboard-Mid-Bottom .dashboard-Card-Wrap .dashboard-Card-Inputs-Wrap .dashboard-Card-Inputs-Buttons:hover {
+  background-color: aliceblue;
+  color: black;
+  border: solid black 2px;
+}
+.dashboard .dashboard-Wrap .dashboard-Mid .dashboard-Mid-Right .dashboard-Mid-Top .dashboard-Card-Wrap .dashboard-Card-Inputs-Wrap .dashboard-Card-Inputs-Buttons:active,
+.dashboard .dashboard-Wrap .dashboard-Mid .dashboard-Mid-Right .dashboard-Mid-Mid .dashboard-Card-Wrap .dashboard-Card-Inputs-Wrap .dashboard-Card-Inputs-Buttons:active,
+.dashboard .dashboard-Wrap .dashboard-Mid .dashboard-Mid-Right .dashboard-Mid-Bottom .dashboard-Card-Wrap .dashboard-Card-Inputs-Wrap .dashboard-Card-Inputs-Buttons:active {
+  transform: scale(0.9);
+}
 .dashboard .dashboard-Wrap .dashboard-Mid .dashboard-Mid-Right .dashboard-Mid-Mid {
   background-color: rgb(196, 72, 0);
 }
-
 .dashboard .dashboard-Wrap .dashboard-Mid .dashboard-Mid-Right .dashboard-Mid-Bottom {
   background-color: rgb(224, 1, 1);
 }
+
+/*# sourceMappingURL=dashboard.css.map */

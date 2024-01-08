@@ -162,6 +162,25 @@ $fontOne: "Poppins", "Helvetica Neue", helvetica, sans-serif;
                 padding-left: 15px;
                 font-family: $fontOne;
               }
+
+              .dashboard-Card-Inputs-Buttons {
+                width: 50px;
+                background-color: transparent;
+                border: solid white 2px;
+                color: white;
+                border-radius: 5px;
+                cursor: pointer;
+
+                &:hover {
+                  background-color: aliceblue;
+                  color: black;
+                  border: solid black 2px;
+                }
+
+                &:active {
+                  transform: scale(0.9);
+                }
+              }
             }
           }
         }
