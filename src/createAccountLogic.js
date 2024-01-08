@@ -35,7 +35,7 @@ const accountsDataObj = [
         day: "4",
         month: "1",
         year: "2024",
-        transaction: 100,
+        transaction: -100,
       },
     ],
     currency: "$",
@@ -74,8 +74,10 @@ const createAccountStepTwo = (userName, userEmail, userPass) => {
     userName,
     userEmail,
     userPass,
-    transactions: [],
-    currnce: `$`,
+    date: [],
+    currency: "$",
+    balance: "0",
+    minBalance: "0",
   };
 
   accountsDataObj.push(newAccount);
