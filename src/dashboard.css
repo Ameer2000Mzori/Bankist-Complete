@@ -24,17 +24,26 @@
   width: 100%;
   height: 10%;
 }
-.dashboard .dashboard-Wrap .dashboard-Top .dashboard-Top-left {
+.dashboard .dashboard-Wrap .dashboard-Top .dashboard-Top-Left {
   padding: 0;
   margin: 0;
 }
-.dashboard .dashboard-Wrap .dashboard-Top .dashboard-Top-left .dashboard-Top-Left-Text-1,
-.dashboard .dashboard-Wrap .dashboard-Top .dashboard-Top-left .dashboard-Top-Left-Text-2 {
+.dashboard .dashboard-Wrap .dashboard-Top .dashboard-Top-Left .dashboard-Top-Left-Text-1 {
   padding: 0;
   margin: 0;
   font-family: "Poppins", "Helvetica Neue", helvetica, sans-serif;
 }
-.dashboard .dashboard-Wrap .dashboard-Top .dashboard-Top-left .dashboard-Top-Left-Text-2 {
+.dashboard .dashboard-Wrap .dashboard-Top .dashboard-Top-Mid {
+  padding: 0;
+  margin: 0;
+}
+.dashboard .dashboard-Wrap .dashboard-Top .dashboard-Top-Mid .dashboard-Top-Mid-Text-1,
+.dashboard .dashboard-Wrap .dashboard-Top .dashboard-Top-Mid .dashboard-Top-Mid-Text-2 {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", "Helvetica Neue", helvetica, sans-serif;
+}
+.dashboard .dashboard-Wrap .dashboard-Top .dashboard-Top-Mid .dashboard-Top-Mid-Text-2 {
   color: gray;
 }
 

@@ -26,18 +26,29 @@ $fontOne: "Poppins", "Helvetica Neue", helvetica, sans-serif;
       width: 100%;
       height: 10%;
 
-      .dashboard-Top-left {
+      .dashboard-Top-Left {
         padding: 0;
         margin: 0;
 
-        .dashboard-Top-Left-Text-1,
-        .dashboard-Top-Left-Text-2 {
+        .dashboard-Top-Left-Text-1 {
+          padding: 0;
+          margin: 0;
+          font-family: $fontOne;
+        }
+      }
+
+      .dashboard-Top-Mid {
+        padding: 0;
+        margin: 0;
+
+        .dashboard-Top-Mid-Text-1,
+        .dashboard-Top-Mid-Text-2 {
           padding: 0;
           margin: 0;
           font-family: $fontOne;
         }
 
-        .dashboard-Top-Left-Text-2 {
+        .dashboard-Top-Mid-Text-2 {
           color: gray;
         }
       }
