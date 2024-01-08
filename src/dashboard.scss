@@ -25,6 +25,8 @@ $fontOne: "Poppins", "Helvetica Neue", helvetica, sans-serif;
       align-items: center;
       width: 100%;
       height: 10%;
+      background-color: aliceblue;
+      border-radius: 15px 15px 0 0;
 
       .dashboard-Top-Left {
         padding: 0;
@@ -34,6 +36,9 @@ $fontOne: "Poppins", "Helvetica Neue", helvetica, sans-serif;
           padding: 0;
           margin: 0;
           font-family: $fontOne;
+          font-size: 1.2rem;
+          color: rgb(34, 34, 34);
+          margin: 5px;
         }
       }
 
@@ -45,11 +50,14 @@ $fontOne: "Poppins", "Helvetica Neue", helvetica, sans-serif;
         .dashboard-Top-Mid-Text-2 {
           padding: 0;
           margin: 0;
+          font-size: 1.2rem;
+          color: rgb(34, 34, 34);
           font-family: $fontOne;
         }
 
         .dashboard-Top-Mid-Text-2 {
           color: gray;
+          font-size: 0.8rem;
         }
       }
 
@@ -64,6 +72,10 @@ $fontOne: "Poppins", "Helvetica Neue", helvetica, sans-serif;
         .dashboard-Top-Right-Text-1 {
           padding: 0;
           margin: 0;
+          font-size: 1.2rem;
+          color: rgb(34, 34, 34);
+          font-family: $fontOne;
+          margin: 5px;
         }
       }
     }
@@ -89,6 +101,17 @@ $fontOne: "Poppins", "Helvetica Neue", helvetica, sans-serif;
           flex-direction: column;
           text-align: start;
           align-items: start;
+
+          .dashboard-Transfer-Card {
+            width: 100%;
+            height: 40px;
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+            align-items: center;
+            justify-content: space-evenly;
+            background-color: aliceblue;
+          }
         }
       }
     }
