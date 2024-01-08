@@ -210,12 +210,31 @@ $fontOne: "Poppins", "Helvetica Neue", helvetica, sans-serif;
 
       .dashboard-Bottom-Left {
         display: flex;
-        width: 65%;
+        width: 55%;
         height: 100%;
         text-align: center;
         align-items: center;
         justify-content: space-between;
         flex-direction: row;
+
+        .dashboard-Bottom-Left-In-Wrap,
+        .dashboard-Bottom-Left-Out-Wrap {
+          height: 50%;
+          background-color: green;
+          color: white;
+          border-radius: 15px;
+          text-align: center;
+          display: flex;
+          flex-direction: row;
+          text-align: center;
+          align-items: center;
+          justify-content: center;
+          width: 150px;
+        }
+
+        .dashboard-Bottom-Left-Out-Wrap {
+          background-color: red;
+        }
       }
 
       .dashboard-Bottom-Right {
