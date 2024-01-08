@@ -33,7 +33,7 @@ const userNotFoundNoty = () => {
   notificationMessageEl.textContent = "USER NOT FOUND";
   notificationMessageEl.classList.add("active");
   userNoty();
-  cleanInputs();
+  cleanInputs(loginEmailInput, loginPasswordInput);
 };
 
 // account created
@@ -43,7 +43,7 @@ const userFoundNoty = () => {
   notificationMessageEl.textContent = "LOGGED IN";
   notificationMessageEl.classList.add("active");
   userNoty();
-  cleanInputs();
+  cleanInputs(loginEmailInput, loginPasswordInput);
 };
 
 let nitoCount = 0;
@@ -61,9 +61,9 @@ const userNoty = () => {
 };
 
 // clean up the inputs function
-const cleanInputs = (userEmail, userPass) => {
-  userEmail = loginUserEmail.value = "";
-  userPass = loginUserPass.value = "";
+const cleanInputs = (loginEmailInput, loginPasswordInput) => {
+  loginEmailInput.value = "";
+  loginPasswordInput.value = "";
   loginEl.classList.remove("active");
 };
 
