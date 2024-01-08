@@ -1464,6 +1464,11 @@ body {
         align-items: center;
         border: solid white 2px;
         transition: all 50ms ease-in-out;
+
+        #login-Close-Btn-Icon {
+          color: white;
+          font-size: 2rem;
+        }
       }
     }
   }

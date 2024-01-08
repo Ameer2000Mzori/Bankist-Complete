@@ -1250,5 +1250,9 @@ body {
   border: solid white 2px;
   transition: all 50ms ease-in-out;
 }
+.login .login-Wrap .login-Close-Btn-Wrap .login-Close-Btn #login-Close-Btn-Icon {
+  color: white;
+  font-size: 2rem;
+}
 
 /*# sourceMappingURL=home.css.map */
