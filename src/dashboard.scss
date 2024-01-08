@@ -104,6 +104,9 @@ $fontOne: "Poppins", "Helvetica Neue", helvetica, sans-serif;
           flex-direction: column;
           text-align: start;
           align-items: start;
+          overflow-y: auto;
+          overflow-x: hidden;
+          gap: 1px;
 
           .dashboard-Transfer-Card {
             width: 100%;
@@ -114,6 +117,11 @@ $fontOne: "Poppins", "Helvetica Neue", helvetica, sans-serif;
             align-items: center;
             justify-content: space-evenly;
             background-color: aliceblue;
+            border: solid rgba(175, 175, 175, 0.678) 1px;
+            border-left: none;
+            border-top: none;
+            border-right: none;
+            padding: 1px;
           }
         }
       }
@@ -226,7 +234,6 @@ $fontOne: "Poppins", "Helvetica Neue", helvetica, sans-serif;
           text-align: center;
           display: flex;
           flex-direction: row;
-          text-align: center;
           align-items: center;
           justify-content: center;
           width: 150px;
@@ -242,7 +249,6 @@ $fontOne: "Poppins", "Helvetica Neue", helvetica, sans-serif;
           cursor: pointer;
           width: 70px;
           height: 50%;
-          background-color: transparent;
           font-family: $fontOne;
           color: black;
           font-weight: 600;
