@@ -91,7 +91,7 @@ $fontOne: "Poppins", "Helvetica Neue", helvetica, sans-serif;
       justify-content: space-between;
 
       .dashboard-Mid-Left {
-        height: 95%;
+        height: 100%;
         width: 65%;
         display: flex;
         border-radius: 15px;
@@ -152,6 +152,17 @@ $fontOne: "Poppins", "Helvetica Neue", helvetica, sans-serif;
             width: 90%;
             height: 100%;
             font-family: $fontOne;
+
+            .dashboard-Card-Inputs-Wrap {
+              .dashboard-Card-Inputs {
+                outline: none;
+                border-radius: 15px;
+                border: none;
+                padding: 1px;
+                padding-left: 15px;
+                font-family: $fontOne;
+              }
+            }
           }
         }
 

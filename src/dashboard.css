@@ -92,7 +92,7 @@
 }
 
 .dashboard .dashboard-Wrap .dashboard-Mid .dashboard-Mid-Left {
-  height: 95%;
+  height: 100%;
   width: 65%;
   display: flex;
   border-radius: 15px;
@@ -156,6 +156,17 @@
   justify-content: center;
   width: 90%;
   height: 100%;
+  font-family: "Poppins", "Helvetica Neue", helvetica, sans-serif;
+}
+
+.dashboard .dashboard-Wrap .dashboard-Mid .dashboard-Mid-Right .dashboard-Mid-Top .dashboard-Card-Wrap .dashboard-Card-Inputs-Wrap .dashboard-Card-Inputs,
+.dashboard .dashboard-Wrap .dashboard-Mid .dashboard-Mid-Right .dashboard-Mid-Mid .dashboard-Card-Wrap .dashboard-Card-Inputs-Wrap .dashboard-Card-Inputs,
+.dashboard .dashboard-Wrap .dashboard-Mid .dashboard-Mid-Right .dashboard-Mid-Bottom .dashboard-Card-Wrap .dashboard-Card-Inputs-Wrap .dashboard-Card-Inputs {
+  outline: none;
+  border-radius: 15px;
+  border: none;
+  padding: 1px;
+  padding-left: 15px;
   font-family: "Poppins", "Helvetica Neue", helvetica, sans-serif;
 }
 
