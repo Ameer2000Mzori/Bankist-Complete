@@ -1434,4 +1434,18 @@ body {
   top: 0;
   left: 0;
   z-index: 6;
+
+  .login-Wrap {
+    position: relative;
+    z-index: 10;
+    height: 500px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #37383d;
+    border-radius: 25px;
+  }
 }
