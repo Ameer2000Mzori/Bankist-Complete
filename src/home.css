@@ -1233,5 +1233,14 @@ body {
   background-color: #37383d;
   border-radius: 25px;
 }
+.login .login-Wrap .login-Close-Btn-Wrap {
+  height: 10%;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+  align-items: end;
+  justify-content: center;
+}
 
 /*# sourceMappingURL=home.css.map */
