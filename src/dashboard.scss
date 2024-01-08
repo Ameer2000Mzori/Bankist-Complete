@@ -235,6 +235,18 @@ $fontOne: "Poppins", "Helvetica Neue", helvetica, sans-serif;
         .dashboard-Bottom-Left-Out-Wrap {
           background-color: red;
         }
+
+        .dashboard-Bottom-Left-Sort-Btn {
+          background-color: transparent;
+          border: solid black 2px;
+          cursor: pointer;
+          width: 70px;
+          height: 50%;
+          background-color: transparent;
+          font-family: $fontOne;
+          color: black;
+          font-weight: 600;
+        }
       }
 
       .dashboard-Bottom-Right {

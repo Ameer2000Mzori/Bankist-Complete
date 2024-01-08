@@ -219,6 +219,17 @@
 .dashboard .dashboard-Wrap .dashboard-Bottom .dashboard-Bottom-Left .dashboard-Bottom-Left-Out-Wrap {
   background-color: red;
 }
+.dashboard .dashboard-Wrap .dashboard-Bottom .dashboard-Bottom-Left .dashboard-Bottom-Left-Sort-Btn {
+  background-color: transparent;
+  border: solid black 2px;
+  cursor: pointer;
+  width: 70px;
+  height: 50%;
+  background-color: transparent;
+  font-family: "Poppins", "Helvetica Neue", helvetica, sans-serif;
+  color: black;
+  font-weight: 600;
+}
 .dashboard .dashboard-Wrap .dashboard-Bottom .dashboard-Bottom-Right {
   width: 30%;
   height: 100%;
