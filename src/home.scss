@@ -1497,5 +1497,16 @@ body {
       justify-content: center;
       color: white;
     }
+
+    .login-Form-Wrap {
+      height: 55%;
+      width: 95%;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+    }
   }
 }
