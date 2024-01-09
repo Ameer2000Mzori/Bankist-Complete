@@ -9,6 +9,17 @@ $fontOne: "Poppins", "Helvetica Neue", helvetica, sans-serif;
   display: block;
 }
 
+// loading
+.loading {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+// dashboard
 .dashboard {
   display: flex;
   flex-direction: column;
