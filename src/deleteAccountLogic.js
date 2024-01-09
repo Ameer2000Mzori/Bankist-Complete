@@ -1,5 +1,6 @@
 // imports
 import { accountsDataObj } from "./createAccountLogic.js";
+import { accountLogout } from "./userDashboardTimer.js";
 
 // selecting elements
 
@@ -22,7 +23,15 @@ const dashboardCardConfirmPIN = document.getElementById(
 // functions
 
 // this is delete account function
-const deleteAccount = () => {
+const deleteAccount = (accountsDataObj) => {
+  let userEmail = dashboardCardConfirmUser.value;
+  let userPass = dashboardCardConfirmPIN.value;
+
+  accountsDataObj = accountsDataObj.filter((users) => {
+    users.userEmail !== userEmail && users.userPass !== userPass;
+  });
+  accountLogout();
+  console.log("our new account data object");
   console.log("account deleted!");
 };
 

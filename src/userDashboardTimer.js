@@ -45,7 +45,7 @@ export const userDashBoardTimer = () => {
 };
 
 // logout functions
-let accountLogout = () => {
+export let accountLogout = () => {
   dashboardPageEl.classList.remove("active");
   loading.classList.remove("active");
   let loginCounter = 0;
