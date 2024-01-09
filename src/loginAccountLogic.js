@@ -47,6 +47,7 @@ const userFoundNoty = (matchingObject) => {
   showUserData(matchingObject);
   loginTimer();
   cleanInputs(loginEmailInput, loginPasswordInput);
+  matchingObject = "";
 };
 
 let nitoCount = 0;

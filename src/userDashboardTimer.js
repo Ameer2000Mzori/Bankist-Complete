@@ -1,3 +1,6 @@
+// importing
+import { timeAndGreet } from "./timeAndGreet.js";
+
 // selecting pages :
 const landingPageEl = document.getElementsByClassName("landing-Page")[0];
 const dashboardPageEl = document.getElementsByClassName("dashboard-Page")[0];
@@ -6,6 +9,9 @@ const loading = document.getElementsByClassName("loading")[0];
 // selecting elements
 const dashboardBottomText1 = document.getElementsByClassName(
   "dash-board-Bottom-Text-1"
+)[0];
+const dashboardMidLeftWrap = document.getElementsByClassName(
+  "dashboard-Mid-Left-Wrap"
 )[0];
 
 // logout btn
@@ -45,11 +51,13 @@ let accountLogout = () => {
   let loginCounter = 0;
   minCount = 0;
   seconds = 0;
+  dashboardMidLeftWrap.innerHTML = ``;
 
   let logininterval = setInterval(() => {
     if (loginCounter < 10) {
       loginCounter++;
     } else {
+      timeAndGreet(false);
       loginCounter = 0;
       clearInterval(logininterval);
       landingPageEl.classList.remove("active");

@@ -48,8 +48,7 @@ export const showUserData = (userInfoObject) => {
   console.log("user loged in info is :", userInfoObject);
 
   // setting time function and greeting
-  timeAndGreet(userInfoObject);
-
+  timeAndGreet(userInfoObject, true);
   // starting the timer
   userDashBoardTimer();
 

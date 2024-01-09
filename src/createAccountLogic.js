@@ -99,6 +99,7 @@ const checkUser = (userName, userEmail, userPass) => {
 
   showUserData(matchingObject);
   cleanInputs(userName, userEmail, userPass);
+  matchingObject = "";
 };
 
 // clean up the inputs function
