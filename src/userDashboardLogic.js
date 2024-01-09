@@ -68,7 +68,15 @@ export const showUserData = (userInfoObject) => {
 //userTransactions
 const userTransactions = (dataLoop) => {
   dataLoop.forEach((date) => {
+    // our dates
+    let time = new Date();
+    let year = time.getFullYear();
+    let month = time.getMonth() + 1;
+    let day = time.getDate();
+    let hour = time.getHours();
+    let min = time.getMinutes();
     console.log(date);
+
     const dashboardTransferCard = document.createElement("div");
     dashboardTransferCard.classList.add("dashboard-Transfer-Card");
 
@@ -82,7 +90,23 @@ const userTransactions = (dataLoop) => {
 
     const dateOfTransfer = document.createElement("div");
     dateOfTransfer.classList.add("date-Of-Transfer");
-    dateOfTransfer.textContent = `${date.day}/${date.month}/${date.year}`;
+    if (year == date.year && month == date.month && day === date.day) {
+      dateOfTransfer.textContent = `today`;
+    } else if (
+      year == date.year &&
+      month == date.month &&
+      day === date.day - 1
+    ) {
+      dateOfTransfer.textContent = `Yesterday`;
+    } else if (
+      year == date.year &&
+      month == date.month &&
+      day === date.day - 7
+    ) {
+      dateOfTransfer.textContent = `Week ago!`;
+    } else {
+      dateOfTransfer.textContent = `${date.day}/${date.month}/${date.year}`;
+    }
     dashboardTransferCard.appendChild(dateOfTransfer);
 
     const amountOfTransfer = document.createElement("div");

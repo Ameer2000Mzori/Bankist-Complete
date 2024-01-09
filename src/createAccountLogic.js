@@ -23,19 +23,19 @@ export const accountsDataObj = [
     userPass: "Ameer",
     date: [
       {
-        day: "1",
+        day: "9",
         month: "1",
-        year: "2023",
+        year: "2024",
         transaction: 100,
       },
       {
-        day: "2",
+        day: "8",
         month: "1",
         year: "2024",
         transaction: 500,
       },
       {
-        day: "4",
+        day: "3",
         month: "1",
         year: "2024",
         transaction: -100,
