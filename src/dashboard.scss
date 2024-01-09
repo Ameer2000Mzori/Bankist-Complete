@@ -1,10 +1,11 @@
 $fontOne: "Poppins", "Helvetica Neue", helvetica, sans-serif;
+
 .dashboard-Page {
   display: none;
   transition: all 1500ms ease-in-out;
 }
 
-.dashboard-Page.ative {
+.dashboard-Page.active {
   display: block;
 }
 
@@ -305,25 +306,31 @@ $fontOne: "Poppins", "Helvetica Neue", helvetica, sans-serif;
       .dashboard-Top {
         .dashboard-Top-Left {
           .dashboard-Top-Left-Text-1 {
-            font-size: 0.9rem;
+            font-size: 0.7rem;
           }
         }
 
         .dashboard-Top-Mid {
           .dashboard-Top-Mid-Text-1,
           .dashboard-Top-Mid-Text-2 {
-            font-size: 0.9rem;
+            font-size: 0.7rem;
           }
 
           .dashboard-Top-Mid-Text-2 {
-            font-size: 0.7rem;
+            font-size: 0.5rem;
           }
         }
 
         .dashboard-Top-Right {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          text-align: center;
+          align-items: center;
+
           .dashboard-Top-Right-Text-1 {
             padding: 0;
-            font-size: 0.9rem;
+            font-size: 0.7rem;
             color: rgb(34, 34, 34);
             font-family: $fontOne;
             margin: 5px;
