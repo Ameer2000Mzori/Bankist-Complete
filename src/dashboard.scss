@@ -1,4 +1,12 @@
 $fontOne: "Poppins", "Helvetica Neue", helvetica, sans-serif;
+.dashboard-Page {
+  display: none;
+  transition: all 1500ms ease-in-out;
+}
+
+.dashboard-Page.ative {
+  display: block;
+}
 
 .dashboard {
   display: flex;
