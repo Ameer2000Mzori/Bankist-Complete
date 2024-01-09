@@ -75,6 +75,22 @@ export const showUserData = (userInfoObject) => {
 const userTransactions = (dataLoop) => {
   dataLoop.forEach((date) => {
     console.log(date);
+    const dashboardTransferCard = document.createElement("div");
+    dashboardTransferCard.classList.add("dashboard-Transfer-Card");
+
+    const typeOfTransfer = document.createElement("div");
+    typeOfTransfer.classList.add("type-Of-Transfer");
+    dashboardTransferCard.appendChild(typeOfTransfer);
+
+    const dateOfTransfer = document.createElement("div");
+    dateOfTransfer.classList.add("date-Of-Transfer");
+    dashboardTransferCard.appendChild(dateOfTransfer);
+
+    const amountOfTransfer = document.createElement("div");
+    amountOfTransfer.classList.add("amount-Of-Transfer");
+    dashboardTransferCard.appendChild(amountOfTransfer);
+
+    dashboardMidLeftWrap.appendChild(dashboardTransferCard);
   });
 
   /* <div class="dashboard-Transfer-Card">
