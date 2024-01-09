@@ -8,38 +8,38 @@ const dashboardTopMidText2 = document.getElementsByClassName(
 
 // this is time and greet func
 export const timeAndGreet = (userInfoObject) => {
-  setInterval(timeAndGreating, 1000);
   let userName = userInfoObject.userName;
-  timeAndGreating(userName);
-};
+  let greetingWord;
 
-// time and greeting func
-const timeAndGreating = (userName) => {
-  let time = new Date();
-  let year = time.getFullYear();
-  let month = time.getMonth() + 1;
-  let day = time.getDate();
-  let hour = time.getHours();
-  let min = time.getMinutes();
+  console.log(userInfoObject, userName);
 
-  let greetingWord =
-    hour >= 0 && hour < 6
-      ? "Good Night!"
-      : hour >= 6 && hour < 12
-      ? "Good Morning!"
-      : hour >= 12 && hour < 18
-      ? "Good Afternoon!"
-      : "Good Evening!";
+  let timerInterVal = setInterval(() => {
+    let time = new Date();
+    let year = time.getFullYear();
+    let month = time.getMonth() + 1;
+    let day = time.getDate();
+    let hour = time.getHours();
+    let min = time.getMinutes();
 
-  // greeting the user on the time hes
-  dashboardTopLeftText1.textContent = `${greetingWord} ${userName}`;
+    // check what time is it so we can greet the user!
+    greetingWord =
+      hour >= 0 && hour < 6
+        ? "Good Night!"
+        : hour >= 6 && hour < 12
+        ? "Good Morning!"
+        : hour >= 12 && hour < 18
+        ? "Good Afternoon!"
+        : "Good Evening!";
 
-  // setting the 0 before each number that is lower then 10
-  month < 10 ? (month = `0${month}`) : month;
-  day < 10 ? (day = `0${day}`) : day;
-  hour < 10 ? (hour = `0${hour}`) : hour;
-  min < 10 ? (min = `0${min}`) : min;
+    // checking if each one of them is not under 10 so we can add 0
+    month < 10 ? (month = `0${month}`) : month;
+    day < 10 ? (day = `0${day}`) : day;
+    hour < 10 ? (hour = `0${hour}`) : hour;
+    min < 10 ? (min = `0${min}`) : min;
 
-  // the date text under balance text
-  dashboardTopMidText2.textContent = `As of ${day}/${month}/${year}, ${hour}:${min}`;
+    // the date text under balance text
+
+    dashboardTopLeftText1.textContent = `${greetingWord} ${userName}`;
+    dashboardTopMidText2.textContent = `As of ${day}/${month}/${year}, ${hour}:${min}`;
+  }, 1000);
 };
