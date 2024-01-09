@@ -15,8 +15,30 @@ const dashboardTopRightText1 = document.getElementsByClassName(
   "dashboard-Top-Right-Text-1"
 )[0];
 
+//  selecting element left of page where the cards should be inserted
+const dashboardMidLeftWrap = document.getElementsByClassName(
+  "dashboard-Mid-Left-Wrap"
+)[0];
+
+// selected all right buttons
+const comfirmTransferBtn = document.getElementsByClassName(
+  "comfirm-Transfer-Btn"
+)[0];
+const requestLoanBtn = document.getElementsByClassName("request-Loan-Btn")[0];
+const comfirmConfirmPIN = document.getElementsByClassName(
+  "comfirm-Confirm-PIN"
+)[0];
+
 // data object
 
 // functions
 
 // event linsters
+
+// html tree loop up
+
+/* <div class="dashboard-Transfer-Card">
+<div class="type-Of-Transfer">Depost</div>
+<div class="date-Of-Transfer">19/12/2023</div>
+<div class="amount-Of-Transfer">10$</div>
+</div> */
