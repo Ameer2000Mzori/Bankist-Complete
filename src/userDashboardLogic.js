@@ -52,6 +52,8 @@ const dashboardBottomText1 = document.getElementsByClassName(
 // data object
 
 // functions
+
+// login timer interval for elements to hide or unhide!
 const loginTimer = () => {
   landingPageEl.classList.add("active");
   loading.classList.remove("active");
@@ -68,7 +70,26 @@ const loginTimer = () => {
   }, 500);
 };
 
+// logout functions
+const accountLogout = () => {
+  dashboardPageEl.classList.remove("active");
+  loading.classList.remove("active");
+  let loginCounter = 0;
+
+  let logininterval = setInterval(() => {
+    if (loginCounter < 10) {
+      loginCounter++;
+    } else {
+      loginCounter = 0;
+      clearInterval(logininterval);
+      landingPageEl.classList.remove("active");
+      loading.classList.add("active");
+    }
+  }, 500);
+};
+
 // event linsters
+dashboardLogoutBtn.addEventListener("click", accountLogout);
 
 // html tree loop up
 
