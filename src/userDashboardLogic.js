@@ -1,5 +1,6 @@
 //importing
 import { userDashBoardTimer } from "./userDashboardTimer.js";
+import { timeAndGreet } from "./timeAndGreet.js";
 // selecting elements
 
 // selecting pages :
@@ -13,12 +14,7 @@ const dashboardLogoutBtn = document.getElementsByClassName(
 )[0];
 
 // selecting titles :
-const dashboardTopLeftText1 = document.getElementsByClassName(
-  "dashboard-Top-Left-Text-1"
-)[0];
-const dashboardTopMidText2 = document.getElementsByClassName(
-  "dashboard-Top-Mid-Text-2"
-)[0];
+
 const dashboardTopRightText1 = document.getElementsByClassName(
   "dashboard-Top-Right-Text-1"
 )[0];
@@ -55,13 +51,14 @@ const dashboardBottomLeftSortBtn = document.getElementsByClassName(
 // show user data / info
 export const showUserData = (userInfoObject) => {
   console.log("user loged in info is :", userInfoObject);
+
+  // setting time function and greeting
+  timeAndGreet(userInfoObject);
+
+  // starting the timer
   userDashBoardTimer();
-  // Get an array of keys from the userInfoObject
-  const keys = Object.keys(userInfoObject);
 
   // inserting data dynamiclly :
-  dashboardTopLeftText1.textContent = userInfoObject.userName;
-  dashboardTopMidText2.textContent = `this is time text`;
   dashboardTopRightText1.textContent = `${userInfoObject.balance}$`;
 
   // inserting data mid for transactions cards!
@@ -158,5 +155,3 @@ export const accountLogout = () => {
 
 // event linsters
 dashboardLogoutBtn.addEventListener("click", accountLogout);
-
-// html tree loop up
