@@ -1,15 +1,17 @@
 .dashboard-Page {
   display: none;
+  opacity: 0;
   transition: all 1500ms ease-in-out;
 }
 
 .dashboard-Page.active {
   display: block;
+  opacity: 1;
 }
 
 .loading {
   height: 100vh;
-  display: flex;
+  opacity: 1;
   flex-direction: column;
   text-align: center;
   align-items: center;
@@ -18,7 +20,7 @@
 }
 
 .loading.active {
-  display: none;
+  opacity: 0;
 }
 
 .dashboard {
@@ -30,6 +32,7 @@
   height: 100vh;
   background-color: rgb(209, 209, 209);
   transition: all 3000ms ease-in-out;
+  opacity: 1;
 }
 
 .dashboard .dashboard-Wrap {
