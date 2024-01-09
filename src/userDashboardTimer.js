@@ -1,9 +1,14 @@
 // importing
 import { accountLogout } from "./userDashboardLogic.js";
 
+// selecting elements
+const dashboardBottomText1 = document.getElementsByClassName(
+  "dash-board-Bottom-Text-1"
+)[0];
+
 // our functions
 export const userDashBoardTimer = () => {
-  let minCount = 3;
+  let minCount = 10;
   let seconds = 0;
 
   let timerInterval = setInterval(() => {
@@ -20,7 +25,6 @@ export const userDashBoardTimer = () => {
       clearInterval(timerInterval);
       accountLogout();
     }
-  }, 200);
+    dashboardBottomText1.textContent = `You will be logged out in 0${minCount}:${seconds}`;
+  }, 1000);
 };
-
-userDashBoardTimer();

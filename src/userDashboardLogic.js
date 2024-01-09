@@ -47,9 +47,6 @@ const dashboardBottomLeftOutWrap = document.getElementsByClassName(
 const dashboardBottomLeftSortBtn = document.getElementsByClassName(
   "dashboard-Bottom-Left-Sort-Btn"
 )[0];
-const dashboardBottomText1 = document.getElementsByClassName(
-  "dash-board-Bottom-Text-1"
-)[0];
 
 // data object
 
