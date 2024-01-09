@@ -7,6 +7,7 @@
   height: 100vh;
   background-color: rgb(209, 209, 209);
 }
+
 .dashboard .dashboard-Wrap {
   width: 769px;
   height: 600px;
@@ -18,6 +19,7 @@
   border: solid white 2px;
   border-radius: 17px 17px 0 0;
 }
+
 .dashboard .dashboard-Wrap .dashboard-Top {
   display: flex;
   flex-direction: row;
@@ -29,10 +31,12 @@
   background-color: aliceblue;
   border-radius: 15px 15px 0 0;
 }
+
 .dashboard .dashboard-Wrap .dashboard-Top .dashboard-Top-Left {
   padding: 0;
   margin: 0;
 }
+
 .dashboard .dashboard-Wrap .dashboard-Top .dashboard-Top-Left .dashboard-Top-Left-Text-1 {
   padding: 0;
   font-family: "Poppins", "Helvetica Neue", helvetica, sans-serif;
@@ -40,10 +44,12 @@
   color: rgb(34, 34, 34);
   margin: 5px;
 }
+
 .dashboard .dashboard-Wrap .dashboard-Top .dashboard-Top-Mid {
   padding: 0;
   margin: 0;
 }
+
 .dashboard .dashboard-Wrap .dashboard-Top .dashboard-Top-Mid .dashboard-Top-Mid-Text-1,
 .dashboard .dashboard-Wrap .dashboard-Top .dashboard-Top-Mid .dashboard-Top-Mid-Text-2 {
   padding: 0;
@@ -52,10 +58,12 @@
   color: rgb(34, 34, 34);
   font-family: "Poppins", "Helvetica Neue", helvetica, sans-serif;
 }
+
 .dashboard .dashboard-Wrap .dashboard-Top .dashboard-Top-Mid .dashboard-Top-Mid-Text-2 {
   color: gray;
   font-size: 0.8rem;
 }
+
 .dashboard .dashboard-Wrap .dashboard-Top .dashboard-Top-Right {
   display: flex;
   flex-direction: column;
@@ -64,6 +72,7 @@
   align-items: start;
   justify-content: start;
 }
+
 .dashboard .dashboard-Wrap .dashboard-Top .dashboard-Top-Right .dashboard-Top-Right-Text-1 {
   padding: 0;
   font-size: 1.2rem;
@@ -71,6 +80,7 @@
   font-family: "Poppins", "Helvetica Neue", helvetica, sans-serif;
   margin: 5px;
 }
+
 .dashboard .dashboard-Wrap .dashboard-Mid {
   height: 75%;
   width: 100%;
@@ -80,6 +90,7 @@
   align-items: center;
   justify-content: space-between;
 }
+
 .dashboard .dashboard-Wrap .dashboard-Mid .dashboard-Mid-Left {
   height: 100%;
   width: 65%;
@@ -87,6 +98,7 @@
   border-radius: 0 15px 15px 0;
   overflow: hidden;
 }
+
 .dashboard .dashboard-Wrap .dashboard-Mid .dashboard-Mid-Left .dashboard-Mid-Left-Wrap {
   height: 100%;
   width: 100%;
@@ -98,6 +110,7 @@
   overflow-x: hidden;
   gap: 1px;
 }
+
 .dashboard .dashboard-Wrap .dashboard-Mid .dashboard-Mid-Left .dashboard-Mid-Left-Wrap .dashboard-Transfer-Card {
   width: 100%;
   height: 40px;
@@ -113,6 +126,7 @@
   border-right: none;
   padding: 1px;
 }
+
 .dashboard .dashboard-Wrap .dashboard-Mid .dashboard-Mid-Right {
   height: 100%;
   width: 30%;
@@ -124,6 +138,7 @@
   background-color: aliceblue;
   border-radius: 15px 0 0 15px;
 }
+
 .dashboard .dashboard-Wrap .dashboard-Mid .dashboard-Mid-Right .dashboard-Mid-Top,
 .dashboard .dashboard-Wrap .dashboard-Mid .dashboard-Mid-Right .dashboard-Mid-Mid,
 .dashboard .dashboard-Wrap .dashboard-Mid .dashboard-Mid-Right .dashboard-Mid-Bottom {
@@ -138,6 +153,7 @@
   background-color: rgb(0, 196, 10);
   color: white;
 }
+
 .dashboard .dashboard-Wrap .dashboard-Mid .dashboard-Mid-Right .dashboard-Mid-Top .dashboard-Card-Wrap,
 .dashboard .dashboard-Wrap .dashboard-Mid .dashboard-Mid-Right .dashboard-Mid-Mid .dashboard-Card-Wrap,
 .dashboard .dashboard-Wrap .dashboard-Mid .dashboard-Mid-Right .dashboard-Mid-Bottom .dashboard-Card-Wrap {
@@ -150,6 +166,7 @@
   height: 100%;
   font-family: "Poppins", "Helvetica Neue", helvetica, sans-serif;
 }
+
 .dashboard .dashboard-Wrap .dashboard-Mid .dashboard-Mid-Right .dashboard-Mid-Top .dashboard-Card-Wrap .dashboard-Card-Inputs-Wrap .dashboard-Card-Inputs,
 .dashboard .dashboard-Wrap .dashboard-Mid .dashboard-Mid-Right .dashboard-Mid-Mid .dashboard-Card-Wrap .dashboard-Card-Inputs-Wrap .dashboard-Card-Inputs,
 .dashboard .dashboard-Wrap .dashboard-Mid .dashboard-Mid-Right .dashboard-Mid-Bottom .dashboard-Card-Wrap .dashboard-Card-Inputs-Wrap .dashboard-Card-Inputs {
@@ -160,6 +177,7 @@
   padding-left: 15px;
   font-family: "Poppins", "Helvetica Neue", helvetica, sans-serif;
 }
+
 .dashboard .dashboard-Wrap .dashboard-Mid .dashboard-Mid-Right .dashboard-Mid-Top .dashboard-Card-Wrap .dashboard-Card-Inputs-Wrap .dashboard-Card-Inputs-Buttons,
 .dashboard .dashboard-Wrap .dashboard-Mid .dashboard-Mid-Right .dashboard-Mid-Mid .dashboard-Card-Wrap .dashboard-Card-Inputs-Wrap .dashboard-Card-Inputs-Buttons,
 .dashboard .dashboard-Wrap .dashboard-Mid .dashboard-Mid-Right .dashboard-Mid-Bottom .dashboard-Card-Wrap .dashboard-Card-Inputs-Wrap .dashboard-Card-Inputs-Buttons {
@@ -170,6 +188,7 @@
   border-radius: 5px;
   cursor: pointer;
 }
+
 .dashboard .dashboard-Wrap .dashboard-Mid .dashboard-Mid-Right .dashboard-Mid-Top .dashboard-Card-Wrap .dashboard-Card-Inputs-Wrap .dashboard-Card-Inputs-Buttons:hover,
 .dashboard .dashboard-Wrap .dashboard-Mid .dashboard-Mid-Right .dashboard-Mid-Mid .dashboard-Card-Wrap .dashboard-Card-Inputs-Wrap .dashboard-Card-Inputs-Buttons:hover,
 .dashboard .dashboard-Wrap .dashboard-Mid .dashboard-Mid-Right .dashboard-Mid-Bottom .dashboard-Card-Wrap .dashboard-Card-Inputs-Wrap .dashboard-Card-Inputs-Buttons:hover {
@@ -177,17 +196,21 @@
   color: black;
   border: solid black 2px;
 }
+
 .dashboard .dashboard-Wrap .dashboard-Mid .dashboard-Mid-Right .dashboard-Mid-Top .dashboard-Card-Wrap .dashboard-Card-Inputs-Wrap .dashboard-Card-Inputs-Buttons:active,
 .dashboard .dashboard-Wrap .dashboard-Mid .dashboard-Mid-Right .dashboard-Mid-Mid .dashboard-Card-Wrap .dashboard-Card-Inputs-Wrap .dashboard-Card-Inputs-Buttons:active,
 .dashboard .dashboard-Wrap .dashboard-Mid .dashboard-Mid-Right .dashboard-Mid-Bottom .dashboard-Card-Wrap .dashboard-Card-Inputs-Wrap .dashboard-Card-Inputs-Buttons:active {
   transform: scale(0.9);
 }
+
 .dashboard .dashboard-Wrap .dashboard-Mid .dashboard-Mid-Right .dashboard-Mid-Mid {
   background-color: rgb(196, 72, 0);
 }
+
 .dashboard .dashboard-Wrap .dashboard-Mid .dashboard-Mid-Right .dashboard-Mid-Bottom {
   background-color: rgb(224, 1, 1);
 }
+
 .dashboard .dashboard-Wrap .dashboard-Bottom {
   display: flex;
   width: 100%;
@@ -201,6 +224,7 @@
   border-radius: 15px 15px 0 0;
   background-color: aliceblue;
 }
+
 .dashboard .dashboard-Wrap .dashboard-Bottom .dashboard-Bottom-Left {
   display: flex;
   width: 55%;
@@ -210,6 +234,7 @@
   justify-content: space-between;
   flex-direction: row;
 }
+
 .dashboard .dashboard-Wrap .dashboard-Bottom .dashboard-Bottom-Left .dashboard-Bottom-Left-In-Wrap,
 .dashboard .dashboard-Wrap .dashboard-Bottom .dashboard-Bottom-Left .dashboard-Bottom-Left-Out-Wrap {
   height: 50%;
@@ -223,9 +248,11 @@
   justify-content: center;
   width: 150px;
 }
+
 .dashboard .dashboard-Wrap .dashboard-Bottom .dashboard-Bottom-Left .dashboard-Bottom-Left-Out-Wrap {
   background-color: red;
 }
+
 .dashboard .dashboard-Wrap .dashboard-Bottom .dashboard-Bottom-Left .dashboard-Bottom-Left-Sort-Btn {
   background-color: transparent;
   border: solid black 2px;
@@ -237,14 +264,17 @@
   font-weight: 600;
   transition: all 50ms ease-in-out;
 }
+
 .dashboard .dashboard-Wrap .dashboard-Bottom .dashboard-Bottom-Left .dashboard-Bottom-Left-Sort-Btn:hover {
   color: white;
   background-color: black;
   border: solid white 2px;
 }
+
 .dashboard .dashboard-Wrap .dashboard-Bottom .dashboard-Bottom-Left .dashboard-Bottom-Left-Sort-Btn:active {
   transform: scale(0.9);
 }
+
 .dashboard .dashboard-Wrap .dashboard-Bottom .dashboard-Bottom-Right {
   width: 30%;
   height: 100%;
@@ -266,20 +296,25 @@
     height: 100vh;
     background-color: rgb(209, 209, 209);
   }
+
   .dashboard .dashboard-Wrap {
     width: 360px;
     height: 600px;
   }
+
   .dashboard .dashboard-Wrap .dashboard-Top .dashboard-Top-Left .dashboard-Top-Left-Text-1 {
     font-size: 0.9rem;
   }
+
   .dashboard .dashboard-Wrap .dashboard-Top .dashboard-Top-Mid .dashboard-Top-Mid-Text-1,
   .dashboard .dashboard-Wrap .dashboard-Top .dashboard-Top-Mid .dashboard-Top-Mid-Text-2 {
     font-size: 0.9rem;
   }
+
   .dashboard .dashboard-Wrap .dashboard-Top .dashboard-Top-Mid .dashboard-Top-Mid-Text-2 {
     font-size: 0.7rem;
   }
+
   .dashboard .dashboard-Wrap .dashboard-Top .dashboard-Top-Right .dashboard-Top-Right-Text-1 {
     padding: 0;
     font-size: 0.9rem;
@@ -287,60 +322,75 @@
     font-family: "Poppins", "Helvetica Neue", helvetica, sans-serif;
     margin: 5px;
   }
+
   .dashboard .dashboard-Wrap .dashboard-Mid .dashboard-Mid-Left {
     width: 55%;
   }
+
   .dashboard .dashboard-Wrap .dashboard-Mid .dashboard-Mid-Left .dashboard-Mid-Left-Wrap .dashboard-Transfer-Card .type-Of-Transfer {
     font-size: 0.8rem;
   }
+
   .dashboard .dashboard-Wrap .dashboard-Mid .dashboard-Mid-Left .dashboard-Mid-Left-Wrap .dashboard-Transfer-Card .date-Of-Transfer {
     font-size: 0.7rem;
   }
+
   .dashboard .dashboard-Wrap .dashboard-Mid .dashboard-Mid-Left .dashboard-Mid-Left-Wrap .dashboard-Transfer-Card .amount-Of-Transfer {
     font-size: 0.8rem;
   }
+
   .dashboard .dashboard-Wrap .dashboard-Mid .dashboard-Mid-Right {
     width: 40%;
   }
+
   .dashboard .dashboard-Wrap .dashboard-Mid .dashboard-Mid-Right .dashboard-Mid-Top .dashboard-Card-Wrap .dashboard-Card-Title,
   .dashboard .dashboard-Wrap .dashboard-Mid .dashboard-Mid-Right .dashboard-Mid-Mid .dashboard-Card-Wrap .dashboard-Card-Title,
   .dashboard .dashboard-Wrap .dashboard-Mid .dashboard-Mid-Right .dashboard-Mid-Bottom .dashboard-Card-Wrap .dashboard-Card-Title {
     font-size: 0.8rem;
   }
+
   .dashboard .dashboard-Wrap .dashboard-Mid .dashboard-Mid-Right .dashboard-Mid-Top .dashboard-Card-Wrap .dashboard-Card-Inputs-Wrap .dashboard-Card-Inputs,
   .dashboard .dashboard-Wrap .dashboard-Mid .dashboard-Mid-Right .dashboard-Mid-Mid .dashboard-Card-Wrap .dashboard-Card-Inputs-Wrap .dashboard-Card-Inputs,
   .dashboard .dashboard-Wrap .dashboard-Mid .dashboard-Mid-Right .dashboard-Mid-Bottom .dashboard-Card-Wrap .dashboard-Card-Inputs-Wrap .dashboard-Card-Inputs {
     width: 80%;
   }
+
   .dashboard .dashboard-Wrap .dashboard-Mid .dashboard-Mid-Right .dashboard-Mid-Top .dashboard-Card-Wrap .dashboard-Card-Inputs-Wrap .dashboard-Card-Inputs-Buttons,
   .dashboard .dashboard-Wrap .dashboard-Mid .dashboard-Mid-Right .dashboard-Mid-Mid .dashboard-Card-Wrap .dashboard-Card-Inputs-Wrap .dashboard-Card-Inputs-Buttons,
   .dashboard .dashboard-Wrap .dashboard-Mid .dashboard-Mid-Right .dashboard-Mid-Bottom .dashboard-Card-Wrap .dashboard-Card-Inputs-Wrap .dashboard-Card-Inputs-Buttons {
     border: solid white 1px;
     width: 50%;
   }
+
   .dashboard .dashboard-Wrap .dashboard-Bottom {
     justify-content: space-between;
   }
+
   .dashboard .dashboard-Wrap .dashboard-Bottom .dashboard-Bottom-Left {
     width: 70%;
   }
+
   .dashboard .dashboard-Wrap .dashboard-Bottom .dashboard-Bottom-Left .dashboard-Bottom-Left-In-Wrap {
     font-size: 0.7rem;
   }
+
   .dashboard .dashboard-Wrap .dashboard-Bottom .dashboard-Bottom-Left .dashboard-Bottom-Left-Out-Wrap {
     font-size: 0.7rem;
   }
+
   .dashboard .dashboard-Wrap .dashboard-Bottom .dashboard-Bottom-Left .dashboard-Bottom-Left-Sort-Btn {
     cursor: pointer;
     width: 50px;
     font-size: 0.7rem;
   }
+
   .dashboard .dashboard-Wrap .dashboard-Bottom .dashboard-Bottom-Right {
     font-size: 0.6rem;
     text-align: center;
     width: 25%;
   }
 }
+
 .logout {
   width: 80%;
   height: 40px;
@@ -350,6 +400,7 @@
   align-items: end;
   justify-content: center;
 }
+
 .logout .logout-Wrap .dashboard-Logout-Btn {
   background-color: transparent;
   border: none;
@@ -357,8 +408,7 @@
   cursor: pointer;
   transition: all 50ms ease-in-out;
 }
+
 .logout .logout-Wrap .dashboard-Logout-Btn:active {
   transform: scale(0.9);
 }
-
-/*# sourceMappingURL=dashboard.css.map */
