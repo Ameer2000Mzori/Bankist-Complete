@@ -63,7 +63,7 @@ const loginTimer = () => {
       loginCounter = 0;
       clearInterval(logininterval);
       loading.classList.add("active");
-      dashboardPageEl.classList.remove("active");
+      dashboardPageEl.classList.add("active");
     }
   }, 500);
 };
