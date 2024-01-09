@@ -1,7 +1,13 @@
+// selecting pages :
+const landingPageEl = document.getElementsByClassName("landing-Page")[0];
+const dashboardPageEl = document.getElementsByClassName("dashboard-Page")[0];
+const loading = document.getElementsByClassName("loading")[0];
+
 // selecting elements
 const dashboardBottomText1 = document.getElementsByClassName(
   "dash-board-Bottom-Text-1"
 )[0];
+
 // logout btn
 const dashboardLogoutBtn = document.getElementsByClassName(
   "dashboard-Logout-Btn"
@@ -29,7 +35,7 @@ export const userDashBoardTimer = () => {
       accountLogout();
     }
     dashboardBottomText1.textContent = `You will be logged out in 0${minCount}:${seconds}`;
-  }, 50);
+  }, 1000);
 };
 
 // logout functions
@@ -37,7 +43,6 @@ let accountLogout = () => {
   dashboardPageEl.classList.remove("active");
   loading.classList.remove("active");
   let loginCounter = 0;
-  clearInterval(timerInterval);
   minCount = 0;
   seconds = 0;
 
