@@ -55,7 +55,7 @@ const dashboardBottomText1 = document.getElementsByClassName(
 
 // show user data / info
 const showUserData = (userInfoObject) => {
-  console.log(userInfoObject);
+  console.log("user info is :", userInfoObject);
 };
 
 // login timer interval for elements to hide or unhide!

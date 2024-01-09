@@ -84,13 +84,13 @@ const createAccountStepTwo = (userName, userEmail, userPass) => {
     minBalance: "0",
   };
 
-  accountsDataObj.push(newAccount);
-  console.log(accountsDataObj);
-  console.log(userName, userEmail, userPass);
-  cleanInputs(userName, userEmail, userPass);
-  alreadyTakenNotifyMessage(true);
   showUserData(newAccount);
   loginTimer();
+  accountsDataObj.push(newAccount);
+  alreadyTakenNotifyMessage(true);
+  // console.log(accountsDataObj);
+  // console.log(userName, userEmail, userPass);
+  cleanInputs(userName, userEmail, userPass);
 };
 
 // clean up the inputs function
@@ -127,7 +127,7 @@ const accountTake = () => {
 
 // account created
 const accountCreated = () => {
-  console.log("account already taken");
+  console.log("account created!");
   notificationMessageEl.style.backgroundColor = "green";
   notificationMessageEl.style.color = "black";
   notificationMessageEl.textContent = "account created";
