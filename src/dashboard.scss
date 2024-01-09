@@ -17,6 +17,11 @@ $fontOne: "Poppins", "Helvetica Neue", helvetica, sans-serif;
   text-align: center;
   align-items: center;
   justify-content: center;
+  transition: all 250ms ease-in-out;
+}
+
+.loading.active {
+  display: none;
 }
 
 // dashboard
