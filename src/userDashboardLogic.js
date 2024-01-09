@@ -62,12 +62,27 @@ export const showUserData = (userInfoObject) => {
 
   // inserting data dynamiclly :
   dashboardTopLeftText1.textContent = userInfoObject.userName;
+  dashboardTopMidText2.textContent = `this is time text`;
+  dashboardTopRightText1.textContent = userInfoObject.balance;
 
   // this is for date data!
+
   let dataLoop = userInfoObject.date;
+  userTransactions(dataLoop);
+};
+
+//userTransactions
+const userTransactions = (dataLoop) => {
   dataLoop.forEach((date) => {
     console.log(date);
   });
+
+  /* <div class="dashboard-Transfer-Card">
+<div class="type-Of-Transfer">Depost</div>
+<div class="date-Of-Transfer">19/12/2023</div>
+<div class="amount-Of-Transfer">10$</div>
+</div> 
+*/
 };
 
 // login timer interval for elements to hide or unhide!
@@ -86,9 +101,6 @@ export const loginTimer = () => {
     }
   }, 500);
 };
-
-// set the time + check if its day or night so we can greet our user!
-const timeData = () => {};
 
 // logout functions
 const accountLogout = () => {
@@ -112,10 +124,3 @@ const accountLogout = () => {
 dashboardLogoutBtn.addEventListener("click", accountLogout);
 
 // html tree loop up
-
-/* <div class="dashboard-Transfer-Card">
-<div class="type-Of-Transfer">Depost</div>
-<div class="date-Of-Transfer">19/12/2023</div>
-<div class="amount-Of-Transfer">10$</div>
-</div> 
-*/
