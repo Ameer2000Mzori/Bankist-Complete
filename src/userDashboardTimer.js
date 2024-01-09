@@ -1,3 +1,3 @@
-export const userDashboardTimer = () => {
+export const userDashBoardTimer = () => {
   console.log("timer started!");
 };

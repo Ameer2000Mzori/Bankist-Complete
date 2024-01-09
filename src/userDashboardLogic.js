@@ -1,5 +1,5 @@
 //importing
-import { userDashboardTimer } from "./userDashboardTimer.js";
+import { userDashBoardTimer } from "./userDashboardTimer.js";
 // selecting elements
 
 // selecting pages :
@@ -58,7 +58,7 @@ const dashboardBottomText1 = document.getElementsByClassName(
 // show user data / info
 export const showUserData = (userInfoObject) => {
   console.log("user loged in info is :", userInfoObject);
-  userDashboardTimer();
+  userDashBoardTimer();
   // Get an array of keys from the userInfoObject
   const keys = Object.keys(userInfoObject);
 
