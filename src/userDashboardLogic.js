@@ -29,6 +29,20 @@ const comfirmConfirmPIN = document.getElementsByClassName(
   "comfirm-Confirm-PIN"
 )[0];
 
+// selected all bottom titles in and out and sort
+const dashboardBottomLeftInWrap = document.getElementsByClassName(
+  "dashboard-Bottom-Left-In-Wrap"
+)[0];
+const dashboardBottomLeftOutWrap = document.getElementsByClassName(
+  "dashboard-Bottom-Left-Out-Wrap"
+)[0];
+const dashboardBottomLeftSortBtn = document.getElementsByClassName(
+  "dashboard-Bottom-Left-Sort-Btn"
+)[0];
+const dashboardBottomText1 = document.getElementsByClassName(
+  "dash-board-Bottom-Text-1"
+)[0];
+
 // data object
 
 // functions
