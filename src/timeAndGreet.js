@@ -8,12 +8,11 @@ const dashboardTopMidText2 = document.getElementsByClassName(
 
 // this is time and greet func
 export const timeAndGreet = (userInfoObject) => {
+  // greeting the user!
   let userName = userInfoObject.userName;
-  let greetingWord;
 
-  console.log(userInfoObject, userName);
-
-  let timerInterVal = setInterval(() => {
+  // our interval to change greeting text and date dynamiclly!
+  setInterval(() => {
     let time = new Date();
     let year = time.getFullYear();
     let month = time.getMonth() + 1;
@@ -22,7 +21,7 @@ export const timeAndGreet = (userInfoObject) => {
     let min = time.getMinutes();
 
     // check what time is it so we can greet the user!
-    greetingWord =
+    let greetingWord =
       hour >= 0 && hour < 6
         ? "Good Night!"
         : hour >= 6 && hour < 12
