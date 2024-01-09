@@ -68,10 +68,6 @@ export const showUserData = (userInfoObject) => {
 //userTransactions
 const userTransactions = (dataLoop) => {
   // creating our data before the loop
-  let time = new Date();
-  let year = time.getFullYear();
-  let month = time.getMonth() + 1;
-  let day = time.getDate();
 
   // the for each loop card!
   dataLoop.forEach((date) => {
@@ -89,11 +85,24 @@ const userTransactions = (dataLoop) => {
     const dateOfTransfer = document.createElement("div");
     dateOfTransfer.classList.add("date-Of-Transfer");
 
-    if (year === userYear && month === userMonth && day === userDay) {
-      dateOfTransfer.textContent = `today`;
+    let time = new Date();
+    let year = time.getFullYear();
+    let month = time.getMonth() + 1;
+    let day = time.getDate();
+
+    let userYear = parseInt(date.year, 10);
+    let userMonth = parseInt(date.month, 10);
+    let userDay = parseInt(date.day, 10);
+
+    if (year == userYear && month == userMonth && day == userDay) {
+      dateOfTransfer.textContent = `Today`;
     } else {
+      userYear < 10 ? (userYear = `0${userYear}`) : userYear;
+      userMonth < 10 ? (userMonth = `0${userMonth}`) : userMonth;
+      userDay < 10 ? (userDay = `0${userDay}`) : userDay;
       dateOfTransfer.textContent = `${userDay}/${userMonth}/${userYear}`;
     }
+
     dashboardTransferCard.appendChild(dateOfTransfer);
 
     const amountOfTransfer = document.createElement("div");
