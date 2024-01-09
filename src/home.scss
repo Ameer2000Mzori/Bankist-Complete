@@ -11,6 +11,15 @@ body {
   margin: 0;
   position: relative;
 }
+// landing page style
+.landing-Page {
+  display: block;
+  transition: all 500ms ease-in-out;
+}
+
+.landing-Page.ative {
+  display: none;
+}
 
 //  navbar
 .navbar {
