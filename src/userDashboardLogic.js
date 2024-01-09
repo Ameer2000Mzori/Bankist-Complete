@@ -80,14 +80,20 @@ const userTransactions = (dataLoop) => {
 
     const typeOfTransfer = document.createElement("div");
     typeOfTransfer.classList.add("type-Of-Transfer");
+    typeOfTransfer.textContent = date.transaction < 0 ? "depost" : "income";
+    typeOfTransfer.style.color = "white";
+    typeOfTransfer.style.backgroundColor =
+      date.transaction < 0 ? "red" : "green";
     dashboardTransferCard.appendChild(typeOfTransfer);
 
     const dateOfTransfer = document.createElement("div");
     dateOfTransfer.classList.add("date-Of-Transfer");
+    dateOfTransfer.textContent = `${date.day}/${date.month}/${date.year}`;
     dashboardTransferCard.appendChild(dateOfTransfer);
 
     const amountOfTransfer = document.createElement("div");
     amountOfTransfer.classList.add("amount-Of-Transfer");
+    amountOfTransfer.textContent = `${date.transaction}$`;
     dashboardTransferCard.appendChild(amountOfTransfer);
 
     dashboardMidLeftWrap.appendChild(dashboardTransferCard);
