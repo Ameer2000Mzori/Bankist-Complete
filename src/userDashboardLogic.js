@@ -3,6 +3,7 @@
 // selecting pages :
 const landingPageEl = document.getElementsByClassName("landing-Page")[0];
 const dashboardPageEl = document.getElementsByClassName("dashboard-Page")[0];
+const loading = document.getElementsByClassName("loading")[0];
 
 // logout btn
 const dashboardLogoutBtn = document.getElementsByClassName(
@@ -53,6 +54,7 @@ const dashboardBottomText1 = document.getElementsByClassName(
 // functions
 const loginTimer = () => {
   landingPageEl.classList.add("active");
+  loading.classList.remove("active");
   let loginCounter = 0;
   let logininterval = setInterval(() => {
     if (loginCounter < 10) {
@@ -60,7 +62,8 @@ const loginTimer = () => {
     } else {
       loginCounter = 0;
       clearInterval(logininterval);
-      loadingAnimation();
+      loading.classList.add("active");
+      dashboardPageEl.classList.remove("active");
     }
   }, 500);
 };
