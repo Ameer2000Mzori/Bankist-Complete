@@ -1,3 +1,5 @@
+//importing
+import { userDashboardTimer } from "./userDashboardTimer.js";
 // selecting elements
 
 // selecting pages :
@@ -56,14 +58,14 @@ const dashboardBottomText1 = document.getElementsByClassName(
 // show user data / info
 export const showUserData = (userInfoObject) => {
   console.log("user loged in info is :", userInfoObject);
-
+  userDashboardTimer();
   // Get an array of keys from the userInfoObject
   const keys = Object.keys(userInfoObject);
 
   // inserting data dynamiclly :
   dashboardTopLeftText1.textContent = userInfoObject.userName;
   dashboardTopMidText2.textContent = `this is time text`;
-  dashboardTopRightText1.textContent = userInfoObject.balance;
+  dashboardTopRightText1.textContent = `${userInfoObject.balance}$`;
 
   // inserting data mid for transactions cards!
   let dataLoop = userInfoObject.date;
@@ -116,6 +118,8 @@ const userTotalMoney = (dataLoop) => {
       : (minBalance += transactions);
   });
 
+  dashboardBottomLeftInWrap.textContent = `in ${totalIncome}$`;
+  dashboardBottomLeftOutWrap.textContent = `out ${minBalance}$`;
   console.log("this is total income: ", totalIncome);
   console.log("this is total minBalance: ", minBalance);
 };
