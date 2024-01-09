@@ -65,10 +65,14 @@ export const showUserData = (userInfoObject) => {
   dashboardTopMidText2.textContent = `this is time text`;
   dashboardTopRightText1.textContent = userInfoObject.balance;
 
-  // this is for date data!
-
+  // inserting data mid for transactions cards!
   let dataLoop = userInfoObject.date;
   userTransactions(dataLoop);
+
+  // insterting data bottom
+  userTotalMoney(dataLoop);
+
+  // this is for date data!
 };
 
 //userTransactions
@@ -98,13 +102,22 @@ const userTransactions = (dataLoop) => {
 
     dashboardMidLeftWrap.appendChild(dashboardTransferCard);
   });
+};
 
-  /* <div class="dashboard-Transfer-Card">
-<div class="type-Of-Transfer">Depost</div>
-<div class="date-Of-Transfer">19/12/2023</div>
-<div class="amount-Of-Transfer">10$</div>
-</div> 
-*/
+// user total money
+const userTotalMoney = (dataLoop) => {
+  let minBalance = 0;
+  let totalIncome = 0;
+
+  dataLoop.forEach((data) => {
+    let transactions = data.transaction;
+    transactions > 0
+      ? (totalIncome += transactions)
+      : (minBalance += transactions);
+  });
+
+  console.log("this is total income: ", totalIncome);
+  console.log("this is total minBalance: ", minBalance);
 };
 
 // login timer interval for elements to hide or unhide!

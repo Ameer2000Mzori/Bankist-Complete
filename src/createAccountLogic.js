@@ -43,6 +43,7 @@ export const accountsDataObj = [
     ],
     currency: "$",
     balance: "500",
+    totalBalance: "600",
     minBalance: "-100",
   },
 ];
@@ -79,6 +80,7 @@ const createAccountStepTwo = (userName, userEmail, userPass) => {
     userPass,
     date: [],
     currency: "$",
+    totalBalance: "0",
     balance: "0",
     minBalance: "0",
   };
