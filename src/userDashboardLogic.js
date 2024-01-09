@@ -54,12 +54,12 @@ const dashboardBottomText1 = document.getElementsByClassName(
 // functions
 
 // show user data / info
-const showUserData = (userInfoObject) => {
-  console.log("user info is :", userInfoObject);
+export const showUserData = (userInfoObject) => {
+  console.log("user loged in info is :", userInfoObject);
 };
 
 // login timer interval for elements to hide or unhide!
-const loginTimer = () => {
+export const loginTimer = () => {
   landingPageEl.classList.add("active");
   loading.classList.remove("active");
   let loginCounter = 0;
@@ -103,7 +103,3 @@ dashboardLogoutBtn.addEventListener("click", accountLogout);
 <div class="date-Of-Transfer">19/12/2023</div>
 <div class="amount-Of-Transfer">10$</div>
 </div> */
-
-// exportings
-export default loginTimer;
-showUserData;

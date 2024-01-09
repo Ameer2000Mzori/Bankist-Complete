@@ -1,7 +1,6 @@
 // imports
-import accountsDataObj from "./createAccountLogic.js";
-import loginTimer from "./userDashboardLogic.js";
-import showUserData from "./userDashboardLogic.js";
+import { accountsDataObj } from "./createAccountLogic.js";
+import { loginTimer, showUserData } from "./userDashboardLogic.js";
 
 // selecting elements
 const loginEmailInput = document.getElementById("login-Email-Input");
@@ -18,7 +17,7 @@ const loginToAccount = () => {
   let loginUserPass = loginPasswordInput.value;
 
   const matchingObject = accountsDataObj.find(
-    (obj) => obj.userName === loginUserEmail && obj.userPass === loginUserPass
+    (obj) => obj.userEmail === loginUserEmail && obj.userPass === loginUserPass
   );
 
   matchingObject ? userFound(matchingObject) : userNotFoundNoty();

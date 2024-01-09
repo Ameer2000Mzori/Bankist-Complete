@@ -1,6 +1,5 @@
 // imports
-import loginTimer from "./userDashboardLogic.js";
-import showUserData from "./userDashboardLogic.js";
+import { loginTimer, showUserData } from "./userDashboardLogic.js";
 
 // selecting elements
 const accountEl = document.getElementsByClassName("account")[0];
@@ -17,7 +16,7 @@ const notificationMessageEl = document.getElementsByClassName(
 
 // gelobal varibales
 let userNew = true;
-const accountsDataObj = [
+export const accountsDataObj = [
   {
     userName: "Ameer",
     userEmail: "Ameer",
@@ -84,12 +83,23 @@ const createAccountStepTwo = (userName, userEmail, userPass) => {
     minBalance: "0",
   };
 
-  showUserData(newAccount);
   loginTimer();
   accountsDataObj.push(newAccount);
   alreadyTakenNotifyMessage(true);
-  // console.log(accountsDataObj);
-  // console.log(userName, userEmail, userPass);
+  checkUser(userName, userEmail, userPass);
+  console.log(accountsDataObj);
+};
+
+// checkuser function, sending data to dashboard logic
+const checkUser = (userName, userEmail, userPass) => {
+  let matchingObject = accountsDataObj.find(
+    (obj) =>
+      obj.userName === userName &&
+      obj.userEmail === userEmail &&
+      obj.userPass === userPass
+  );
+
+  showUserData(matchingObject);
   cleanInputs(userName, userEmail, userPass);
 };
 
@@ -135,4 +145,3 @@ const accountCreated = () => {
 };
 // eventlinsters
 submitCreationAccountBtn.addEventListener("click", createAccount);
-export default accountsDataObj;
