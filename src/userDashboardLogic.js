@@ -142,7 +142,7 @@ export const loginTimer = () => {
 };
 
 // logout functions
-const accountLogout = () => {
+export const accountLogout = () => {
   dashboardPageEl.classList.remove("active");
   loading.classList.remove("active");
   let loginCounter = 0;
