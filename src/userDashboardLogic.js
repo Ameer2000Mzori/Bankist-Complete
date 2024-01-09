@@ -56,6 +56,18 @@ const dashboardBottomText1 = document.getElementsByClassName(
 // show user data / info
 export const showUserData = (userInfoObject) => {
   console.log("user loged in info is :", userInfoObject);
+
+  // Get an array of keys from the userInfoObject
+  const keys = Object.keys(userInfoObject);
+
+  // inserting data dynamiclly :
+  dashboardTopLeftText1.textContent = userInfoObject.userName;
+
+  // this is for date data!
+  let dataLoop = userInfoObject.date;
+  dataLoop.forEach((date) => {
+    console.log(date);
+  });
 };
 
 // login timer interval for elements to hide or unhide!
@@ -74,6 +86,9 @@ export const loginTimer = () => {
     }
   }, 500);
 };
+
+// set the time + check if its day or night so we can greet our user!
+const timeData = () => {};
 
 // logout functions
 const accountLogout = () => {
@@ -102,4 +117,5 @@ dashboardLogoutBtn.addEventListener("click", accountLogout);
 <div class="type-Of-Transfer">Depost</div>
 <div class="date-Of-Transfer">19/12/2023</div>
 <div class="amount-Of-Transfer">10$</div>
-</div> */
+</div> 
+*/
