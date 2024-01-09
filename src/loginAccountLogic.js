@@ -1,5 +1,7 @@
 // imports
 import accountsDataObj from "./createAccountLogic.js";
+import loginTimer from "./userDashboardLogic.js";
+
 // selecting elements
 const loginEmailInput = document.getElementById("login-Email-Input");
 const loginPasswordInput = document.getElementById("login-Password-Input");
@@ -43,6 +45,7 @@ const userFoundNoty = () => {
   notificationMessageEl.textContent = "LOGGED IN";
   notificationMessageEl.classList.add("active");
   userNoty();
+  loginTimer();
   cleanInputs(loginEmailInput, loginPasswordInput);
 };
 

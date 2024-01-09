@@ -33,6 +33,7 @@ $fontOne: "Poppins", "Helvetica Neue", helvetica, sans-serif;
   justify-content: center;
   height: 100vh;
   background-color: rgb(209, 209, 209);
+  transition: all 500ms ease-in-out;
 
   .dashboard-Wrap {
     width: 769px;

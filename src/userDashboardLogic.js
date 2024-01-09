@@ -77,3 +77,6 @@ const loginTimer = () => {
 <div class="date-Of-Transfer">19/12/2023</div>
 <div class="amount-Of-Transfer">10$</div>
 </div> */
+
+// exportings
+export default loginTimer;
