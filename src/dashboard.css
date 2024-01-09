@@ -350,5 +350,15 @@
   align-items: end;
   justify-content: center;
 }
+.logout .logout-Wrap .dashboard-Logout-Btn {
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 50ms ease-in-out;
+}
+.logout .logout-Wrap .dashboard-Logout-Btn:active {
+  transform: scale(0.9);
+}
 
 /*# sourceMappingURL=dashboard.css.map */
