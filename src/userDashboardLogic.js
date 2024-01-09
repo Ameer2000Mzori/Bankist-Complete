@@ -51,6 +51,19 @@ const dashboardBottomText1 = document.getElementsByClassName(
 // data object
 
 // functions
+const loginTimer = () => {
+  landingPageEl.classList.add("active");
+  let loginCounter = 0;
+  let logininterval = setInterval(() => {
+    if (loginCounter < 10) {
+      loginCounter++;
+    } else {
+      loginCounter = 0;
+      clearInterval(logininterval);
+      loadingAnimation();
+    }
+  }, 500);
+};
 
 // event linsters
 
