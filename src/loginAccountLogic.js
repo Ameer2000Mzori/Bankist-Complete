@@ -1,6 +1,7 @@
 // imports
 import accountsDataObj from "./createAccountLogic.js";
 import loginTimer from "./userDashboardLogic.js";
+import showUserData from "./userDashboardLogic.js";
 
 // selecting elements
 const loginEmailInput = document.getElementById("login-Email-Input");
@@ -25,9 +26,8 @@ const loginToAccount = () => {
 
 // user found function
 const userFound = (matchingObject) => {
-  console.log("this user is found!");
   console.log("the user data is :", matchingObject);
-  userFoundNoty();
+  userFoundNoty(matchingObject);
 };
 
 const userNotFoundNoty = () => {
@@ -39,12 +39,13 @@ const userNotFoundNoty = () => {
 };
 
 // account created
-const userFoundNoty = () => {
+const userFoundNoty = (matchingObject) => {
   notificationMessageEl.style.backgroundColor = "green";
   notificationMessageEl.style.color = "black";
   notificationMessageEl.textContent = "LOGGED IN";
   notificationMessageEl.classList.add("active");
   userNoty();
+  showUserData(matchingObject);
   loginTimer();
   cleanInputs(loginEmailInput, loginPasswordInput);
 };

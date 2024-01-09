@@ -1,5 +1,6 @@
 // imports
 import loginTimer from "./userDashboardLogic.js";
+import showUserData from "./userDashboardLogic.js";
 
 // selecting elements
 const accountEl = document.getElementsByClassName("account")[0];
@@ -88,6 +89,7 @@ const createAccountStepTwo = (userName, userEmail, userPass) => {
   console.log(userName, userEmail, userPass);
   cleanInputs(userName, userEmail, userPass);
   alreadyTakenNotifyMessage(true);
+  showUserData(newAccount);
   loginTimer();
 };
 
