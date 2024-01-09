@@ -57,7 +57,7 @@ let accountLogout = () => {
     if (loginCounter < 10) {
       loginCounter++;
     } else {
-      timeAndGreet(false);
+      timeAndGreet(false, false);
       loginCounter = 0;
       clearInterval(logininterval);
       landingPageEl.classList.remove("active");

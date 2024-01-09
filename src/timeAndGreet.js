@@ -6,11 +6,12 @@ const dashboardTopMidText2 = document.getElementsByClassName(
   "dashboard-Top-Mid-Text-2"
 )[0];
 
+let userName;
+let timeAndGreetInterval;
 // this is time and greet func
 export const timeAndGreet = (userInfoObject, greet) => {
   // greeting the user!
-  let userName = userInfoObject.userName;
-  let timeAndGreetInterval;
+  userName = userInfoObject.userName;
   // loggedin boolean
 
   // our interval to change greeting text and date dynamiclly!
@@ -44,12 +45,10 @@ export const timeAndGreet = (userInfoObject, greet) => {
       console.log(`As of ${day}/${month}/${year}, ${hour}:${min}`);
       dashboardTopLeftText1.textContent = `${greetingWord} ${userName}`;
       dashboardTopMidText2.textContent = `As of ${day}/${month}/${year}, ${hour}:${min}`;
-
-      if (greet == false) {
-        console.log("faled and everything stopped!");
-        clearInterval(timeAndGreetInterval);
-        userName = ``;
-      }
     }, 1000);
+  } else {
+    console.log("stopped timer!");
+    clearInterval(timeAndGreetInterval);
+    userName = ``;
   }
 };
