@@ -1,7 +1,7 @@
 .dashboard-Page {
   display: none;
   opacity: 0;
-  transition: all 1500ms ease-in-out;
+  transition: all 750ms ease-in-out;
 }
 
 .dashboard-Page.active {
@@ -16,11 +16,13 @@
   text-align: center;
   align-items: center;
   justify-content: center;
-  transition: all 3000ms ease-in-out;
+  display: flex;
+  transition: all 750ms ease-in-out;
 }
 
 .loading.active {
   opacity: 0;
+  display: none;
 }
 
 .dashboard {
