@@ -8,11 +8,6 @@ const landingPageEl = document.getElementsByClassName("landing-Page")[0];
 const dashboardPageEl = document.getElementsByClassName("dashboard-Page")[0];
 const loading = document.getElementsByClassName("loading")[0];
 
-// logout btn
-const dashboardLogoutBtn = document.getElementsByClassName(
-  "dashboard-Logout-Btn"
-)[0];
-
 // selecting titles :
 
 const dashboardTopRightText1 = document.getElementsByClassName(
@@ -134,24 +129,3 @@ export const loginTimer = () => {
     }
   }, 500);
 };
-
-// logout functions
-export const accountLogout = () => {
-  dashboardPageEl.classList.remove("active");
-  loading.classList.remove("active");
-  let loginCounter = 0;
-
-  let logininterval = setInterval(() => {
-    if (loginCounter < 10) {
-      loginCounter++;
-    } else {
-      loginCounter = 0;
-      clearInterval(logininterval);
-      landingPageEl.classList.remove("active");
-      loading.classList.add("active");
-    }
-  }, 500);
-};
-
-// event linsters
-dashboardLogoutBtn.addEventListener("click", accountLogout);
