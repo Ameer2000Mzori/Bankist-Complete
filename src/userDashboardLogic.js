@@ -4,6 +4,11 @@
 const landingPageEl = document.getElementsByClassName("landing-Page")[0];
 const dashboardPageEl = document.getElementsByClassName("dashboard-Page")[0];
 
+// logout btn
+const dashboardLogoutBtn = document.getElementsByClassName(
+  "dashboard-Logout-Btn"
+)[0];
+
 // selecting titles :
 const dashboardTopLeftText1 = document.getElementsByClassName(
   "dashboard-Top-Left-Text-1"
