@@ -34,6 +34,7 @@ const requestMoney = () => {
   console.log(`after returning money  :`, stringWithoutDecimal);
 
   userRequestedMoney(stringWithoutDecimal);
+  dashboardCardInputRequestLoan.value = "";
 };
 // this is userRequestedMoney function
 const userRequestedMoney = (stringWithoutDecimal) => {

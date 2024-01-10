@@ -54,32 +54,7 @@ export const accountsDataObj = [
     userName: "Ameen",
     userEmail: "Ameen",
     userPass: "Ameen",
-    date: [
-      {
-        day: "10",
-        month: "1",
-        year: "2024",
-        transaction: 100,
-      },
-      {
-        day: "7",
-        month: "1",
-        year: "2024",
-        transaction: 500,
-      },
-      {
-        day: "8",
-        month: "1",
-        year: "2024",
-        transaction: 500,
-      },
-      {
-        day: "3",
-        month: "1",
-        year: "2024",
-        transaction: -100,
-      },
-    ],
+    date: [],
     currency: "$",
     balance: 500,
   },

@@ -132,7 +132,7 @@ export const userTotalMoney = (dataLoop, userInfo) => {
   });
 
   let gotUser = accountsDataObj.find((user) => {
-    return user.userName === "Ameer";
+    return user.userName === userInfo.userName;
   });
 
   let leftBalance = totalIncome - Math.abs(minBalance);
