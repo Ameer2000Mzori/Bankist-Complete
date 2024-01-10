@@ -128,18 +128,17 @@ export const userTotalMoney = (dataLoop) => {
       : (minBalance += transactions);
   });
 
+  let leftBalance = totalIncome - Math.abs(minBalance);
+
+  dashboardTopRightText1.textContent = `${leftBalance}`;
   dashboardBottomLeftInWrap.textContent = `in ${totalIncome}$`;
   dashboardBottomLeftOutWrap.textContent = `out ${minBalance}$`;
-  if (minBalance.include("-")) {
-    console.log(minBalance);
-  }
-  let leftBalance = totalIncome - NewminBalance;
-
   console.log("this is total income: ", totalIncome);
   console.log("this is total minBalance: ", minBalance);
   console.log("this is  leftbalance: ", leftBalance);
   minBalance = 0;
   totalIncome = 0;
+  leftBalance = 0;
 };
 
 // login timer interval for elements to hide or unhide!
