@@ -31,9 +31,17 @@ const deleteAccount = () => {
   console.log("this is userEmail input", userEmailInput);
   console.log("this is userPass input", userPassInput);
 
-  accountsDataObj = accountsDataObj.filter((user) => {
-    user.userEmail !== userEmailInput && user.userPass !== userPassInput;
+  let indexToRemove = -1;
+
+  accountsDataObj.forEach((user, index) => {
+    if (user.userEmail === userEmailInput && user.userPass === userPassInput) {
+      indexToRemove = index;
+    }
   });
+
+  if (indexToRemove !== -1) {
+    accountsDataObj.splice(indexToRemove, 1);
+  }
 
   console.log("account deleted!");
   console.log("our user data after deletion: ", accountsDataObj);
