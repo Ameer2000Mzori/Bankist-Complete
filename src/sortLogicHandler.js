@@ -6,8 +6,9 @@ const dashboardBottomLeftSortBtn = document.getElementsByClassName(
 )[0];
 
 // gelobal varibales
-let sortBoolean = false;
+let sortBoolean = true;
 let ourUserData;
+let sortedInfo = [];
 
 // functions
 
@@ -17,20 +18,19 @@ export const getUserInfo = (gotUser) => {
 };
 
 const sortTransactions = () => {
-  console.log(ourUserData.date[0]);
-  let sortedInfo = [];
-  let lowestNumber = ourUserData.date[0];
-  if (!sortBoolean) {
+  console.log(ourUserData.date.length);
+
+  let sortedInfo = ourUserData.date.slice();
+
+  if (sortBoolean) {
+    sortBoolean = false;
+    sortedInfo.sort((a, b) => b.transaction - a.transaction);
+    console.log("Sorted data:", sortedInfo);
+  } else {
     sortBoolean = true;
-    for (let i = 0; i < ourUserData.date.length; i++) {
-      if (lowestNumber < ourUserData.date[i]) {
-        lowestNumber = ourUserData.date[i];
-        sortedInfo.push(lowestNumber);
-        console.log(lowestNumber);
-      }
-    }
+    sortedInfo.sort((a, b) => a.transaction - b.transaction);
+    console.log("Sorted data:", sortedInfo);
   }
-  console.log("sorted data:", sortedInfo);
 };
 
 //events
