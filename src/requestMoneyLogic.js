@@ -1,13 +1,10 @@
-// importing
-import { userInfoObject } from "./userDashboardLogic.js";
-
 // selected btn // selected inputs
-const requestLoanBtn = document.getElementsByClassName("request-Loan-Btn")[0];
+const requestLoanBtn = document.getElementById("request-Loan-Btn");
 
 // gelobal varibales
 let userInfo;
 // functions
-const getUserInformation = () => {
+export const getUserInformation = () => {
   userInfo = userInfoObject;
 };
 

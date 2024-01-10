@@ -2,6 +2,7 @@
 import { userDashBoardTimer } from "./userDashboardTimer.js";
 import { timeAndGreet } from "./timeAndGreet.js";
 import { deleteAccount } from "./deleteAccountLogic.js";
+import { getUserInformation } from "./requestMoneyLogic.js";
 
 // selecting elements
 
