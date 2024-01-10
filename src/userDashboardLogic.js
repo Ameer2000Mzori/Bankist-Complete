@@ -35,9 +35,6 @@ const dashboardBottomLeftInWrap = document.getElementsByClassName(
 const dashboardBottomLeftOutWrap = document.getElementsByClassName(
   "dashboard-Bottom-Left-Out-Wrap"
 )[0];
-const dashboardBottomLeftSortBtn = document.getElementsByClassName(
-  "dashboard-Bottom-Left-Sort-Btn"
-)[0];
 
 // gelobal obj
 let userInfo;
