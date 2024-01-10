@@ -54,13 +54,13 @@ const makeNewTransaction = (ourUser, stringWithoutDecimal) => {
   let year = time.getFullYear();
   let month = time.getMonth() + 1;
   let day = time.getDate();
-  parseInt(stringWithoutDecimal);
+  let numriInput = Number(stringWithoutDecimal);
 
   let newTransaction = {
     day: `${day}`,
     month: `${month}`,
     year: `${year}`,
-    transaction: stringWithoutDecimal,
+    transaction: numriInput,
   };
   ourUser.date.unshift(newTransaction);
   console.log(ourUser);

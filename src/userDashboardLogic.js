@@ -119,7 +119,7 @@ export const userTransactions = (dataLoop) => {
 export const userTotalMoney = (dataLoop) => {
   let minBalance = 0;
   let totalIncome = 0;
-  console.log(dataLoop);
+  console.log("our data loop", dataLoop);
 
   dataLoop.forEach((data) => {
     let transactions = data.transaction;
@@ -130,8 +130,14 @@ export const userTotalMoney = (dataLoop) => {
 
   dashboardBottomLeftInWrap.textContent = `in ${totalIncome}$`;
   dashboardBottomLeftOutWrap.textContent = `out ${minBalance}$`;
+  if (minBalance.include("-")) {
+    console.log(minBalance);
+  }
+  let leftBalance = totalIncome - NewminBalance;
+
   console.log("this is total income: ", totalIncome);
   console.log("this is total minBalance: ", minBalance);
+  console.log("this is  leftbalance: ", leftBalance);
   minBalance = 0;
   totalIncome = 0;
 };
