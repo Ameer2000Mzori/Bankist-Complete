@@ -16,7 +16,7 @@ const loginToAccount = () => {
   let loginUserEmail = loginEmailInput.value;
   let loginUserPass = loginPasswordInput.value;
 
-  const matchingObject = accountsDataObj.find(
+  let matchingObject = accountsDataObj.find(
     (obj) => obj.userEmail === loginUserEmail && obj.userPass === loginUserPass
   );
 

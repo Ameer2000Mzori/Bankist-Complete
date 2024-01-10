@@ -1,7 +1,8 @@
 //importing
 import { userDashBoardTimer } from "./userDashboardTimer.js";
 import { timeAndGreet } from "./timeAndGreet.js";
-import { userDeleteAccountData } from "./deleteAccountLogic.js";
+import { deleteAccount } from "./deleteAccountLogic.js";
+
 // selecting elements
 
 // selecting pages :
@@ -47,6 +48,7 @@ export const showUserData = (userInfoObject) => {
 
   // setting time function and greeting
   timeAndGreet(userInfoObject, true);
+
   // starting the timer
   userDashBoardTimer();
 
@@ -61,7 +63,7 @@ export const showUserData = (userInfoObject) => {
   userTotalMoney(dataLoop);
 
   // sending data to delete account if needed
-  userDeleteAccountData(userInfoObject);
+  deleteAccount(userInfoObject, false);
 };
 
 //userTransactions
