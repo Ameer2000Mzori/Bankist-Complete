@@ -64,6 +64,9 @@ export const showUserData = (userInfoObject) => {
 
   // sending data to delete account if needed
   deleteAccount(userInfoObject, false);
+
+  // seinding data of the user to loan logic file
+  getUserInformation(userInfoObject);
 };
 
 //userTransactions
