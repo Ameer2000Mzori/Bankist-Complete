@@ -18,12 +18,23 @@ const dashboardCardConfirmPIN = document.getElementById(
 
 // gelobal varibales
 (() => {
-  console.log(accountsDataObj);
+  console.log();
 })();
 // functions
 
+// delete account data holder
+export const userDeleteAccountData = (userInfoObject) => {
+  console.log(`got the data :`, userInfoObject);
+  let newObj = userInfoObject;
+  console.log("after putting the data inside new object:", newObj);
+};
+
 // this is delete account function
 const deleteAccount = () => {
+  console.log(
+    "this is the logged in user info in delete account:",
+    userInfoObject
+  );
   accountLogout();
 
   let userEmailInput = dashboardCardConfirmUser.value;
