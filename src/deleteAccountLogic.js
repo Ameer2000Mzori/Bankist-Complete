@@ -75,26 +75,6 @@ const deleteUser = (
   deletedAccountNotification();
 };
 
-// delete user envent button
-comfirmConfirmPIN.addEventListener("click", () => {
-  // sent data to the delet account func
-  deleteAccount(userInfo, true);
-
-  // start the interval of 5 seconds disablaing
-  let disableBtnTime = setInterval(() => {
-    if (btnCount < 10) {
-      console.log("button disabled");
-      btnCount++;
-      comfirmConfirmPIN.disabled = true;
-    } else {
-      console.log("button disabled");
-      btnCount = 0;
-      clearInterval(disableBtnTime);
-      comfirmConfirmPIN.disabled = false;
-    }
-  }, 500);
-});
-
 // cleaning up inputs function
 export const cleanUpInputs = (
   userInfoObject,
@@ -125,3 +105,23 @@ const deletedAccountNotification = () => {
     }
   }, 1000);
 };
+
+// delete user envent button
+comfirmConfirmPIN.addEventListener("click", () => {
+  // sent data to the delet account func
+  deleteAccount(userInfo, true);
+
+  // start the interval of 5 seconds disablaing
+  let disableBtnTime = setInterval(() => {
+    if (btnCount < 10) {
+      console.log("button disabled");
+      btnCount++;
+      comfirmConfirmPIN.disabled = true;
+    } else {
+      console.log("button disabled");
+      btnCount = 0;
+      clearInterval(disableBtnTime);
+      comfirmConfirmPIN.disabled = false;
+    }
+  }, 500);
+});
