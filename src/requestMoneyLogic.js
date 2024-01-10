@@ -81,18 +81,18 @@ const makeNewTransaction = (ourUser, stringWithoutDecimal) => {
 };
 
 // check user requested type of money
-export const checkUserInput = () => {
-  moneyRequested = moneyRequested.replace(/\./g, "");
-  if (moneyRequested === "") {
-    moneyRequested = 50;
+export const checkUserInput = (inputData) => {
+  let inputNewData = inputData.replace(/\./g, "");
+  if (inputNewData === "") {
+    inputNewData = 50;
     dashboardCardInputRequestLoan.value = 50;
   }
-  if (moneyRequested >= 1000 || moneyRequested < 0) {
-    moneyRequested = 50;
+  if (inputNewData >= 1000 || inputNewData < 0) {
+    inputNewData = 50;
     dashboardCardInputRequestLoan.value = 50;
   }
-  dashboardCardInputRequestLoan.value = moneyRequested;
-  return moneyRequested;
+  dashboardCardInputRequestLoan.value = inputNewData;
+  return inputNewData;
 };
 // event lisnters
 requestLoanBtn.addEventListener("click", requestMoney);
