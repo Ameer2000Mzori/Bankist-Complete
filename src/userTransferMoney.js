@@ -25,19 +25,14 @@ const getUserTransferamount = () => {
   // checking the user info if we have it in data base
   let transferUserName = dashboardCardInputTransfer.value;
   let foundedTransferUser;
-  if (userInfoCpy.userName !== transferUserName) {
-    foundedTransferUser = accountsDataObj.find(
-      (user) => user.userName == transferUserName
-    );
-  } else {
-    console.log("enter only other users name");
-  }
 
-  if (foundedTransferUser) {
-    console.log("user found:", foundedTransferUser);
-  } else {
-    console.log("sorry user not found", foundedTransferUser);
-  }
+  checkUser(transferUserName, foundedTransferUser);
+
+  console.log(
+    "after returning user infos",
+    transferUserName,
+    foundedTransferUser
+  );
   // getting user input
   //   let requestedMoneyTransfer = dashboardCardInputAmount.value;
   //   // rounding and checking the user input type
@@ -48,6 +43,24 @@ const getUserTransferamount = () => {
   //   console.log("this is before clean up everyhting ", requestedMoneyTransfer);
   //   requestedMoneyTransfer = dashboardCardInputAmount.value = "";
   //   console.log("this is after clean up everyhting ", requestedMoneyTransfer);
+};
+
+// check user function
+const checkUser = (transferUserName, foundedTransferUser) => {
+  if (userInfoCpy.userName !== transferUserName) {
+    foundedTransferUser = accountsDataObj.find(
+      (user) => user.userName == transferUserName
+    );
+  } else {
+    console.log("enter only other users name");
+  }
+
+  if (foundedTransferUser) {
+    console.log("user found:", foundedTransferUser);
+    return foundedTransferUser;
+  } else {
+    console.log("sorry user not found", foundedTransferUser);
+  }
 };
 
 // events
