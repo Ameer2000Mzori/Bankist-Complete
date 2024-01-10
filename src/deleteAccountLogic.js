@@ -96,7 +96,7 @@ comfirmConfirmPIN.addEventListener("click", () => {
 });
 
 // cleaning up inputs function
-const cleanUpInputs = (
+export const cleanUpInputs = (
   userInfoObject,
   userInfo,
   userEmailInput,

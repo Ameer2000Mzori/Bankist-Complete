@@ -1,5 +1,6 @@
 // importing
 import { timeAndGreet } from "./timeAndGreet.js";
+import { cleanUpInputs } from "./deleteAccountLogic.js";
 
 // selecting pages :
 const landingPageEl = document.getElementsByClassName("landing-Page")[0];
@@ -24,7 +25,7 @@ let seconds = 0;
 
 // our functions
 export const userDashBoardTimer = () => {
-  minCount = 10;
+  minCount = 5;
   seconds = 0;
   let timerInterval = setInterval(() => {
     if (minCount > 0) {
@@ -52,6 +53,7 @@ export let accountLogout = () => {
   minCount = 0;
   seconds = 0;
   dashboardMidLeftWrap.innerHTML = ``;
+  cleanUpInputs();
 
   let logininterval = setInterval(() => {
     if (loginCounter < 10) {
