@@ -5,8 +5,8 @@ import { checkUserInput } from "./requestMoneyLogic.js";
 
 // selecting elements // comfirm transfer money
 const comfirmTransferBtn = document.getElementById("comfirm-Transfer-Btn");
-const dashboardCardInputTransfer = document.getElementById(
-  "dashboard-Card-Input-Transfer"
+const dashboardCardInputAmount = document.getElementById(
+  "dashboard-Card-Input-Amount"
 );
 
 // gelobal variables
@@ -18,11 +18,13 @@ export const getLoggedInUserData = (userInfoObject) => {
 };
 
 const getUserTransferamount = () => {
-  let requestedMoneyTransfer = dashboardCardInputTransfer.value;
+  let requestedMoneyTransfer = dashboardCardInputAmount.value;
   checkUserInput(requestedMoneyTransfer);
   console.log("this is return before convert:", requestedMoneyTransfer);
-  let moneyconvert = requestedMoneyTransfer;
+  let moneyconvert = Number(requestedMoneyTransfer);
   console.log("this is money convert:", moneyconvert);
+  requestedMoneyTransfer = dashboardCardInputAmount.value = "";
+  console.log("this is after clean up everyhting ", requestedMoneyTransfer);
 };
 
 // events
