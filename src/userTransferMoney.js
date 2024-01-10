@@ -18,12 +18,15 @@ export const getLoggedInUserData = (userInfoObject) => {
 };
 
 const getUserTransferamount = () => {
-  let requestedMoney = 10;
-  checkUserInput(requestedMoney);
-  let moneyconvert = requestedMoney;
+  let requestedMoneyTransfer = 10;
+  checkUserInput(requestedMoneyTransfer);
+  let moneyconvert = requestedMoneyTransfer;
   console.log("this is money convert:", moneyconvert);
-  requestedMoney = 0;
-  console.log("this is moneyrequest after cleaning:", requestedMoney);
+  requestedMoneyTransfer = 0;
+  console.log(
+    "this is requestedMoneyTransfer after cleaning:",
+    requestedMoneyTransfer
+  );
 };
 
 // events
