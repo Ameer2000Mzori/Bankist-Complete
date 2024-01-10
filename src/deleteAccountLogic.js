@@ -62,7 +62,7 @@ const deleteUser = (userInfoObject, userEmailInput, userPassInput) => {
     accountsDataObj.splice(indexToRemove, 1);
   }
   // cleaning up everything after deletation
-  cleanUpInputs();
+  cleanUpInputs(userInfoObject, userInfo, userEmailInput, userPassInput);
   // notification
   deletedAccountNotification();
 };
@@ -88,7 +88,12 @@ comfirmConfirmPIN.addEventListener("click", () => {
 });
 
 // cleaning up inputs function
-const cleanUpInputs = () => {
+const cleanUpInputs = (
+  userInfoObject,
+  userInfo,
+  userEmailInput,
+  userPassInput
+) => {
   userInfo = "";
   userInfoObject = "";
   userEmailInput = dashboardCardConfirmUser.value = "";
