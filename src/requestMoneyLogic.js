@@ -32,12 +32,25 @@ const userRequestedMoney = (stringWithoutDecimal) => {
   let ourUser = accountsDataObj.find((user) => {
     return user.userName === "Ameer";
   });
-  ourUser && ourUser ? makeNewTransaction() : console.log("no user found");
+  ourUser && ourUser
+    ? makeNewTransaction(ourUser)
+    : console.log("no user found");
 };
 
 // makeNewTransaction function
-const makeNewTransaction = () => {
-  console.log(`user Found`);
+const makeNewTransaction = (ourUser) => {
+  console.log(`user Found`, ourUser);
+  let time = new Date();
+  let year = time.getFullYear();
+  let month = time.getMonth() + 1;
+  let day = time.getDate();
+
+  let newTransaction = {
+    title: `Ameer`,
+  };
+  ourUser.date.push(newTransaction);
+  console.log(ourUser);
+  console.log("this is our user data:", accountsDataObj);
 };
 
 userRequestedMoney();
