@@ -49,7 +49,12 @@ const deleteAccountFunction = (
 };
 
 // delete user logic
-const deleteUser = (userInfoObject, userEmailInput, userPassInput) => {
+const deleteUser = (
+  checkStatus,
+  userInfoObject,
+  userEmailInput,
+  userPassInput
+) => {
   accountLogout();
   let indexToRemove = -1;
   accountsDataObj.forEach((user, index) => {
@@ -61,6 +66,9 @@ const deleteUser = (userInfoObject, userEmailInput, userPassInput) => {
   if (indexToRemove !== -1) {
     accountsDataObj.splice(indexToRemove, 1);
   }
+
+  // test
+  console.log("after delete users data object:", accountsDataObj);
   // cleaning up everything after deletation
   cleanUpInputs(userInfoObject, userInfo, userEmailInput, userPassInput);
   // notification
