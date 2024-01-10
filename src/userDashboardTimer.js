@@ -31,13 +31,11 @@ export const userDashBoardTimer = () => {
     if (minCount > 0) {
       if (seconds > 0) {
         seconds--;
-        console.log(seconds, minCount);
       } else {
         seconds = 60;
         minCount--;
       }
     } else {
-      console.log("logged out!");
       clearInterval(timerInterval);
       accountLogout();
     }

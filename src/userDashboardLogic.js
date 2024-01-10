@@ -119,6 +119,7 @@ export const userTransactions = (dataLoop) => {
 export const userTotalMoney = (dataLoop) => {
   let minBalance = 0;
   let totalIncome = 0;
+  console.log(dataLoop);
 
   dataLoop.forEach((data) => {
     let transactions = data.transaction;
@@ -131,6 +132,8 @@ export const userTotalMoney = (dataLoop) => {
   dashboardBottomLeftOutWrap.textContent = `out ${minBalance}$`;
   console.log("this is total income: ", totalIncome);
   console.log("this is total minBalance: ", minBalance);
+  minBalance = 0;
+  totalIncome = 0;
 };
 
 // login timer interval for elements to hide or unhide!

@@ -54,6 +54,7 @@ const makeNewTransaction = (ourUser, stringWithoutDecimal) => {
   let year = time.getFullYear();
   let month = time.getMonth() + 1;
   let day = time.getDate();
+  parseInt(stringWithoutDecimal);
 
   let newTransaction = {
     day: `${day}`,
