@@ -35,7 +35,7 @@ const requestMoney = () => {
 
   stringWithoutDecimal = moneyRequested;
   console.log(`after converting money  :`, stringWithoutDecimal);
-  moneyRequested = 0;
+  moneyRequested = "0";
 
   console.log(`after clearning money request   :`, moneyRequested);
 
