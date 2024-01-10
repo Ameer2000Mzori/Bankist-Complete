@@ -1,7 +1,6 @@
 // importing
 import { accountsDataObj } from "./createAccountLogic.js";
 import { userTotalMoney, userTransactions } from "./userDashboardLogic.js";
-import { checkUserInput } from "./requestMoneyLogic.js";
 
 // selecting elements // comfirm transfer money
 const comfirmTransferBtn = document.getElementById("comfirm-Transfer-Btn");
@@ -19,7 +18,10 @@ export const getLoggedInUserData = (userInfoObject) => {
 
 const getUserTransferamount = () => {
   let requestedMoneyTransfer = dashboardCardInputAmount.value;
-  checkUserInput(requestedMoneyTransfer);
+  requestedMoneyTransfer = Math.round(Number(requestedMoneyTransfer));
+  if (requestedMoneyTransfer === 0) requestedMoneyTransfer = 50;
+  if (requestedMoneyTransfer > 2000 || requestedMoneyTransfer < 0)
+    requestedMoneyTransfer = 50;
   console.log("this is return before convert:", requestedMoneyTransfer);
   let moneyconvert = Number(requestedMoneyTransfer);
   console.log("this is money convert:", moneyconvert);

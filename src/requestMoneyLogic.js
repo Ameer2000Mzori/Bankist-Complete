@@ -30,7 +30,11 @@ export const getUserInformation = (userInfoObject) => {
 const requestMoney = () => {
   // getting data
   moneyRequested = dashboardCardInputRequestLoan.value;
-  checkUserInput(moneyRequested);
+
+  moneyRequested = Math.round(Number(moneyRequested));
+  if (moneyRequested === 0) moneyRequested = 50;
+  if (moneyRequested > 2000 || moneyRequested < 0) moneyRequested = 50;
+
   console.log(`before returning money  :`, moneyRequested);
 
   stringWithoutDecimal = moneyRequested;
@@ -61,13 +65,12 @@ const makeNewTransaction = (ourUser, stringWithoutDecimal) => {
   let year = time.getFullYear();
   let month = time.getMonth() + 1;
   let day = time.getDate();
-  let numriInput = Number(stringWithoutDecimal);
 
   let newTransaction = {
     day: `${day}`,
     month: `${month}`,
     year: `${year}`,
-    transaction: numriInput,
+    transaction: stringWithoutDecimal,
   };
   ourUser.date.unshift(newTransaction);
   console.log(ourUser);
@@ -80,19 +83,5 @@ const makeNewTransaction = (ourUser, stringWithoutDecimal) => {
   userTotalMoney(ourUser.date, ourUser);
 };
 
-// check user requested type of money
-export const checkUserInput = (inputData) => {
-  let inputNewData = inputData.replace(/\./g, "");
-  if (inputNewData === "") {
-    inputNewData = 50;
-    dashboardCardInputRequestLoan.value = 50;
-  }
-  if (inputNewData >= 1000 || inputNewData < 0) {
-    inputNewData = 50;
-    dashboardCardInputRequestLoan.value = 50;
-  }
-  dashboardCardInputRequestLoan.value = inputNewData;
-  return inputNewData;
-};
 // event lisnters
 requestLoanBtn.addEventListener("click", requestMoney);
