@@ -4,6 +4,7 @@ import { timeAndGreet } from "./timeAndGreet.js";
 import { deleteAccount } from "./deleteAccountLogic.js";
 import { getUserInformation } from "./requestMoneyLogic.js";
 import { accountsDataObj } from "./createAccountLogic.js";
+import { getUserInfo } from "./sortLogicHandler.js";
 
 // selecting elements
 
@@ -146,6 +147,7 @@ export const userTotalMoney = (dataLoop, userInfo) => {
   minBalance = 0;
   totalIncome = 0;
   leftBalance = 0;
+  getUserInfo(gotUser);
 };
 
 // login timer interval for elements to hide or unhide!
