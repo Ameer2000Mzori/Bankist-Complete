@@ -30,18 +30,17 @@ const userRequestedMoney = (stringWithoutDecimal) => {
   console.log(accountsDataObj);
 
   let ourUser = accountsDataObj.find((user) => {
-    return user.userName === userInfo.userName;
+    return user.userName === "Ameer";
   });
-  if (ourUser) {
-    console.log("user Found :", ourUser);
-    let newTransaction;
-    console.log(`our user date:`, ourUser.date);
-  } else {
-    console.log("no user");
-  }
+  ourUser && ourUser ? makeNewTransaction() : console.log("no user found");
 };
 
-// userRequestedMoney();
+// makeNewTransaction function
+const makeNewTransaction = () => {
+  console.log(`user Found`);
+};
+
+userRequestedMoney();
 // check user requested type of money
 const checkUserInput = () => {
   stringWithoutDecimal = moneyRequested.replace(/\./g, "");
