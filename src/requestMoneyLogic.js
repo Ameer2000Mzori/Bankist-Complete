@@ -1,3 +1,6 @@
+// importing
+import { accountsDataObj } from "./createAccountLogic.js";
+
 // selected btn // selected inputs
 const requestLoanBtn = document.getElementById("request-Loan-Btn");
 const dashboardCardInputRequestLoan = document.getElementById(
@@ -19,8 +22,27 @@ const requestMoney = () => {
   moneyRequested = dashboardCardInputRequestLoan.value;
   checkUserInput(stringWithoutDecimal);
   console.log(`after returning money  :`, stringWithoutDecimal);
+
+  userRequestedMoney(stringWithoutDecimal);
+};
+// this is userRequestedMoney function
+const userRequestedMoney = (stringWithoutDecimal) => {
+  console.log(accountsDataObj);
+
+  let ourUser = accountsDataObj.find((user) => {
+    return user.userName === userInfo.userName;
+  });
+  if (ourUser) {
+    console.log("user Found :", ourUser);
+    let newTransaction;
+    console.log(`our user date:`, ourUser.date);
+  } else {
+    console.log("no user");
+  }
 };
 
+// userRequestedMoney();
+// check user requested type of money
 const checkUserInput = () => {
   stringWithoutDecimal = moneyRequested.replace(/\./g, "");
   if (stringWithoutDecimal === "") {
