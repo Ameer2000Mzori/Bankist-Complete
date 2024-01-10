@@ -19,12 +19,14 @@ const dashboardCardConfirmPIN = document.getElementById(
 
 // functions
 let btnCount = 0;
-
+let userInfo;
 // this is delete account function
 export const deleteAccount = (userInfoObject, checkStatus) => {
   // this is user input
   let userEmailInput = dashboardCardConfirmUser.value;
   let userPassInput = dashboardCardConfirmPIN.value;
+
+  // this is user info object
 
   // if user has put his right information or not!
   userInfoObject.userEmail === userEmailInput &&
@@ -36,22 +38,7 @@ export const deleteAccount = (userInfoObject, checkStatus) => {
         userPassInput
       )
     : console.log("password or email wrong!");
-
-  // delete user envent button
-  comfirmConfirmPIN.addEventListener("click", () => {
-    deleteAccount(userInfoObject, true);
-    let disableBtnTime = setInterval(() => {
-      if (btnCount < 10) {
-        btnCount++;
-        comfirmConfirmPIN.disabled = true;
-      } else {
-        btnCount = 0;
-        clearInterval(disableBtnTime);
-        comfirmConfirmPIN.disabled = false;
-      }
-    }, 1000);
-    userInfoObject = "";
-  });
+  userInfo = userInfoObject;
 };
 
 // delte account logic
@@ -77,8 +64,40 @@ const deleteAccountFunction = (
       accountsDataObj.splice(indexToRemove, 1);
     }
 
+    // testing the code
+    console.log("this is data accounts object :", accountsDataObj);
+    console.log("this is data user object :", userInfoObject);
+    console.log("this is data user check status :", checkStatus);
+    console.log("this is data user user email input :", userEmailInput);
+    console.log("this is data user user pass input  :", userPassInput);
+
+    // cleaning up everything after deletation
+    userInfo = "";
     userInfoObject = "";
-    userEmailInput = dashboardCardConfirmUser = "";
-    userPassInput = dashboardCardConfirmPIN = "";
+    userEmailInput = dashboardCardConfirmUser.value = "";
+    userPassInput = dashboardCardConfirmPIN.value = "";
   }
 };
+
+// delete user envent button
+
+comfirmConfirmPIN.addEventListener("click", () => {
+  // sent data to the delet account func
+  deleteAccount(userInfo, true);
+
+  // start the interval of 5 seconds disablaing
+  let disableBtnTime = setInterval(() => {
+    if (btnCount < 10) {
+      btnCount++;
+      console.log("btn disabled");
+
+      comfirmConfirmPIN.disabled = true;
+    } else {
+      console.log("btn enabled");
+
+      btnCount = 0;
+      clearInterval(disableBtnTime);
+      comfirmConfirmPIN.disabled = false;
+    }
+  }, 500);
+});
