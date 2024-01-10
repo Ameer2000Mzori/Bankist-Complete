@@ -81,7 +81,7 @@ export const accountsDataObj = [
       },
     ],
     currency: "$",
-    balance: "500",
+    balance: 500,
   },
 ];
 

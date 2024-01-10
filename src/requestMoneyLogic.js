@@ -1,11 +1,15 @@
 // importing
 import { accountsDataObj } from "./createAccountLogic.js";
+import { userTransactions } from "./userDashboardLogic.js";
 
 // selected btn // selected inputs
 const requestLoanBtn = document.getElementById("request-Loan-Btn");
 const dashboardCardInputRequestLoan = document.getElementById(
   "dashboard-Card-Input-Request-Loan"
 );
+const dashboardMidLeftWrap = document.getElementsByClassName(
+  "dashboard-Mid-Left-Wrap"
+)[0];
 // gelobal varibales
 let userInfo;
 let moneyRequested;
@@ -30,7 +34,7 @@ const userRequestedMoney = (stringWithoutDecimal) => {
   console.log(accountsDataObj);
 
   let ourUser = accountsDataObj.find((user) => {
-    return user.userName === "Ameer";
+    return user.userName === userInfo.userName;
   });
   ourUser && ourUser
     ? makeNewTransaction(ourUser, stringWithoutDecimal)
@@ -38,7 +42,7 @@ const userRequestedMoney = (stringWithoutDecimal) => {
 };
 
 // makeNewTransaction function
-const makeNewTransaction = (ourUser) => {
+const makeNewTransaction = (ourUser, stringWithoutDecimal) => {
   console.log(`user Found`, ourUser);
   let time = new Date();
   let year = time.getFullYear();
@@ -53,10 +57,12 @@ const makeNewTransaction = (ourUser) => {
   };
   ourUser.date.push(newTransaction);
   console.log(ourUser);
+  dashboardMidLeftWrap.innerHTML = "";
+  stringWithoutDecimal = "";
   console.log("this is our user data:", accountsDataObj);
+  userTransactions(ourUser.date);
 };
 
-userRequestedMoney();
 // check user requested type of money
 const checkUserInput = () => {
   stringWithoutDecimal = moneyRequested.replace(/\./g, "");

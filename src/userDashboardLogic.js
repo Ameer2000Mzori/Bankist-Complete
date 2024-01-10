@@ -52,9 +52,6 @@ export const showUserData = (userInfoObject) => {
   // starting the timer
   userDashBoardTimer();
 
-  // inserting data dynamiclly :
-  dashboardTopRightText1.textContent = `${userInfoObject.balance}$`;
-
   // inserting data mid for transactions cards!
   let dataLoop = userInfoObject.date;
   userTransactions(dataLoop);
@@ -70,7 +67,7 @@ export const showUserData = (userInfoObject) => {
 };
 
 //userTransactions
-const userTransactions = (dataLoop) => {
+export const userTransactions = (dataLoop) => {
   // creating our data before the loop
 
   // the for each loop card!
