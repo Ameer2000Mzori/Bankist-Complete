@@ -2,31 +2,28 @@
 import { accountsDataObj } from "./createAccountLogic.js";
 import { accountLogout } from "./userDashboardTimer.js";
 
-// selecting elements
-
 // selected btn
-// delete user
 const comfirmConfirmPIN = document.getElementById("comfirm-Confirm-PIN");
 
 // selected inputs
 const dashboardCardConfirmUser = document.getElementById(
   "dashboard-Card-Confirm-User"
 );
-
 const dashboardCardConfirmPIN = document.getElementById(
   "dashboard-Card-Confirm-PIN"
 );
 
-// functions
+// gelobal varibales
 let btnCount = 0;
 let userInfo;
+
+// functions
+
 // this is delete account function
 export const deleteAccount = (userInfoObject, checkStatus) => {
   // this is user input
   let userEmailInput = dashboardCardConfirmUser.value;
   let userPassInput = dashboardCardConfirmPIN.value;
-
-  // this is user info object
 
   // if user has put his right information or not!
   userInfoObject.userEmail === userEmailInput &&
@@ -64,18 +61,8 @@ const deleteAccountFunction = (
       accountsDataObj.splice(indexToRemove, 1);
     }
 
-    // testing the code
-    console.log("this is data accounts object :", accountsDataObj);
-    console.log("this is data user object :", userInfoObject);
-    console.log("this is data user check status :", checkStatus);
-    console.log("this is data user user email input :", userEmailInput);
-    console.log("this is data user user pass input  :", userPassInput);
-
     // cleaning up everything after deletation
-    userInfo = "";
-    userInfoObject = "";
-    userEmailInput = dashboardCardConfirmUser.value = "";
-    userPassInput = dashboardCardConfirmPIN.value = "";
+    cleanUpInputs(userInfo, userInfoObject, userEmailInput, userPassInput);
   }
 };
 
@@ -88,16 +75,34 @@ comfirmConfirmPIN.addEventListener("click", () => {
   // start the interval of 5 seconds disablaing
   let disableBtnTime = setInterval(() => {
     if (btnCount < 10) {
+      console.log("button disabled");
       btnCount++;
-      console.log("btn disabled");
-
       comfirmConfirmPIN.disabled = true;
     } else {
-      console.log("btn enabled");
-
+      console.log("button disabled");
       btnCount = 0;
       clearInterval(disableBtnTime);
       comfirmConfirmPIN.disabled = false;
     }
   }, 500);
 });
+
+// cleaning up inputs function
+const cleanUpInputs = (
+  userInfo,
+  userInfoObject,
+  userEmailInput,
+  userPassInput
+) => {
+  // testing the code
+  // console.log("this is data accounts object :", accountsDataObj);
+  // console.log("this is data user object :", userInfoObject);
+  // console.log("this is data user check status :", checkStatus);
+  // console.log("this is data user user email input :", userEmailInput);
+  // console.log("this is data user user pass input  :", userPassInput);
+  // cleaning up
+  userInfo = "";
+  userInfoObject = "";
+  userEmailInput = dashboardCardConfirmUser.value = "";
+  userPassInput = dashboardCardConfirmPIN.value = "";
+};
