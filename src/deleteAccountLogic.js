@@ -102,4 +102,13 @@ const deletedAccountNotification = () => {
   notificationMessageEl.style.color = "black";
   notificationMessageEl.textContent = "ACCOUNT DELETED!";
   notificationMessageEl.classList.add("active");
+  let notificationCount = 0;
+  let notificationInterVal = setInterval(() => {
+    if (notificationCount < 5) {
+      notificationCount++;
+    } else {
+      clearInterval(notificationInterVal);
+      notificationMessageEl.classList.remove("active");
+    }
+  }, 1000);
 };
