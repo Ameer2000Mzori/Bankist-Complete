@@ -32,22 +32,29 @@ export const deleteAccount = (userInfoObject, checkStatus) => {
 
     let indexToRemove = -1;
 
-    accountsDataObj.forEach((user, index) => {
-      if (
-        user.userEmail === userEmailInput &&
-        user.userPass === userPassInput
-      ) {
-        indexToRemove = index;
+    if (
+      userInfoObject.userEmail === userEmailInput &&
+      userInfoObject.userPass === userEmailInput
+    ) {
+      accountsDataObj.forEach((user, index) => {
+        if (
+          user.userEmail === userEmailInput &&
+          user.userPass === userPassInput
+        ) {
+          indexToRemove = index;
+        }
+      });
+
+      if (indexToRemove !== -1) {
+        accountsDataObj.splice(indexToRemove, 1);
       }
-    });
 
-    if (indexToRemove !== -1) {
-      accountsDataObj.splice(indexToRemove, 1);
+      console.log("account deleted!");
+      console.log("our user data after deletion: ", accountsDataObj);
+      console.log("this is user data inside of true", userInfoObject);
+    } else {
+      console.log("your email or password is worng");
     }
-
-    console.log("account deleted!");
-    console.log("our user data after deletion: ", accountsDataObj);
-    console.log("this is user data inside of true", userInfoObject);
   } else {
     console.log("this is user data inside of false", userInfoObject);
   }
