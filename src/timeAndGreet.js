@@ -42,7 +42,6 @@ export const timeAndGreet = (userInfoObject, greet) => {
 
       // the date text under balance text
 
-      console.log(`As of ${day}/${month}/${year}, ${hour}:${min}`);
       dashboardTopLeftText1.textContent = `${greetingWord} ${userName}`;
       dashboardTopMidText2.textContent = `As of ${day}/${month}/${year}, ${hour}:${min}`;
     }, 1000);
