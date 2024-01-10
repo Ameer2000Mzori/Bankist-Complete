@@ -1,4 +1,5 @@
 // importing
+import { accountsDataObj } from "./createAccountLogic.js";
 
 // selecting elements
 const dashboardBottomLeftSortBtn = document.getElementsByClassName(
@@ -20,8 +21,14 @@ export const getUserInfo = (gotUser) => {
 const sortTransactions = () => {
   console.log(ourUserData.date.length);
 
+  // new copy of our user data
   let sortedInfo = ourUserData.date.slice();
+  let userFound = accountsDataObj.find((user) => {
+    return user.userName === ourUserData.userName;
+  });
 
+  console.log("founded user:", userFound);
+  console.log("users accounts ", accountsDataObj);
   if (sortStage === 0) {
     sortStage++;
     console.log("sort stage:", sortStage);
