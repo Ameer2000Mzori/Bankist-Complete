@@ -2,10 +2,8 @@
 import { accountsDataObj } from "./createAccountLogic.js";
 import { accountLogout } from "./userDashboardTimer.js";
 
-// selected btn
+// selected btn // selected inputs
 const comfirmConfirmPIN = document.getElementById("comfirm-Confirm-PIN");
-
-// selected inputs
 const dashboardCardConfirmUser = document.getElementById(
   "dashboard-Card-Confirm-User"
 );
@@ -18,7 +16,6 @@ let btnCount = 0;
 let userInfo;
 
 // functions
-
 // this is delete account function
 export const deleteAccount = (userInfoObject, checkStatus) => {
   // this is user input
@@ -46,24 +43,25 @@ const deleteAccountFunction = (
   userPassInput
 ) => {
   if (checkStatus) {
-    accountLogout();
-    let indexToRemove = -1;
-    accountsDataObj.forEach((user, index) => {
-      if (
-        user.userEmail === userEmailInput &&
-        user.userPass === userPassInput
-      ) {
-        indexToRemove = index;
-      }
-    });
-
-    if (indexToRemove !== -1) {
-      accountsDataObj.splice(indexToRemove, 1);
-    }
-
-    // cleaning up everything after deletation
-    cleanUpInputs(userInfo, userInfoObject, userEmailInput, userPassInput);
+    deleteUser(userInfoObject, checkStatus, userEmailInput, userPassInput);
   }
+};
+
+// dlete user logic
+const deleteUser = (userInfoObject, userEmailInput, userPassInput) => {
+  accountLogout();
+  let indexToRemove = -1;
+  accountsDataObj.forEach((user, index) => {
+    if (user.userEmail === userEmailInput && user.userPass === userPassInput) {
+      indexToRemove = index;
+    }
+  });
+
+  if (indexToRemove !== -1) {
+    accountsDataObj.splice(indexToRemove, 1);
+  }
+  // cleaning up everything after deletation
+  cleanUpInputs(userInfo, userInfoObject, userEmailInput, userPassInput);
 };
 
 // delete user envent button
