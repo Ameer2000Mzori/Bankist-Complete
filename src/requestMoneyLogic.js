@@ -1,6 +1,6 @@
 // importing
 import { accountsDataObj } from "./createAccountLogic.js";
-import { userTransactions } from "./userDashboardLogic.js";
+import { userTransactions, userTotalMoney } from "./userDashboardLogic.js";
 
 // selected btn // selected inputs
 const requestLoanBtn = document.getElementById("request-Loan-Btn");
@@ -9,6 +9,12 @@ const dashboardCardInputRequestLoan = document.getElementById(
 );
 const dashboardMidLeftWrap = document.getElementsByClassName(
   "dashboard-Mid-Left-Wrap"
+)[0];
+const dashboardBottomLeftInWrap = document.getElementsByClassName(
+  "dashboard-Bottom-Left-In-Wrap"
+)[0];
+const dashboardBottomLeftOutWrap = document.getElementsByClassName(
+  "dashboard-Bottom-Left-Out-Wrap"
 )[0];
 // gelobal varibales
 let userInfo;
@@ -55,12 +61,15 @@ const makeNewTransaction = (ourUser, stringWithoutDecimal) => {
     year: `${year}`,
     transaction: stringWithoutDecimal,
   };
-  ourUser.date.push(newTransaction);
+  ourUser.date.unshift(newTransaction);
   console.log(ourUser);
   dashboardMidLeftWrap.innerHTML = "";
   stringWithoutDecimal = "";
+  dashboardBottomLeftInWrap.textContent = "";
+  dashboardBottomLeftOutWrap.textContent = "";
   console.log("this is our user data:", accountsDataObj);
   userTransactions(ourUser.date);
+  userTotalMoney(ourUser.date);
 };
 
 // check user requested type of money

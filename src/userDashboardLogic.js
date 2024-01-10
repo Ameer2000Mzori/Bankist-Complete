@@ -116,7 +116,7 @@ export const userTransactions = (dataLoop) => {
 };
 
 // user total money
-const userTotalMoney = (dataLoop) => {
+export const userTotalMoney = (dataLoop) => {
   let minBalance = 0;
   let totalIncome = 0;
 
