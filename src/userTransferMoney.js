@@ -13,6 +13,7 @@ const dashboardCardInputTransfer = document.getElementById(
 
 // gelobal variables
 let userInfoCpy;
+let userFound;
 
 // functions
 
@@ -28,21 +29,25 @@ const getUserTransferamount = () => {
 
   checkUser(transferUserName, foundedTransferUser);
 
-  console.log(
-    "after returning user infos",
-    transferUserName,
-    foundedTransferUser
-  );
+  // cleaning up and passing the data to other function
+  console.log("after returning user infos", transferUserName, userFound);
+  userFound = "";
+  transferUserName = "";
+  console.log("after cleaning up user infos", transferUserName, userFound);
+};
+
+// user inputs transfer money logic
+const userTransferMoney = () => {
   // getting user input
-  //   let requestedMoneyTransfer = dashboardCardInputAmount.value;
-  //   // rounding and checking the user input type
-  //   requestedMoneyTransfer = Math.round(Number(requestedMoneyTransfer));
-  //   if (requestedMoneyTransfer === 0) requestedMoneyTransfer = 50;
-  //   if (requestedMoneyTransfer > 2000 || requestedMoneyTransfer < 0)
-  //     requestedMoneyTransfer = 50;
-  //   console.log("this is before clean up everyhting ", requestedMoneyTransfer);
-  //   requestedMoneyTransfer = dashboardCardInputAmount.value = "";
-  //   console.log("this is after clean up everyhting ", requestedMoneyTransfer);
+  let requestedMoneyTransfer = dashboardCardInputAmount.value;
+  // rounding and checking the user input type
+  requestedMoneyTransfer = Math.round(Number(requestedMoneyTransfer));
+  if (requestedMoneyTransfer === 0) requestedMoneyTransfer = 50;
+  if (requestedMoneyTransfer > 2000 || requestedMoneyTransfer < 0)
+    requestedMoneyTransfer = 50;
+  console.log("this is before clean up everyhting ", requestedMoneyTransfer);
+  requestedMoneyTransfer = dashboardCardInputAmount.value = "";
+  console.log("this is after clean up everyhting ", requestedMoneyTransfer);
 };
 
 // check user function
@@ -56,8 +61,10 @@ const checkUser = (transferUserName, foundedTransferUser) => {
   }
 
   if (foundedTransferUser) {
-    console.log("user found:", foundedTransferUser);
-    return foundedTransferUser;
+    userFound = foundedTransferUser;
+    console.log("before return user info", foundedTransferUser);
+    userTransferMoney();
+    return userFound;
   } else {
     console.log("sorry user not found", foundedTransferUser);
   }
