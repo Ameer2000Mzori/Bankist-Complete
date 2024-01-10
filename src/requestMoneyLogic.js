@@ -33,7 +33,7 @@ const userRequestedMoney = (stringWithoutDecimal) => {
     return user.userName === "Ameer";
   });
   ourUser && ourUser
-    ? makeNewTransaction(ourUser)
+    ? makeNewTransaction(ourUser, stringWithoutDecimal)
     : console.log("no user found");
 };
 
@@ -46,7 +46,10 @@ const makeNewTransaction = (ourUser) => {
   let day = time.getDate();
 
   let newTransaction = {
-    title: `Ameer`,
+    day: `${day}`,
+    month: `${month}`,
+    year: `${year}`,
+    transaction: stringWithoutDecimal,
   };
   ourUser.date.push(newTransaction);
   console.log(ourUser);
