@@ -70,7 +70,7 @@ const makeNewTransaction = (ourUser, stringWithoutDecimal) => {
   dashboardBottomLeftOutWrap.textContent = "";
   console.log("this is our user data:", accountsDataObj);
   userTransactions(ourUser.date);
-  userTotalMoney(ourUser.date);
+  userTotalMoney(ourUser.date, ourUser);
 };
 
 // check user requested type of money

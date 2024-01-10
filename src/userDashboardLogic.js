@@ -3,6 +3,7 @@ import { userDashBoardTimer } from "./userDashboardTimer.js";
 import { timeAndGreet } from "./timeAndGreet.js";
 import { deleteAccount } from "./deleteAccountLogic.js";
 import { getUserInformation } from "./requestMoneyLogic.js";
+import { accountsDataObj } from "./createAccountLogic.js";
 
 // selecting elements
 
@@ -38,8 +39,8 @@ const dashboardBottomLeftSortBtn = document.getElementsByClassName(
   "dashboard-Bottom-Left-Sort-Btn"
 )[0];
 
-// data object
-
+// gelobal obj
+let userInfo;
 // functions
 
 // show user data / info
@@ -57,7 +58,9 @@ export const showUserData = (userInfoObject) => {
   userTransactions(dataLoop);
 
   // insterting data bottom
-  userTotalMoney(dataLoop);
+  // copying user info to other varibale for use of balance money update
+  userInfo = userInfoObject;
+  userTotalMoney(dataLoop, userInfo);
 
   // sending data to delete account if needed
   deleteAccount(userInfoObject, false);
@@ -116,7 +119,7 @@ export const userTransactions = (dataLoop) => {
 };
 
 // user total money
-export const userTotalMoney = (dataLoop) => {
+export const userTotalMoney = (dataLoop, userInfo) => {
   let minBalance = 0;
   let totalIncome = 0;
   console.log("our data loop", dataLoop);
@@ -128,14 +131,21 @@ export const userTotalMoney = (dataLoop) => {
       : (minBalance += transactions);
   });
 
-  let leftBalance = totalIncome - Math.abs(minBalance);
+  let gotUser = accountsDataObj.find((user) => {
+    return user.userName === "Ameer";
+  });
 
-  dashboardTopRightText1.textContent = `${leftBalance}`;
+  let leftBalance = totalIncome - Math.abs(minBalance);
+  dashboardTopRightText1.textContent = `${leftBalance}$`;
   dashboardBottomLeftInWrap.textContent = `in ${totalIncome}$`;
   dashboardBottomLeftOutWrap.textContent = `out ${minBalance}$`;
   console.log("this is total income: ", totalIncome);
   console.log("this is total minBalance: ", minBalance);
   console.log("this is  leftbalance: ", leftBalance);
+  console.log("user found :", gotUser);
+  gotUser.balance = leftBalance;
+  console.log("this is our user:", gotUser);
+  console.log("this is our accounts data obj", accountsDataObj);
   minBalance = 0;
   totalIncome = 0;
   leftBalance = 0;
