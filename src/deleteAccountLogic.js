@@ -18,6 +18,7 @@ const dashboardCardConfirmPIN = document.getElementById(
 );
 
 // functions
+let btnCount = 0;
 
 // this is delete account function
 export const deleteAccount = (userInfoObject, checkStatus) => {
@@ -28,18 +29,38 @@ export const deleteAccount = (userInfoObject, checkStatus) => {
   // if user has put his right information or not!
   userInfoObject.userEmail === userEmailInput &&
   userInfoObject.userPass === userPassInput
-    ? deleteAccountFunction(checkStatus, userEmailInput, userPassInput)
+    ? deleteAccountFunction(
+        userInfoObject,
+        checkStatus,
+        userEmailInput,
+        userPassInput
+      )
     : console.log("password or email wrong!");
 
   // delete user envent button
   comfirmConfirmPIN.addEventListener("click", () => {
     deleteAccount(userInfoObject, true);
+    let disableBtnTime = setInterval(() => {
+      if (btnCount < 10) {
+        btnCount++;
+        comfirmConfirmPIN.disabled = true;
+      } else {
+        btnCount = 0;
+        clearInterval(disableBtnTime);
+        comfirmConfirmPIN.disabled = false;
+      }
+    }, 1000);
     userInfoObject = "";
   });
 };
 
 // delte account logic
-const deleteAccountFunction = (checkStatus, userEmailInput, userPassInput) => {
+const deleteAccountFunction = (
+  userInfoObject,
+  checkStatus,
+  userEmailInput,
+  userPassInput
+) => {
   if (checkStatus) {
     accountLogout();
     let indexToRemove = -1;
