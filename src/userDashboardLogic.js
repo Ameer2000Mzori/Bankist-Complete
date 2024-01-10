@@ -25,11 +25,6 @@ const dashboardMidLeftWrap = document.getElementsByClassName(
   "dashboard-Mid-Left-Wrap"
 )[0];
 
-// selected all right buttons
-const comfirmTransferBtn = document.getElementsByClassName(
-  "comfirm-Transfer-Btn"
-)[0];
-
 // selected all bottom titles in and out and sort
 const dashboardBottomLeftInWrap = document.getElementsByClassName(
   "dashboard-Bottom-Left-In-Wrap"

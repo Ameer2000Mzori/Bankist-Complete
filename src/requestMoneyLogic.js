@@ -30,8 +30,14 @@ export const getUserInformation = (userInfoObject) => {
 const requestMoney = () => {
   // getting data
   moneyRequested = dashboardCardInputRequestLoan.value;
-  checkUserInput(stringWithoutDecimal);
-  console.log(`after returning money  :`, stringWithoutDecimal);
+  checkUserInput(moneyRequested);
+  console.log(`before returning money  :`, moneyRequested);
+
+  stringWithoutDecimal = moneyRequested;
+  console.log(`after converting money  :`, stringWithoutDecimal);
+  moneyRequested = 0;
+
+  console.log(`after clearning money request   :`, moneyRequested);
 
   userRequestedMoney(stringWithoutDecimal);
   dashboardCardInputRequestLoan.value = "";
@@ -75,18 +81,18 @@ const makeNewTransaction = (ourUser, stringWithoutDecimal) => {
 };
 
 // check user requested type of money
-const checkUserInput = () => {
-  stringWithoutDecimal = moneyRequested.replace(/\./g, "");
-  if (stringWithoutDecimal === "") {
-    stringWithoutDecimal = 50;
+export const checkUserInput = () => {
+  moneyRequested = moneyRequested.replace(/\./g, "");
+  if (moneyRequested === "") {
+    moneyRequested = 50;
     dashboardCardInputRequestLoan.value = 50;
   }
-  if (stringWithoutDecimal >= 1000 || stringWithoutDecimal < 0) {
-    stringWithoutDecimal = 50;
+  if (moneyRequested >= 1000 || moneyRequested < 0) {
+    moneyRequested = 50;
     dashboardCardInputRequestLoan.value = 50;
   }
-  dashboardCardInputRequestLoan.value = stringWithoutDecimal;
-  return stringWithoutDecimal;
+  dashboardCardInputRequestLoan.value = moneyRequested;
+  return moneyRequested;
 };
 // event lisnters
 requestLoanBtn.addEventListener("click", requestMoney);
