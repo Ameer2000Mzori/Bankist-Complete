@@ -1,6 +1,6 @@
 // importing
 import { accountsDataObj } from "./createAccountLogic.js";
-
+import { userTransactions, userTotalMoney } from "./userDashboardLogic.js";
 // selecting elements
 const dashboardBottomLeftSortBtn = document.getElementsByClassName(
   "dashboard-Bottom-Left-Sort-Btn"
@@ -29,12 +29,19 @@ const sortTransactions = () => {
 
   sortTransactionsLogic(sortedInfo);
 
+  console.log("our sorted transactions return:", sortedInfo);
   console.log("founded user:", userFound);
+  userFound.date = [];
+  userFound.date = [...sortedInfo];
+  sortedInfo = [];
   console.log("users accounts ", accountsDataObj);
+
+  userTransactions(userFound.date);
+  userTotalMoney(userFound.date, userFound);
 };
 
 // sortTransactionsLogic
-const sortTransactionsLogic = () => {
+const sortTransactionsLogic = (sortedInfo) => {
   if (sortStage === 0) {
     sortStage++;
     console.log("sort stage:", sortStage);
@@ -42,16 +49,11 @@ const sortTransactionsLogic = () => {
     console.log("Sorted data:", sortedInfo);
     return sortedInfo;
   } else if (sortStage === 1) {
-    sortStage++;
+    sortStage = 0;
     console.log("sort stage:", sortStage);
     sortedInfo.sort((a, b) => a.transaction - b.transaction);
     console.log("Sorted data:", sortedInfo);
     return sortedInfo;
-  } else {
-    sortStage = 0;
-    console.log("sort stage:", sortStage);
-    console.log("our normal data:", ourUserData.date);
-    return ourUserData.date;
   }
 };
 //events
