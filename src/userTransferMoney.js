@@ -24,14 +24,19 @@ export const getLoggedInUserData = (userInfoObject) => {
 const getUserTransferamount = () => {
   // checking the user info if we have it in data base
   let transferUserName = dashboardCardInputTransfer.value;
-  let foundedTransferUser = accountsDataObj.find((user) => {
-    user.userName === transferUserName;
-  });
+  let foundedTransferUser;
+  if (userInfoCpy.userName !== transferUserName) {
+    foundedTransferUser = accountsDataObj.find(
+      (user) => user.userName == transferUserName
+    );
+  } else {
+    console.log("enter only other users name");
+  }
 
   if (foundedTransferUser) {
     console.log("user found:", foundedTransferUser);
   } else {
-    console.log("user not found:", foundedTransferUser);
+    console.log("sorry user not found", foundedTransferUser);
   }
   // getting user input
   //   let requestedMoneyTransfer = dashboardCardInputAmount.value;
