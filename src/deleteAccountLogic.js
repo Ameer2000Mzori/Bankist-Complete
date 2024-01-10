@@ -10,7 +10,9 @@ const dashboardCardConfirmUser = document.getElementById(
 const dashboardCardConfirmPIN = document.getElementById(
   "dashboard-Card-Confirm-PIN"
 );
-
+const notificationMessageEl = document.getElementsByClassName(
+  "notification-Message"
+)[0];
 // gelobal varibales
 let btnCount = 0;
 let userInfo;
@@ -61,6 +63,8 @@ const deleteUser = (userInfoObject, userEmailInput, userPassInput) => {
   }
   // cleaning up everything after deletation
   cleanUpInputs();
+  // notification
+  deletedAccountNotification();
 };
 
 // delete user envent button
@@ -89,4 +93,13 @@ const cleanUpInputs = () => {
   userInfoObject = "";
   userEmailInput = dashboardCardConfirmUser.value = "";
   userPassInput = dashboardCardConfirmPIN.value = "";
+};
+
+// deleted account notification
+
+const deletedAccountNotification = () => {
+  notificationMessageEl.style.backgroundColor = "green";
+  notificationMessageEl.style.color = "black";
+  notificationMessageEl.textContent = "ACCOUNT DELETED!";
+  notificationMessageEl.classList.add("active");
 };
