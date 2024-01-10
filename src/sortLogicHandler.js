@@ -5,6 +5,9 @@ import { userTransactions, userTotalMoney } from "./userDashboardLogic.js";
 const dashboardBottomLeftSortBtn = document.getElementsByClassName(
   "dashboard-Bottom-Left-Sort-Btn"
 )[0];
+const dashboardMidLeftWrap = document.getElementsByClassName(
+  "dashboard-Mid-Left-Wrap"
+)[0];
 
 // gelobal varibales
 let sortStage = 0;
@@ -35,7 +38,7 @@ const sortTransactions = () => {
   userFound.date = [...sortedInfo];
   sortedInfo = [];
   console.log("users accounts ", accountsDataObj);
-
+  dashboardMidLeftWrap.innerHTML = "";
   userTransactions(userFound.date);
   userTotalMoney(userFound.date, userFound);
 };
