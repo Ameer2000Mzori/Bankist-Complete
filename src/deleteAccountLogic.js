@@ -17,8 +17,6 @@ const dashboardCardConfirmPIN = document.getElementById(
   "dashboard-Card-Confirm-PIN"
 );
 
-// gelobal varibales
-
 // functions
 
 // this is delete account function
@@ -28,40 +26,38 @@ export const deleteAccount = (userInfoObject, checkStatus) => {
   let userPassInput = dashboardCardConfirmPIN.value;
 
   // if user has put his right information or not!
-  if (
-    userInfoObject.userEmail === userEmailInput &&
-    userInfoObject.userPass === userPassInput
-  ) {
-    if (checkStatus) {
-      accountLogout();
-
-      let indexToRemove = -1;
-
-      accountsDataObj.forEach((user, index) => {
-        if (
-          user.userEmail === userEmailInput &&
-          user.userPass === userPassInput
-        ) {
-          indexToRemove = index;
-        }
-      });
-
-      if (indexToRemove !== -1) {
-        accountsDataObj.splice(indexToRemove, 1);
-      }
-
-      console.log("account deleted!");
-      console.log("our user data after deletion: ", accountsDataObj);
-      console.log("this is user data inside of true", userInfoObject);
-      userInfoObject = "";
-    }
-  } else {
-    console.log("password or email wrong!");
-  }
+  userInfoObject.userEmail === userEmailInput &&
+  userInfoObject.userPass === userPassInput
+    ? deleteAccountFunction(checkStatus, userEmailInput, userPassInput)
+    : console.log("password or email wrong!");
 
   // delete user envent button
   comfirmConfirmPIN.addEventListener("click", () => {
     deleteAccount(userInfoObject, true);
     userInfoObject = "";
   });
+};
+
+// delte account logic
+const deleteAccountFunction = (checkStatus, userEmailInput, userPassInput) => {
+  if (checkStatus) {
+    accountLogout();
+    let indexToRemove = -1;
+    accountsDataObj.forEach((user, index) => {
+      if (
+        user.userEmail === userEmailInput &&
+        user.userPass === userPassInput
+      ) {
+        indexToRemove = index;
+      }
+    });
+
+    if (indexToRemove !== -1) {
+      accountsDataObj.splice(indexToRemove, 1);
+    }
+
+    userInfoObject = "";
+    userEmailInput = dashboardCardConfirmUser = "";
+    userPassInput = dashboardCardConfirmPIN = "";
+  }
 };
