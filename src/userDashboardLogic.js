@@ -5,6 +5,7 @@ import { deleteAccount } from "./deleteAccountLogic.js";
 import { getUserInformation } from "./requestMoneyLogic.js";
 import { accountsDataObj } from "./createAccountLogic.js";
 import { getUserInfo } from "./sortLogicHandler.js";
+import { getLoggedInUserData } from "./userTransferMoney.js";
 
 // selecting elements
 
@@ -65,6 +66,9 @@ export const showUserData = (userInfoObject) => {
 
   // seinding data of the user to loan logic file
   getUserInformation(userInfoObject);
+
+  // send user informations to the transfer money logic of the logged in user
+  getLoggedInUserData(userInfoObject);
 };
 
 //userTransactions
