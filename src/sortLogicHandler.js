@@ -6,7 +6,7 @@ const dashboardBottomLeftSortBtn = document.getElementsByClassName(
 )[0];
 
 // gelobal varibales
-let sortBoolean = true;
+let sortStage = 0;
 let ourUserData;
 let sortedInfo = [];
 
@@ -22,14 +22,18 @@ const sortTransactions = () => {
 
   let sortedInfo = ourUserData.date.slice();
 
-  if (sortBoolean) {
-    sortBoolean = false;
+  if (sortStage === 0) {
+    sortStage++;
     sortedInfo.sort((a, b) => b.transaction - a.transaction);
     console.log("Sorted data:", sortedInfo);
-  } else {
-    sortBoolean = true;
+  } else if (sortStage === 1) {
+    sortStage++;
+    console.log("sort stage:", sortBoolean);
     sortedInfo.sort((a, b) => a.transaction - b.transaction);
     console.log("Sorted data:", sortedInfo);
+  } else {
+    sortStage = 0;
+    console.log("our normal data:", ourUserData.date);
   }
 };
 
