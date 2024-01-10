@@ -23,16 +23,20 @@ const dashboardCardConfirmPIN = document.getElementById(
 // functions
 
 // this is delete account function
-const deleteAccount = (accountsDataObj) => {
-  let userEmail = dashboardCardConfirmUser.value;
-  let userPass = dashboardCardConfirmPIN.value;
-
-  accountsDataObj = accountsDataObj.filter((users) => {
-    users.userEmail !== userEmail && users.userPass !== userPass;
-  });
+const deleteAccount = () => {
   accountLogout();
-  console.log("our new account data object");
+
+  let userEmailInput = dashboardCardConfirmUser.value;
+  let userPassInput = dashboardCardConfirmPIN.value;
+  console.log("this is userEmail input", userEmailInput);
+  console.log("this is userPass input", userPassInput);
+
+  accountsDataObj = accountsDataObj.filter((user) => {
+    user.userEmail !== userEmailInput && user.userPass !== userPassInput;
+  });
+
   console.log("account deleted!");
+  console.log("our user data after deletion: ", accountsDataObj);
 };
 
 // eventlinsters
