@@ -15,7 +15,6 @@ const dashboardCardConfirmPIN = document.getElementById(
 let btnCount = 0;
 let userInfo;
 
-// functions
 // this is delete account function
 export const deleteAccount = (userInfoObject, checkStatus) => {
   // this is user input
@@ -47,7 +46,7 @@ const deleteAccountFunction = (
   }
 };
 
-// dlete user logic
+// delete user logic
 const deleteUser = (userInfoObject, userEmailInput, userPassInput) => {
   accountLogout();
   let indexToRemove = -1;
@@ -61,11 +60,10 @@ const deleteUser = (userInfoObject, userEmailInput, userPassInput) => {
     accountsDataObj.splice(indexToRemove, 1);
   }
   // cleaning up everything after deletation
-  cleanUpInputs(userInfo, userInfoObject, userEmailInput, userPassInput);
+  cleanUpInputs();
 };
 
 // delete user envent button
-
 comfirmConfirmPIN.addEventListener("click", () => {
   // sent data to the delet account func
   deleteAccount(userInfo, true);
@@ -86,19 +84,7 @@ comfirmConfirmPIN.addEventListener("click", () => {
 });
 
 // cleaning up inputs function
-const cleanUpInputs = (
-  userInfo,
-  userInfoObject,
-  userEmailInput,
-  userPassInput
-) => {
-  // testing the code
-  // console.log("this is data accounts object :", accountsDataObj);
-  // console.log("this is data user object :", userInfoObject);
-  // console.log("this is data user check status :", checkStatus);
-  // console.log("this is data user user email input :", userEmailInput);
-  // console.log("this is data user user pass input  :", userPassInput);
-  // cleaning up
+const cleanUpInputs = () => {
   userInfo = "";
   userInfoObject = "";
   userEmailInput = dashboardCardConfirmUser.value = "";
