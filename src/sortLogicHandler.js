@@ -24,15 +24,17 @@ const sortTransactions = () => {
 
   if (sortStage === 0) {
     sortStage++;
+    console.log("sort stage:", sortStage);
     sortedInfo.sort((a, b) => b.transaction - a.transaction);
     console.log("Sorted data:", sortedInfo);
   } else if (sortStage === 1) {
     sortStage++;
-    console.log("sort stage:", sortBoolean);
+    console.log("sort stage:", sortStage);
     sortedInfo.sort((a, b) => a.transaction - b.transaction);
     console.log("Sorted data:", sortedInfo);
   } else {
     sortStage = 0;
+    console.log("sort stage:", sortStage);
     console.log("our normal data:", ourUserData.date);
   }
 };
