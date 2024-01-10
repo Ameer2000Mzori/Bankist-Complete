@@ -25,7 +25,6 @@ const dashboardMidLeftWrap = document.getElementsByClassName(
 const comfirmTransferBtn = document.getElementsByClassName(
   "comfirm-Transfer-Btn"
 )[0];
-const requestLoanBtn = document.getElementsByClassName("request-Loan-Btn")[0];
 
 // selected all bottom titles in and out and sort
 const dashboardBottomLeftInWrap = document.getElementsByClassName(
