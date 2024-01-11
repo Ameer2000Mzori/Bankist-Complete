@@ -40,7 +40,6 @@ const getUserTransferamount = () => {
 
   // cleaning up and passing the data to other function
   console.log("after returning user infos", transferUserName, userFound);
-  userFound = "";
   transferUserName = dashboardCardInputTransfer.value = "";
   console.log("after cleaning up user infos", transferUserName, userFound);
 };
@@ -60,6 +59,7 @@ const userTransferMoney = () => {
     console.log("you have enough money");
     changeSentUserMoneyData(userInfoCpy, requestedMoneyTransfer);
     changeReciveUserData(userFound, requestedMoneyTransfer);
+    userFound = "";
   } else {
     console.log("no enough money");
   }
@@ -69,7 +69,7 @@ const userTransferMoney = () => {
 
 // our logged in user function
 const changeSentUserMoneyData = (userInfoCpy, requestedMoneyTransfer) => {
-  console.log(`user Found`, userInfoCpy);
+  console.log(`user sent moeny `, userInfoCpy);
   let time = new Date();
   let year = time.getFullYear();
   let month = time.getMonth() + 1;
@@ -83,7 +83,6 @@ const changeSentUserMoneyData = (userInfoCpy, requestedMoneyTransfer) => {
     transaction: requestedMoneyTransfer,
   };
   userInfoCpy.date.unshift(newTransaction);
-  console.log(userInfoCpy);
   dashboardMidLeftWrap.innerHTML = "";
   dashboardBottomLeftInWrap.textContent = "";
   dashboardBottomLeftOutWrap.textContent = "";
@@ -91,15 +90,14 @@ const changeSentUserMoneyData = (userInfoCpy, requestedMoneyTransfer) => {
   userTransactions(userInfoCpy.date);
   userTotalMoney(userInfoCpy.date, userInfoCpy);
 };
-// the user that is gonna recive money
 
+// the user that is gonna recive money
 const changeReciveUserData = (userFound, requestedMoneyTransfer) => {
-  console.log(`user Found`, userFound);
+  console.log(`user recived money :`, userFound);
   let time = new Date();
   let year = time.getFullYear();
   let month = time.getMonth() + 1;
   let day = time.getDate();
-  requestedMoneyTransfer = requestedMoneyTransfer;
 
   let newTransaction = {
     day: `${day}`,
@@ -108,13 +106,7 @@ const changeReciveUserData = (userFound, requestedMoneyTransfer) => {
     transaction: requestedMoneyTransfer,
   };
   userFound.date.unshift(newTransaction);
-  console.log(userFound);
-  dashboardMidLeftWrap.innerHTML = "";
-  dashboardBottomLeftInWrap.textContent = "";
-  dashboardBottomLeftOutWrap.textContent = "";
   console.log("this is our user data:", accountsDataObj);
-  userTransactions(userFound.date);
-  userTotalMoney(userFound.date, userFound);
 };
 
 // check user function
