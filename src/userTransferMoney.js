@@ -59,6 +59,7 @@ const userTransferMoney = () => {
   if (userInfoCpy.balance > requestedMoneyTransfer) {
     console.log("you have enough money");
     changeSentUserMoneyData(userInfoCpy, requestedMoneyTransfer);
+    changeReciveUserData(userFound, requestedMoneyTransfer);
   } else {
     console.log("no enough money");
   }
@@ -91,6 +92,30 @@ const changeSentUserMoneyData = (userInfoCpy, requestedMoneyTransfer) => {
   userTotalMoney(userInfoCpy.date, userInfoCpy);
 };
 // the user that is gonna recive money
+
+const changeReciveUserData = (userFound, requestedMoneyTransfer) => {
+  console.log(`user Found`, userFound);
+  let time = new Date();
+  let year = time.getFullYear();
+  let month = time.getMonth() + 1;
+  let day = time.getDate();
+  requestedMoneyTransfer = requestedMoneyTransfer;
+
+  let newTransaction = {
+    day: `${day}`,
+    month: `${month}`,
+    year: `${year}`,
+    transaction: requestedMoneyTransfer,
+  };
+  userFound.date.unshift(newTransaction);
+  console.log(userFound);
+  dashboardMidLeftWrap.innerHTML = "";
+  dashboardBottomLeftInWrap.textContent = "";
+  dashboardBottomLeftOutWrap.textContent = "";
+  console.log("this is our user data:", accountsDataObj);
+  userTransactions(userFound.date);
+  userTotalMoney(userFound.date, userFound);
+};
 
 // check user function
 const checkUser = (transferUserName, foundedTransferUser) => {
