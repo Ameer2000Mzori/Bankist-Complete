@@ -10,6 +10,15 @@ const dashboardCardInputAmount = document.getElementById(
 const dashboardCardInputTransfer = document.getElementById(
   "dashboard-Card-Input-Transfer"
 );
+const dashboardMidLeftWrap = document.getElementsByClassName(
+  "dashboard-Mid-Left-Wrap"
+)[0];
+const dashboardBottomLeftInWrap = document.getElementsByClassName(
+  "dashboard-Bottom-Left-In-Wrap"
+)[0];
+const dashboardBottomLeftOutWrap = document.getElementsByClassName(
+  "dashboard-Bottom-Left-Out-Wrap"
+)[0];
 
 // gelobal variables
 let userInfoCpy;
@@ -49,6 +58,7 @@ const userTransferMoney = () => {
   console.log("our user copy balance,", userInfoCpy.balance);
   if (userInfoCpy.balance > requestedMoneyTransfer) {
     console.log("you have enough money");
+    changeSentUserMoneyData(userInfoCpy, requestedMoneyTransfer);
   } else {
     console.log("no enough money");
   }
@@ -57,7 +67,29 @@ const userTransferMoney = () => {
 };
 
 // our logged in user function
+const changeSentUserMoneyData = (userInfoCpy, requestedMoneyTransfer) => {
+  console.log(`user Found`, userInfoCpy);
+  let time = new Date();
+  let year = time.getFullYear();
+  let month = time.getMonth() + 1;
+  let day = time.getDate();
+  requestedMoneyTransfer = -requestedMoneyTransfer;
 
+  let newTransaction = {
+    day: `${day}`,
+    month: `${month}`,
+    year: `${year}`,
+    transaction: requestedMoneyTransfer,
+  };
+  userInfoCpy.date.unshift(newTransaction);
+  console.log(userInfoCpy);
+  dashboardMidLeftWrap.innerHTML = "";
+  dashboardBottomLeftInWrap.textContent = "";
+  dashboardBottomLeftOutWrap.textContent = "";
+  console.log("this is our user data:", accountsDataObj);
+  userTransactions(userInfoCpy.date);
+  userTotalMoney(userInfoCpy.date, userInfoCpy);
+};
 // the user that is gonna recive money
 
 // check user function
