@@ -32,7 +32,7 @@ const getUserTransferamount = () => {
   // cleaning up and passing the data to other function
   console.log("after returning user infos", transferUserName, userFound);
   userFound = "";
-  transferUserName = "";
+  transferUserName = dashboardCardInputTransfer.value = "";
   console.log("after cleaning up user infos", transferUserName, userFound);
 };
 
@@ -46,9 +46,19 @@ const userTransferMoney = () => {
   if (requestedMoneyTransfer > 2000 || requestedMoneyTransfer < 0)
     requestedMoneyTransfer = 50;
   console.log("this is before clean up everyhting ", requestedMoneyTransfer);
+  console.log("our user copy balance,", userInfoCpy.balance);
+  if (userInfoCpy.balance > requestedMoneyTransfer) {
+    console.log("you have enough money");
+  } else {
+    console.log("no enough money");
+  }
   requestedMoneyTransfer = dashboardCardInputAmount.value = "";
   console.log("this is after clean up everyhting ", requestedMoneyTransfer);
 };
+
+// our logged in user function
+
+// the user that is gonna recive money
 
 // check user function
 const checkUser = (transferUserName, foundedTransferUser) => {
