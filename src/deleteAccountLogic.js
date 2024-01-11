@@ -65,6 +65,7 @@ const deleteUser = (
 
   if (indexToRemove !== -1) {
     accountsDataObj.splice(indexToRemove, 1);
+    localStorage.setItem("accountsDataObj", JSON.stringify(accountsDataObj));
   }
 
   // test

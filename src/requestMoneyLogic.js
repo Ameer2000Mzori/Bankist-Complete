@@ -78,6 +78,7 @@ const makeNewTransaction = (ourUser, stringWithoutDecimal) => {
   stringWithoutDecimal = "";
   dashboardBottomLeftInWrap.textContent = "";
   dashboardBottomLeftOutWrap.textContent = "";
+  localStorage.setItem("accountsDataObj", JSON.stringify(accountsDataObj));
   console.log("this is our user data:", accountsDataObj);
   userTransactions(ourUser.date);
   userTotalMoney(ourUser.date, ourUser);

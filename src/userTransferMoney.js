@@ -86,6 +86,7 @@ const changeSentUserMoneyData = (userInfoCpy, requestedMoneyTransfer) => {
   dashboardMidLeftWrap.innerHTML = "";
   dashboardBottomLeftInWrap.textContent = "";
   dashboardBottomLeftOutWrap.textContent = "";
+  localStorage.setItem("accountsDataObj", JSON.stringify(accountsDataObj));
   console.log("this is our user data:", accountsDataObj);
   userTransactions(userInfoCpy.date);
   userTotalMoney(userInfoCpy.date, userInfoCpy);
@@ -106,6 +107,7 @@ const changeReciveUserData = (userFound, requestedMoneyTransfer) => {
     transaction: requestedMoneyTransfer,
   };
   userFound.date.unshift(newTransaction);
+  localStorage.setItem("accountsDataObj", JSON.stringify(accountsDataObj));
   console.log("this is our user data:", accountsDataObj);
 };
 

@@ -16,49 +16,52 @@ const notificationMessageEl = document.getElementsByClassName(
 
 // gelobal varibales
 let userNew = true;
-export const accountsDataObj = [
-  {
-    userName: "Ameer",
-    userEmail: "Ameer",
-    userPass: "Ameer",
-    date: [
-      {
-        day: "9",
-        month: "1",
-        year: "2024",
-        transaction: 100,
-      },
-      {
-        day: "7",
-        month: "1",
-        year: "2024",
-        transaction: 500,
-      },
-      {
-        day: "8",
-        month: "1",
-        year: "2024",
-        transaction: 500,
-      },
-      {
-        day: "3",
-        month: "1",
-        year: "2024",
-        transaction: -100,
-      },
-    ],
-    currency: "$",
-    balance: "500",
-  },
-  {
-    userName: "Ameen",
-    userEmail: "Ameen",
-    userPass: "Ameen",
-    date: [],
-    currency: "$",
-    balance: 500,
-  },
-];
+
+export const accountsDataObj =
+  JSON.parse(localStorage.getItem("accountsDataObj")) || [];
+// export const accountsDataStorage = [
+//   {
+//     userName: "Ameer",
+//     userEmail: "Ameer",
+//     userPass: "Ameer",
+//     date: [
+//       {
+//         day: "9",
+//         month: "1",
+//         year: "2024",
+//         transaction: 100,
+//       },
+//       {
+//         day: "7",
+//         month: "1",
+//         year: "2024",
+//         transaction: 500,
+//       },
+//       {
+//         day: "8",
+//         month: "1",
+//         year: "2024",
+//         transaction: 500,
+//       },
+//       {
+//         day: "3",
+//         month: "1",
+//         year: "2024",
+//         transaction: -100,
+//       },
+//     ],
+//     currency: "$",
+//     balance: "500",
+//   },
+//   {
+//     userName: "Ameen",
+//     userEmail: "Ameen",
+//     userPass: "Ameen",
+//     date: [],
+//     currency: "$",
+//     balance: 500,
+//   },
+// ];
 
 // functions
 const createAccount = () => {
@@ -97,6 +100,7 @@ const createAccountStepTwo = (userName, userEmail, userPass) => {
 
   loginTimer();
   accountsDataObj.push(newAccount);
+  localStorage.setItem("accountsDataObj", JSON.stringify(accountsDataObj));
   alreadyTakenNotifyMessage(true);
   checkUser(userName, userEmail, userPass);
   console.log(accountsDataObj);
