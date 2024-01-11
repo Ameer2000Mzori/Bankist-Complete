@@ -24,6 +24,8 @@
 
 ![alt text](./sample/1.png)
 ![alt text](./sample/2.png)
+![alt text](./sample/3.png)
+![alt text](./sample/4.png)
 
 ## 🛠 Built With <a name="built-with"></a>
 
